@@ -1,19 +1,18 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 {% block title %}
-gfsdfgsdfg
+NewLiFe
 {% endblock %}
 {% block content %}
    <!--Home section Starts -->
-
    <section class="home" id="home" >
 
        <div class="content">
-           <h3>Teorik Eğitim Pratikte Güzel.</h3>
+           <h3>{% trans 'Teorik Eğitim Pratikte Güzel.' %}</h3>
 
-           <p>New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar.</p>
+           <p>{% trans 'New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar.' %}</p>
 
-           <a href="#" class="btn">Şimdi Deneyimle</a>
+           <a href="#" class="btn">{% trans 'Şimdi Deneyimle' %}</a>
 
        </div>
 
@@ -21,11 +20,10 @@ gfsdfgsdfg
 
    <!--Home section Ends -->
 
-
    <!--About Section Starts-->
 
   <section class="about" id="about">
-     <h1 class="heading"> <span>New LiFe</span> Hakkında</h1>
+     <h1 class="heading"> <span>New LiFe</span> {% trans 'Hakkında' %}</h1>
 
      <div class="flex-container">
 
@@ -34,13 +32,19 @@ gfsdfgsdfg
          </div>
 
          <div class="content">
-             <h3>New LiFe Kullanıcılarına Ne sunar?</h3>
+             <h3>{% trans 'New LiFe Kullanıcılarına Ne sunar?' %}</h3>
 
-             <p><b>New LiFe Team</b>'in oluşturduğu sanal ortam ile istediğiniz an her yer bir deneyim ortamı. New LiFe, teorik olarak derste verilen bilgileri daha verimli hale getirme hedefini, kullanıcılarına 3D ve infografik içerikler ile sağlar. Bilginin ulaşılabilirliği ve akılda kalıcılığı en üst seviyede tutmak <b>New LiFe Team</b>'in en büyük hedefidir...</p>
+             {% blocktrans %}
+               <p><b>
+               New LiFe Team</b>'in oluşturduğu sanal ortam ile istediğiniz an her yer bir deneyim ortamı.
+               New LiFe, teorik olarak derste verilen bilgileri daha verimli hale getirme hedefini,
+               kullanıcılarına 3D ve infografik içerikler ile sağlar. Bilginin ulaşılabilirliği ve akılda kalıcılığı en üst seviyede tutmak
+               <b>New LiFe Team</b>'in en büyük hedefidir...</p>
+            {% endblocktrans %}
+             <p>{% trans 'Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük ile sunar.Sizler için bilginin verimliliğini ve akılda kalıcılığını artırmayı olanaklı hale getirmek için çabalar.' %}</p>
 
-             <p>Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük ile sunar. Sizler için bilginin verimliliğini ve akılda kalıcılığını artırmayı olanaklı hale getirmek için çabalar.</p>
 
-             <a href="#" class="btn">Daha Fazla</a>
+             <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
 
          </div>
 
@@ -54,18 +58,18 @@ gfsdfgsdfg
 
    <section class="menu" id="menu">
 
-       <h1 class="heading"> Sizin <span>yararınız</span></h1>
+       <h1 class="heading"> {% trans 'Sizin <span>yararınız</span>' %}</h1>
 
        <div class="box-container">
           <div class="box">
 
            <img src="{% static 'VR/etkili_ogrenme.jpg' %}" alt="">
 
-           <h3>Etkili Öğrenme</h3>
+           <h3>{% trans 'Etkili Öğrenme' %}</h3>
 
-           <div class="price">New LiFe<span> deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.</span></div>
+           <div class="price">New LiFe<span> {% trans 'deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.' %}</span></div>
 
-           <a href="#" class="btn">Daha Fazla</a>
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
 
        </div>
 
@@ -74,11 +78,11 @@ gfsdfgsdfg
 
            <img src="{% static 'VR/zaman_kazanci.jpg' %}" alt="">
 
-           <h3>Zaman Kazancı</h3>
+           <h3>{% trans 'Zaman Kazancı' %}</h3>
 
-           <div class="price">New LiFe<span> deneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle tekrarlanmaz.</span></div>
+           <div class="price">New LiFe<span> d{% trans 'eneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle tekrarlanmaz.' %}</span></div>
 
-           <a href="#" class="btn">Daha Fazla</a>
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
 
        </div>
 
@@ -87,11 +91,11 @@ gfsdfgsdfg
 
           <img src="{% static 'VR/yeni_deneyimler.jpg' %}" alt="">
 
-           <h3> Yeni Deneyimler</h3>
+           <h3> {% trans 'Yeni Deneyimler' %}</h3>
 
-           <div class="price">New LiFe,<span>farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler sunmayı hedefler.</span></div>
+           <div class="price">New LiFe,<span>{% trans 'farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler sunmayı hedefler.' %}</span></div>
 
-           <a href="#" class="btn">Daha Fazla</a>
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
 
        </div>
 
@@ -100,11 +104,11 @@ gfsdfgsdfg
 
            <img src="{% static 'VR/etkilenmeme.jpg' %}" alt="">
 
-           <h3>Etkilenmeme</h3>
+           <h3>{% trans 'Etkilenmeme' %}</h3>
 
-           <div class="price">New LiFe,<span> ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan (pandemi gibi) etkilenmezsin</span></div>
+           <div class="price">New LiFe,<span> {% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan (pandemi gibi) etkilenmezsin' %}</span></div>
 
-           <a href="#" class="btn">Daha Fazla</a>
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
 
        </div>
        </div>
@@ -119,7 +123,7 @@ gfsdfgsdfg
    <section class="products" id="products">
 
        <h1 class="heading">
-            <span>İçeriklerimiz</span>
+            <span>{% trans 'İçeriklerimiz' %}</span>
        </h1>
 
        <div class="box-container">
@@ -133,7 +137,7 @@ gfsdfgsdfg
                    <img src="{% static 'Content/kimya_deneyleri.jpg' %}" alt="">
                </div>
                <div class="content">
-                   <h3>Kimya Deneyleri</h3>
+                   <h3>{% trans 'Kimya Deneyleri' %}</h3>
                    <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -141,7 +145,7 @@ gfsdfgsdfg
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                    </div>
-                   <div class="price">Gözlerini kamaştıracak! <span></span></div>
+                   <div class="price">{% trans 'Gözlerini kamaştıracak!' %} <span></span></div>
                </div>
            </div>
 
@@ -155,7 +159,7 @@ gfsdfgsdfg
                    <img src="{% static 'Content/hizli_bir_deneyim.jpg' %}" alt="">
                </div>
                <div class="content">
-                   <h3>Hızlı Bir Deneyim</h3>
+                   <h3>{% trans 'Hızlı Bir Deneyim' %}</h3>
                    <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -163,7 +167,7 @@ gfsdfgsdfg
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                    </div>
-                   <div class="price">Kendinle Yarış.<span></span></div>
+                   <div class="price">{% trans 'Kendinle Yarış.' %}<span></span></div>
                </div>
            </div>
 
@@ -177,7 +181,7 @@ gfsdfgsdfg
                    <img src="{% static 'Content/ogrendiklerini_pekistirme.jpg' %}" alt="">
                </div>
                <div class="content">
-                   <h3>Öğrendiklerini Pekiştirme</h3>
+                   <h3>{% trans 'Öğrendiklerini Pekiştirme' %}</h3>
                    <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -185,7 +189,7 @@ gfsdfgsdfg
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                    </div>
-                   <div class="price">Kendini denemelisin. <span></span></div>
+                   <div class="price">{% trans 'Kendini denemelisin.' %} <span></span></div>
                </div>
            </div>
 
@@ -198,7 +202,7 @@ gfsdfgsdfg
                    <img src="{% static 'Content/bilesenleri_yakindan_gorme.jpg' %}" alt="">
                </div>
                <div class="content">
-                   <h3>Bileşenleri yakından görme</h3>
+                   <h3>{% trans 'Bileşenleri yakından görme' %}</h3>
                    <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -206,7 +210,7 @@ gfsdfgsdfg
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                    </div>
-                   <div class="price">Kişisel Deneyimleme! <span></span></div>
+                   <div class="price">{% trans 'Kişisel Deneyimleme!' %} <span></span></div>
                </div>
            </div>
 
@@ -219,7 +223,7 @@ gfsdfgsdfg
                    <img src="{% static 'Content/genel_tekrar.jpg' %}" alt="">
                </div>
                <div class="content">
-                   <h3>Genel Tekrar</h3>
+                   <h3>{% trans 'Genel Tekrar' %}</h3>
                    <div class="stars">
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -227,22 +231,17 @@ gfsdfgsdfg
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                    </div>
-                   <div class="price">Her şey kontrol altında<span></span></div>
+                   <div class="price">{% trans 'Her şey kontrol altında' %}<span></span></div>
                </div>
            </div>
-
        </div>
-
    </section>
-
-
-
 
    <!--Review section starts -->
 
    <section class="review" id="review">
 
-       <h1 class="heading">Kullanıcı <span>Yorumları</span> </h1>
+       <h1 class="heading">{% trans 'Kullanıcı <span>Yorumları</span>' %} </h1>
 
        <div class="box-container">
           {% for user_comment in user_comments %}
@@ -268,7 +267,7 @@ gfsdfgsdfg
 
     <section class="trainers" id="trainers">
 
-    <h1 class="heading">Yönetim <span>Ekibimiz</span> </h1>
+    <h1 class="heading">{% trans 'Yönetim <span>Ekibimiz</span>' %} </h1>
 
     <div class="box-container">
       {% for management_member in management_members %}
@@ -293,8 +292,6 @@ gfsdfgsdfg
 
 
 
-
-
     </div>
 
 </section>
@@ -304,28 +301,28 @@ gfsdfgsdfg
    <!--Contact section starts -->
    <section class="contact" id="contact">
 
-       <h1 class="heading"> <span>İletişim</span> </h1>
+       <h1 class="heading"> <span>{% trans 'İletişim' %}</span> </h1>
        <div class="row">
 
            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12037.677592598036!2d28.97067453955077!3d41.03795669999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7645b3330a7%3A0xde0d784d2a10da2d!2sEspressolab%20Taksim%20Meydan!5e0!3m2!1str!2str!4v1670615897005!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
            <form action="">
-               <h3>Bizimle iletişime geç</h3>
+               <h3>{% trans 'Bizimle iletişime geç' %}</h3>
                <div class="inputBox">
                    <span class="fas fa-user"></span>
-                   <input type="text" placeholder="Ad Soyad">
+                   <input type="text" placeholder="{% trans 'Ad Soyad' %}">
                </div>
 
                <div class="inputBox">
                    <span class="fas fa-envelope"></span>
-                   <input type="email" placeholder="Email Adresi">
+                   <input type="email" placeholder="{% trans 'Email Adresi' %}">
                </div>
 
                <div class="inputBox">
                    <span class="fas fa-phone"></span>
-                   <input type="number" placeholder="Telefon Numarası">
+                   <input type="number" placeholder="{% trans 'Telefon Numarası' %}">
                </div>
-               <input type="submit" value="İletişime geç" class="btn">
+               <input type="submit" value="{% trans 'İletişime geç' %}" class="btn">
 
            </form>
 
@@ -338,7 +335,7 @@ gfsdfgsdfg
    <!--Blogs section starts -->
 
    <section class="blogs" id="blogs">
-       <h1 class="heading">Güncel <span>bloglar</span> </h1>
+       <h1 class="heading"> {% trans 'Güncel <span>bloglar</span>' %}</h1>
 
        <div class="box-container">
 
@@ -355,8 +352,6 @@ gfsdfgsdfg
                </div>
            </div>
 
-
-
            <div class="box">
                <div class="image">
                    <img src="{% static 'Blogs/Vejetaryen_Hakkinda.png' %}" alt="">
@@ -369,7 +364,6 @@ gfsdfgsdfg
                    <a href="#" class="btn">İncele</a>
                </div>
            </div>
-
 
            <div class="box">
                <div class="image">
