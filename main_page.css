@@ -60,6 +60,8 @@ section{
     color: var(--main-color);
 }
 
+
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -205,7 +207,7 @@ section{
     height: 8rem;
     width: 11rem;
     border-radius: 4px;
-    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16),
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16), 
                         6px 4px 4px 1px rgba(0,0,0,.30);
 }
 
@@ -230,7 +232,7 @@ section{
     display: flex;
     align-items: center;
     background: url(
-    '/static/VR/vrBackground.jpg') no-repeat;
+    Items/VR/vrBackground.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -242,7 +244,7 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff; 
 }
 
 .home .content p{
@@ -250,7 +252,7 @@ section{
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #eee;
+    color: #eee; 
 }
 
 .about .flex-container{
@@ -542,7 +544,7 @@ section{
     margin-bottom: 2rem;
     background: var(--bg);
     border: var(--border);
-    box-shadow: 5px 5px 5px 2px rgba(225,225,225,.12),
+    box-shadow: 5px 5px 5px 2px rgba(225,225,225,.12), 
                         6px 4px 4px 1px rgba(225,225,225,.30);
 }
 
@@ -551,7 +553,7 @@ section{
     font-size: 2rem;
     padding-left: 2rem;
 }
-
+ 
 .contact .row form .inputBox input{
     width: 100%;
     padding: 2rem;
@@ -684,14 +686,14 @@ section{
 
 /* Media Queries*/
 @media screen and (max-width: 991px){
-
+    
     html{
     font-size: 55%;
 }
     .header{
         padding: 1.5rem 2rem;
     }
-
+    
     section{
         padding: 2rem;
     }
@@ -709,11 +711,11 @@ section{
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
-
+    
     .header .navbar.active{
         right: 0;
     }
-
+    
     .header .navbar a{
         color: var(--black);
         display: block;
@@ -721,7 +723,7 @@ section{
         padding: .5rem;
         font-size: 2rem;
     }
-
+    
     .header .search-form{
         width: 90%;
         right: 2rem;
@@ -739,9 +741,9 @@ section{
 }
 
 @media screen and (max-width: 450px){
-
+    
     html{
     font-size: 50%;
 }
-
+    
 }
