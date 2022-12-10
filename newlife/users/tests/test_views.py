@@ -11,11 +11,7 @@ from django.urls import reverse
 from newlife.users.forms import UserAdminChangeForm
 from newlife.users.models import User
 from newlife.users.tests.factories import UserFactory
-from newlife.users.views import (
-    UserRedirectView,
-    UserUpdateView,
-    user_detail_view,
-)
+from newlife.users.views import UserRedirectView, UserUpdateView, user_detail_view
 
 pytestmark = pytest.mark.django_db
 

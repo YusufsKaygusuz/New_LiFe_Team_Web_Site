@@ -245,49 +245,21 @@ gfsdfgsdfg
        <h1 class="heading">Kullanıcı <span>Yorumları</span> </h1>
 
        <div class="box-container">
-           <div class="box">
+          {% for user_comment in user_comments %}
+              <div class="box">
                <img src="{% static 'quote-img.png' %}" alt="" class="quote">
-               <p>New LiFe Ile Eğlenerek Öğreniyorum Ve Güncel Bloglar Ile Yeni Bilgilere Hızlı Ulaşabiliyorum.</p>
-           <img src="{% static 'Members/Elif_Sare_Biten.jpg' %}" class="user" alt="">
-               <h3>Elif Sare Biten</h3>
+               <p>{{ user_comment.comment }}</p>
+                {% if user_comment.image %}
+           <img src="{{ user_comment.image.url }}" class="user" alt="">
+                {% endif %}
+               <h3>{{ user_comment.user_full_name }}</h3>
                <div class="stars">
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                   </div>
+                 {% for counter in user_comment.get_total_range %}
+                    <i class="fas fa-star"></i>
+                 {% endfor %}
+               </div>
            </div>
-
-           <div class="box">
-               <img src="{% static 'quote-img.png' %}" alt="" class="quote">
-               <p>VR ve web sitesi sayesinde istediğim zaman bilgiye ulaşabiliyorum. Teşekkürler New LiFe Team.</p>
-           <img src="{% static 'Members/Aslihan_Demir.jpg' %}" class="user" alt="">
-               <h3>Aslıhan Demir</h3>
-               <div class="stars">
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
-                   </div>
-           </div>
-
-           <div class="box">
-               <img src="{% static 'quote-img.png' %}" alt="" class="quote">
-               <p>Bloglar sayesinde güncel konulardan haberdar olabiliyorum. </p>
-           <img src="{% static 'Members/Eslem_Yanik.jpg' %}" class="user" alt="">
-               <h3>Eslem Yanık</h3>
-               <div class="stars">
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                   </div>
-           </div>
-
-
+          {% endfor %}
            </div>
 
    </section>

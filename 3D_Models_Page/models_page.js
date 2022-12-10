@@ -20,7 +20,7 @@ window.onscroll = () =>{
 }
 
 document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn =>{
-  
+
   btn.onclick = () =>{
     let color = btn.style.background;
     document.querySelector(':root').style.setProperty('--main-color', color);
@@ -61,7 +61,7 @@ var swiper = new Swiper(".review-slider", {
       },
       1050: {
         slidesPerView: 3,
-      },    
+      },
     },
     autoplay:{
       delay: 5000,

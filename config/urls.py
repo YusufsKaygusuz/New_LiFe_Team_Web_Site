@@ -1,23 +1,22 @@
 from django.conf import settings
+from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
-from life.views import HomePageView
-from django.conf.urls.i18n import i18n_patterns
 
+from life.views import HomePageView
 
 urlpatterns = [
     path("", HomePageView.as_view(), name="homepage"),
     path(settings.ADMIN_URL, admin.site.urls),
     path("users/", include("newlife.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),
-    ]
+]
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit

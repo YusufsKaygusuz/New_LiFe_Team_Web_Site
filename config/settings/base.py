@@ -76,10 +76,7 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
 ]
 
-LOCAL_APPS = [
-    "newlife.users",
-    "life.apps.LifeConfig"
-]
+LOCAL_APPS = ["newlife.users", "life.apps.LifeConfig"]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -291,12 +288,7 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "1.0.0",
     "SERVE_PERMISSIONS": ["rest_framework.permissions.IsAdminUser"],
 }
-LANGUAGES = (
-    ("en","English"),
-    ("tr","Turkish"),
-    ("de","German")
+LANGUAGES = (("en", "English"), ("tr", "Turkish"), ("de", "German"))
+MODELTRANSLATION_DEFAULT_LANGUAGE = "tr"
 
-)
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'tr'
-
-MODELTRANSLATION_LANGUAGES = ('tr', 'en', 'de')
+MODELTRANSLATION_LANGUAGES = ("tr", "en", "de")

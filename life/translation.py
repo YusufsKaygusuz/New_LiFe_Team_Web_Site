@@ -1,7 +1,13 @@
-from life.models import NewLifeManagementMember
-from modeltranslation.translator import TranslationOptions,register
+from modeltranslation.translator import TranslationOptions, register
+
+from life.models import Comment, NewLifeManagementMember
 
 
 @register(NewLifeManagementMember)
 class NewLifeManagementMemberTranslationOptions(TranslationOptions):
-    fields = ('title',)
+    fields = ("title",)
+
+
+@register(Comment)
+class CommentTranslationOptions(TranslationOptions):
+    fields = ("comment",)
