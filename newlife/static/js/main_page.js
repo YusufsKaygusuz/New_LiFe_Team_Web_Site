@@ -15,13 +15,6 @@ let searchForm = document.querySelector('.search-form');
 }
 */
 
-let cartItem = document.querySelector('.cart-item-container');
-
-    document.querySelector('#cart-btn').onclick = () =>{
-    cartItem.classList.toggle('active');
-    navbar.classList.remove('active');
-     //searchForm.classList.remove('active');
-}
 
 window.onscroll = () =>{
     navbar.classList.remove('active');

@@ -1,3 +1,4 @@
+{% load i18n %}
   <!-- footer section starts -->
       <section class="footer">
 
@@ -13,13 +14,13 @@
 
           <div class="links">
               <a href="#home">New LiFe</a>
-              <a href="#about">Hakkında</a>
-              <a href="#menu">Yararlar</a>
-              <a href="#products">Deneyler</a>
-              <a href="#review">Yorumlar</a>
-              <a href="#trainers">Yönetim</a>
-              <a href="#contact">İletişim</a>
-              <a href="#blogs">blogs</a>
+              <a href="#about">{% trans 'Hakkında' %}</a>
+              <a href="#menu">{% trans 'Yararlar' %}</a>
+              <a href="#products">{% trans 'Deneyler' %}</a>
+              <a href="#review">{% trans 'Yorumlar' %}</a>
+              <a href="#trainers">{% trans 'Yönetim' %}</a>
+              <a href="#contact">{% trans 'İletişim' %}</a>
+              <a href="#blogs">{% trans 'blogs' %}</a>
           </div>
 
           <div class="credit">created by <span>New LiFe Software®</span> | all rights reserved</div>
