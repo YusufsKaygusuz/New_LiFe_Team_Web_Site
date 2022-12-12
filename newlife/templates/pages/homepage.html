@@ -3,7 +3,46 @@
 {% block title %}
 NewLiFe
 {% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+{% endblock %}
 {% block content %}
+  <header class="header">
+
+       <a href="#" class="logo">
+           <img src="{% static 'VR/OurLogo.png' %}" alt="">
+       </a>
+
+       <nav class="navbar">
+           <a href="#home">New LiFe</a>
+           <a href="#about">{% trans 'Hakkında' %}</a>
+           <a href="#menu">{% trans 'Yararlar' %}</a>
+           <a href="#products">{% trans 'Deneyler' %}</a>
+           <a href="#review">{% trans 'Yorumlar' %}</a>
+           <a href="#trainers">{% trans 'Yönetim' %}</a>
+           <a href="#contact">{% trans 'İletişim' %}</a>
+           <a href="#blogs">{% trans 'Bloglar' %}</a>
+       </nav>
+
+       <div class="icons">
+           <!--
+           <div class="fas fa-search" id="search-btn"></div>
+            -->
+
+            <a href=""><div class="fas fa-user" id="cart-btn"></div></a>
+
+           <div class="fas fa-bars" id="menu-btn"></div>
+
+       </div>
+
+       <!-- search Partition
+       <div class="search-form">
+           <input type="search" id="search-box" placeholder="searchhere...">
+           <label for="search-box" class="fas fa-search"></label>
+       </div>
+       -->
+
+   </header>
    <!--Home section Starts -->
    <section class="home" id="home" >
 
@@ -131,7 +170,7 @@ NewLiFe
            <div class="box">
                <div class="icons">
                    <a href="#" class="fas fa-heart"></a>
-                   <a href="#" class="fas fa-eye"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
                </div>
                <div class="image">
                    <img src="{% static 'Content/kimya_deneyleri.jpg' %}" alt="">
@@ -153,7 +192,7 @@ NewLiFe
                <div class="icons">
                 <!--   <a href="#" class="fas fa-shopping-cart"></a> -->
                    <a href="#" class="fas fa-heart"></a>
-                   <a href="#" class="fas fa-eye"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
                </div>
                <div class="image">
                    <img src="{% static 'Content/hizli_bir_deneyim.jpg' %}" alt="">
@@ -175,7 +214,7 @@ NewLiFe
            <div class="box">
                <div class="icons">
                    <a href="#" class="fas fa-heart"></a>
-                   <a href="#" class="fas fa-eye"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
                </div>
                <div class="image">
                    <img src="{% static 'Content/ogrendiklerini_pekistirme.jpg' %}" alt="">
@@ -196,7 +235,7 @@ NewLiFe
            <div class="box">
                <div class="icons">
                    <a href="#" class="fas fa-heart"></a>
-                   <a href="#" class="fas fa-eye"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
                </div>
                <div class="image">
                    <img src="{% static 'Content/bilesenleri_yakindan_gorme.jpg' %}" alt="">
@@ -217,7 +256,7 @@ NewLiFe
            <div class="box">
                <div class="icons">
                    <a href="#" class="fas fa-heart"></a>
-                   <a href="#" class="fas fa-eye"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
                </div>
                <div class="image">
                    <img src="{% static 'Content/genel_tekrar.jpg' %}" alt="">
@@ -383,4 +422,6 @@ NewLiFe
    </section>
 
    <!--Blogs section ends -->
+    <script src="{% static 'js/main_page.js' %}"></script>
+
 {% endblock %}

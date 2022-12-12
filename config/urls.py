@@ -3,12 +3,14 @@ from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
+from django.utils.translation import gettext_lazy as _
 from django.views import defaults as default_views
 
-from life.views import HomePageView
+from life.views import HomePageView, MoleculeView, set_language
 
 urlpatterns = [
     path("", HomePageView.as_view(), name="homepage"),
+    path(_("molekuller"), MoleculeView.as_view(), name="molecule"),
     path(settings.ADMIN_URL, admin.site.urls),
     path("users/", include("newlife.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
@@ -16,6 +18,7 @@ urlpatterns = [
 
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),
+    path("set_language/<str:language>", set_language, name="set-language"),
 ]
 
 if settings.DEBUG:

@@ -73,3 +73,20 @@ class Comment(models.Model):
     class Meta:
         verbose_name = _("User Comment")
         verbose_name_plural = _("User Comments")
+
+
+class Molecule(models.Model):
+    title = models.CharField(
+        verbose_name="Molecule Title", help_text="Molecule name", max_length=255
+    )
+    embed_link = models.URLField(
+        verbose_name="Embed Link",
+        help_text="ex: https://embed.molview.org/v1/?mode=balls&cid=1049",
+    )
+
+    def __str__(self) -> str:
+        return f"{self.title}"
+
+    class Meta:
+        verbose_name = _("Molecule")
+        verbose_name_plural = _("Molecules")
