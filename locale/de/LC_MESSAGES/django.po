@@ -1,0 +1,556 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-11 00:28+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: life/choices.py:6
+msgid "1 Star"
+msgstr ""
+
+#: life/choices.py:7
+msgid "2 Star"
+msgstr ""
+
+#: life/choices.py:8
+msgid "3 Star"
+msgstr ""
+
+#: life/choices.py:9
+msgid "4 Star"
+msgstr ""
+
+#: life/choices.py:10
+msgid "5 Star"
+msgstr ""
+
+#: life/models.py:18
+msgid "Title"
+msgstr ""
+
+#: life/models.py:23
+msgid "Full Name"
+msgstr ""
+
+#: life/models.py:28
+msgid "Linkedin URL"
+msgstr ""
+
+#: life/models.py:31
+msgid "Instagram URL"
+msgstr ""
+
+#: life/models.py:34
+msgid "Ordering Number"
+msgstr ""
+
+#: life/models.py:37
+msgid "Member Image"
+msgstr ""
+
+#: life/models.py:43
+msgid "Management Member"
+msgstr ""
+
+#: life/models.py:44
+msgid "Management Members"
+msgstr ""
+
+#: life/models.py:50
+msgid "User Full Name"
+msgstr ""
+
+#: life/models.py:53
+msgid "User Image"
+msgstr ""
+
+#: life/models.py:56
+msgid "Comment Star"
+msgstr ""
+
+#: life/models.py:62 life/models.py:75
+msgid "User Comment"
+msgstr ""
+
+#: life/models.py:65
+msgid "Is Active Comment"
+msgstr ""
+
+#: life/models.py:76
+msgid "User Comments"
+msgstr ""
+
+#: newlife/templates/account/account_inactive.html:5
+#: newlife/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr ""
+
+#: newlife/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr ""
+
+#: newlife/templates/account/email.html:7
+msgid "Account"
+msgstr ""
+
+#: newlife/templates/account/email.html:10
+msgid "E-mail Addresses"
+msgstr ""
+
+#: newlife/templates/account/email.html:13
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: newlife/templates/account/email.html:27
+msgid "Verified"
+msgstr ""
+
+#: newlife/templates/account/email.html:29
+msgid "Unverified"
+msgstr ""
+
+#: newlife/templates/account/email.html:31
+msgid "Primary"
+msgstr ""
+
+#: newlife/templates/account/email.html:37
+msgid "Make Primary"
+msgstr ""
+
+#: newlife/templates/account/email.html:38
+msgid "Re-send Verification"
+msgstr ""
+
+#: newlife/templates/account/email.html:39
+msgid "Remove"
+msgstr ""
+
+#: newlife/templates/account/email.html:46
+msgid "Warning:"
+msgstr ""
+
+#: newlife/templates/account/email.html:46
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: newlife/templates/account/email.html:51
+msgid "Add E-mail Address"
+msgstr ""
+
+#: newlife/templates/account/email.html:56
+msgid "Add E-mail"
+msgstr ""
+
+#: newlife/templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: newlife/templates/account/email_confirm.html:6
+#: newlife/templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: newlife/templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: newlife/templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: newlife/templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: newlife/templates/account/login.html:7
+#: newlife/templates/account/login.html:11
+#: newlife/templates/account/login.html:56
+msgid "Sign In"
+msgstr ""
+
+#: newlife/templates/account/login.html:17
+msgid "Please sign in with one of your existing third party accounts:"
+msgstr ""
+
+#: newlife/templates/account/login.html:19
+#, python-format
+msgid ""
+"Or, <a href=\"%(signup_url)s\">sign up</a> for a %(site_name)s account and "
+"sign in below:"
+msgstr ""
+
+#: newlife/templates/account/login.html:32
+msgid "or"
+msgstr ""
+
+#: newlife/templates/account/login.html:41
+#, python-format
+msgid ""
+"If you have not created an account yet, then please <a href=\"%(signup_url)s"
+"\">sign up</a> first."
+msgstr ""
+
+#: newlife/templates/account/login.html:55
+msgid "Forgot Password?"
+msgstr ""
+
+#: newlife/templates/account/logout.html:5
+#: newlife/templates/account/logout.html:8
+#: newlife/templates/account/logout.html:17
+msgid "Sign Out"
+msgstr ""
+
+#: newlife/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: newlife/templates/account/password_change.html:6
+#: newlife/templates/account/password_change.html:9
+#: newlife/templates/account/password_change.html:14
+#: newlife/templates/account/password_reset_from_key.html:5
+#: newlife/templates/account/password_reset_from_key.html:8
+#: newlife/templates/account/password_reset_from_key_done.html:4
+#: newlife/templates/account/password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr ""
+
+#: newlife/templates/account/password_reset.html:7
+#: newlife/templates/account/password_reset.html:11
+#: newlife/templates/account/password_reset_done.html:6
+#: newlife/templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr ""
+
+#: newlife/templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: newlife/templates/account/password_reset.html:21
+msgid "Reset My Password"
+msgstr ""
+
+#: newlife/templates/account/password_reset.html:24
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: newlife/templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: newlife/templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr ""
+
+#: newlife/templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: newlife/templates/account/password_reset_from_key.html:18
+msgid "change password"
+msgstr ""
+
+#: newlife/templates/account/password_reset_from_key.html:21
+#: newlife/templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr ""
+
+#: newlife/templates/account/password_set.html:6
+#: newlife/templates/account/password_set.html:9
+#: newlife/templates/account/password_set.html:14
+msgid "Set Password"
+msgstr ""
+
+#: newlife/templates/account/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: newlife/templates/account/signup.html:9
+#: newlife/templates/account/signup.html:19
+msgid "Sign Up"
+msgstr ""
+
+#: newlife/templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: newlife/templates/account/signup_closed.html:5
+#: newlife/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr ""
+
+#: newlife/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: newlife/templates/account/verification_sent.html:5
+#: newlife/templates/account/verification_sent.html:8
+#: newlife/templates/account/verified_email_required.html:5
+#: newlife/templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: newlife/templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: newlife/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: newlife/templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: newlife/templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:11
+msgid "Teorik Eğitim Pratikte Güzel."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:13
+msgid "New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:15
+msgid "Şimdi Deneyimle"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:26
+msgid "Hakkında"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:35
+msgid "New LiFe Kullanıcılarına Ne sunar?"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:37
+msgid ""
+"\n"
+"               <p><b>\n"
+"               New LiFe Team</b>'in oluşturduğu sanal ortam ile istediğiniz "
+"an her yer bir deneyim ortamı.\n"
+"               New LiFe, teorik olarak derste verilen bilgileri daha verimli "
+"hale getirme hedefini,\n"
+"               kullanıcılarına 3D ve infografik içerikler ile sağlar. "
+"Bilginin ulaşılabilirliği ve akılda kalıcılığı en üst seviyede tutmak\n"
+"               <b>New LiFe Team</b>'in en büyük hedefidir...</p>\n"
+"            "
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:44
+msgid ""
+"Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi "
+"deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük "
+"ile sunar.Sizler için bilginin verimliliğini ve akılda kalıcılığını "
+"artırmayı olanaklı hale getirmek için çabalar."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:47
+#: newlife/templates/pages/homepage.html:72
+#: newlife/templates/pages/homepage.html:85
+#: newlife/templates/pages/homepage.html:98
+#: newlife/templates/pages/homepage.html:111
+msgid "Daha Fazla"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:61
+msgid "Sizin <span>yararınız</span>"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:68
+msgid "Etkili Öğrenme"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:70
+msgid ""
+"deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme "
+"sağlar."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:81
+msgid "Zaman Kazancı"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:83
+msgid ""
+"eneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle "
+"tekrarlanmaz."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:94
+msgid "Yeni Deneyimler"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:96
+msgid ""
+"farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler "
+"sunmayı hedefler."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:107
+msgid "Etkilenmeme"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:109
+msgid ""
+"ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan "
+"(pandemi gibi) etkilenmezsin"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:126
+msgid "İçeriklerimiz"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:140
+msgid "Kimya Deneyleri"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:148
+msgid "Gözlerini kamaştıracak!"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:162
+msgid "Hızlı Bir Deneyim"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:170
+msgid "Kendinle Yarış."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:184
+msgid "Öğrendiklerini Pekiştirme"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:192
+msgid "Kendini denemelisin."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:205
+msgid "Bileşenleri yakından görme"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:213
+msgid "Kişisel Deneyimleme!"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:226
+msgid "Genel Tekrar"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:234
+msgid "Her şey kontrol altında"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:244
+msgid "Kullanıcı <span>Yorumları</span>"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:270
+msgid "Yönetim <span>Ekibimiz</span>"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:304
+msgid "İletişim"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:310
+msgid "Bizimle iletişime geç"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:313
+msgid "Ad Soyad"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:318
+msgid "Email Adresi"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:323
+msgid "Telefon Numarası"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:325
+msgid "İletişime geç"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:338
+msgid "Güncel <span>bloglar</span>"
+msgstr ""
+
+#: newlife/users/admin.py:18
+msgid "Personal info"
+msgstr ""
+
+#: newlife/users/admin.py:20
+msgid "Permissions"
+msgstr ""
+
+#: newlife/users/admin.py:31
+msgid "Important dates"
+msgstr ""
+
+#: newlife/users/apps.py:7
+msgid "Users"
+msgstr ""
+
+#: newlife/users/forms.py:25 newlife/users/tests/test_forms.py:36
+msgid "This username has already been taken."
+msgstr ""
+
+#: newlife/users/models.py:18
+msgid "Name of User"
+msgstr ""
+
+#: newlife/users/models.py:22
+msgid "Profile Image"
+msgstr ""
+
+#: newlife/users/views.py:25
+msgid "Information successfully updated"
+msgstr ""

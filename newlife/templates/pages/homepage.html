@@ -1,0 +1,427 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% block title %}
+NewLiFe
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+{% endblock %}
+{% block content %}
+  <header class="header">
+
+       <a href="#" class="logo">
+           <img src="{% static 'VR/OurLogo.png' %}" alt="">
+       </a>
+
+       <nav class="navbar">
+           <a href="#home">New LiFe</a>
+           <a href="#about">{% trans 'Hakkında' %}</a>
+           <a href="#menu">{% trans 'Yararlar' %}</a>
+           <a href="#products">{% trans 'Deneyler' %}</a>
+           <a href="#review">{% trans 'Yorumlar' %}</a>
+           <a href="#trainers">{% trans 'Yönetim' %}</a>
+           <a href="#contact">{% trans 'İletişim' %}</a>
+           <a href="#blogs">{% trans 'Bloglar' %}</a>
+       </nav>
+
+       <div class="icons">
+           <!--
+           <div class="fas fa-search" id="search-btn"></div>
+            -->
+
+            <a href=""><div class="fas fa-user" id="cart-btn"></div></a>
+
+           <div class="fas fa-bars" id="menu-btn"></div>
+
+       </div>
+
+       <!-- search Partition
+       <div class="search-form">
+           <input type="search" id="search-box" placeholder="searchhere...">
+           <label for="search-box" class="fas fa-search"></label>
+       </div>
+       -->
+
+   </header>
+   <!--Home section Starts -->
+   <section class="home" id="home" >
+
+       <div class="content">
+           <h3>{% trans 'Teorik Eğitim Pratikte Güzel.' %}</h3>
+
+           <p>{% trans 'New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar.' %}</p>
+
+           <a href="#" class="btn">{% trans 'Şimdi Deneyimle' %}</a>
+
+       </div>
+
+   </section>
+
+   <!--Home section Ends -->
+
+   <!--About Section Starts-->
+
+  <section class="about" id="about">
+     <h1 class="heading"> <span>New LiFe</span> {% trans 'Hakkında' %}</h1>
+
+     <div class="flex-container">
+
+         <div class="image">
+             <img src="{% static 'VR/vrBackground2.jpg' %}" alt="" >
+         </div>
+
+         <div class="content">
+             <h3>{% trans 'New LiFe Kullanıcılarına Ne sunar?' %}</h3>
+
+             {% blocktrans %}
+               <p><b>
+               New LiFe Team</b>'in oluşturduğu sanal ortam ile istediğiniz an her yer bir deneyim ortamı.
+               New LiFe, teorik olarak derste verilen bilgileri daha verimli hale getirme hedefini,
+               kullanıcılarına 3D ve infografik içerikler ile sağlar. Bilginin ulaşılabilirliği ve akılda kalıcılığı en üst seviyede tutmak
+               <b>New LiFe Team</b>'in en büyük hedefidir...</p>
+            {% endblocktrans %}
+             <p>{% trans 'Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük ile sunar.Sizler için bilginin verimliliğini ve akılda kalıcılığını artırmayı olanaklı hale getirmek için çabalar.' %}</p>
+
+
+             <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
+
+         </div>
+
+     </div>
+
+  </section>
+
+   <!--About Section Ends -->
+
+   <!-- Menu section starts-->
+
+   <section class="menu" id="menu">
+
+       <h1 class="heading"> {% trans 'Sizin <span>yararınız</span>' %}</h1>
+
+       <div class="box-container">
+          <div class="box">
+
+           <img src="{% static 'VR/etkili_ogrenme.jpg' %}" alt="">
+
+           <h3>{% trans 'Etkili Öğrenme' %}</h3>
+
+           <div class="price">New LiFe<span> {% trans 'deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.' %}</span></div>
+
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
+
+       </div>
+
+
+       <div class="box">
+
+           <img src="{% static 'VR/zaman_kazanci.jpg' %}" alt="">
+
+           <h3>{% trans 'Zaman Kazancı' %}</h3>
+
+           <div class="price">New LiFe<span> d{% trans 'eneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle tekrarlanmaz.' %}</span></div>
+
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
+
+       </div>
+
+
+       <div class="box">
+
+          <img src="{% static 'VR/yeni_deneyimler.jpg' %}" alt="">
+
+           <h3> {% trans 'Yeni Deneyimler' %}</h3>
+
+           <div class="price">New LiFe,<span>{% trans 'farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler sunmayı hedefler.' %}</span></div>
+
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
+
+       </div>
+
+
+       <div class="box">
+
+           <img src="{% static 'VR/etkilenmeme.jpg' %}" alt="">
+
+           <h3>{% trans 'Etkilenmeme' %}</h3>
+
+           <div class="price">New LiFe,<span> {% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan (pandemi gibi) etkilenmezsin' %}</span></div>
+
+           <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
+
+       </div>
+       </div>
+
+   </section>
+
+   <!-- Menu section ends-->
+
+
+   <!-- Products section starts -->
+
+   <section class="products" id="products">
+
+       <h1 class="heading">
+            <span>{% trans 'İçeriklerimiz' %}</span>
+       </h1>
+
+       <div class="box-container">
+
+           <div class="box">
+               <div class="icons">
+                   <a href="#" class="fas fa-heart"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
+               </div>
+               <div class="image">
+                   <img src="{% static 'Content/kimya_deneyleri.jpg' %}" alt="">
+               </div>
+               <div class="content">
+                   <h3>{% trans 'Kimya Deneyleri' %}</h3>
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+                   <div class="price">{% trans 'Gözlerini kamaştıracak!' %} <span></span></div>
+               </div>
+           </div>
+
+           <div class="box">
+               <div class="icons">
+                <!--   <a href="#" class="fas fa-shopping-cart"></a> -->
+                   <a href="#" class="fas fa-heart"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
+               </div>
+               <div class="image">
+                   <img src="{% static 'Content/hizli_bir_deneyim.jpg' %}" alt="">
+               </div>
+               <div class="content">
+                   <h3>{% trans 'Hızlı Bir Deneyim' %}</h3>
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+                   <div class="price">{% trans 'Kendinle Yarış.' %}<span></span></div>
+               </div>
+           </div>
+
+
+           <div class="box">
+               <div class="icons">
+                   <a href="#" class="fas fa-heart"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
+               </div>
+               <div class="image">
+                   <img src="{% static 'Content/ogrendiklerini_pekistirme.jpg' %}" alt="">
+               </div>
+               <div class="content">
+                   <h3>{% trans 'Öğrendiklerini Pekiştirme' %}</h3>
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+                   <div class="price">{% trans 'Kendini denemelisin.' %} <span></span></div>
+               </div>
+           </div>
+
+           <div class="box">
+               <div class="icons">
+                   <a href="#" class="fas fa-heart"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
+               </div>
+               <div class="image">
+                   <img src="{% static 'Content/bilesenleri_yakindan_gorme.jpg' %}" alt="">
+               </div>
+               <div class="content">
+                   <h3>{% trans 'Bileşenleri yakından görme' %}</h3>
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+                   <div class="price">{% trans 'Kişisel Deneyimleme!' %} <span></span></div>
+               </div>
+           </div>
+
+           <div class="box">
+               <div class="icons">
+                   <a href="#" class="fas fa-heart"></a>
+                   <a href="{% url 'molecule' %}" class="fas fa-eye"></a>
+               </div>
+               <div class="image">
+                   <img src="{% static 'Content/genel_tekrar.jpg' %}" alt="">
+               </div>
+               <div class="content">
+                   <h3>{% trans 'Genel Tekrar' %}</h3>
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+                   <div class="price">{% trans 'Her şey kontrol altında' %}<span></span></div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!--Review section starts -->
+
+   <section class="review" id="review">
+
+       <h1 class="heading">{% trans 'Kullanıcı <span>Yorumları</span>' %} </h1>
+
+       <div class="box-container">
+          {% for user_comment in user_comments %}
+              <div class="box">
+               <img src="{% static 'quote-img.png' %}" alt="" class="quote">
+               <p>{{ user_comment.comment }}</p>
+                {% if user_comment.image %}
+           <img src="{{ user_comment.image.url }}" class="user" alt="">
+                {% endif %}
+               <h3>{{ user_comment.user_full_name }}</h3>
+               <div class="stars">
+                 {% for counter in user_comment.get_total_range %}
+                    <i class="fas fa-star"></i>
+                 {% endfor %}
+               </div>
+           </div>
+          {% endfor %}
+           </div>
+
+   </section>
+
+   <!--Review section ends -->
+
+    <section class="trainers" id="trainers">
+
+    <h1 class="heading">{% trans 'Yönetim <span>Ekibimiz</span>' %} </h1>
+
+    <div class="box-container">
+      {% for management_member in management_members %}
+      <div class="box">
+      {%  if management_member.image %}
+                  <img src="{{ management_member.image.url }}" alt="">
+        {% endif %}
+                  <div class="content">
+                      <span>{{ management_member.title }}</span>
+                      <h3>{{ management_member.full_name }}</h3>
+                      <div class="share">
+                        {% if management_member.linkedin %}
+                          <a href="{{ management_member.linkedin }}" class="fab fa-linkedin"></a>
+                        {% endif %}
+                      {% if management_member.instagram %}
+                          <a href="{{ management_member.instagram }}" class="fab fa-instagram"></a>
+                      {% endif %}
+                      </div>
+                  </div>
+              </div>
+      {% endfor %}
+
+
+
+    </div>
+
+</section>
+
+
+
+   <!--Contact section starts -->
+   <section class="contact" id="contact">
+
+       <h1 class="heading"> <span>{% trans 'İletişim' %}</span> </h1>
+       <div class="row">
+
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12037.677592598036!2d28.97067453955077!3d41.03795669999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7645b3330a7%3A0xde0d784d2a10da2d!2sEspressolab%20Taksim%20Meydan!5e0!3m2!1str!2str!4v1670615897005!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+           <form action="">
+               <h3>{% trans 'Bizimle iletişime geç' %}</h3>
+               <div class="inputBox">
+                   <span class="fas fa-user"></span>
+                   <input type="text" placeholder="{% trans 'Ad Soyad' %}">
+               </div>
+
+               <div class="inputBox">
+                   <span class="fas fa-envelope"></span>
+                   <input type="email" placeholder="{% trans 'Email Adresi' %}">
+               </div>
+
+               <div class="inputBox">
+                   <span class="fas fa-phone"></span>
+                   <input type="number" placeholder="{% trans 'Telefon Numarası' %}">
+               </div>
+               <input type="submit" value="{% trans 'İletişime geç' %}" class="btn">
+
+           </form>
+
+       </div>
+
+   </section>
+   <!--Contact section ends -->
+
+
+   <!--Blogs section starts -->
+
+   <section class="blogs" id="blogs">
+       <h1 class="heading"> {% trans 'Güncel <span>bloglar</span>' %}</h1>
+
+       <div class="box-container">
+
+           <div class="box">
+               <div class="image">
+                   <img src="{% static 'Blogs/Gezegenler_Hakkinda.png' %}" alt="">
+               </div>
+               <div class="content">
+                   <a href="#" class="title">Gezegenler Hakkında</a>
+
+                   <span>İçerik Ekibi / 04 Aralık 2022</span>
+                   <p>Gezegenler Hakkında Kısa Bir Deneyim Turu.</p>
+                   <a href="#" class="btn">İncele </a>
+               </div>
+           </div>
+
+           <div class="box">
+               <div class="image">
+                   <img src="{% static 'Blogs/Vejetaryen_Hakkinda.png' %}" alt="">
+               </div>
+               <div class="content">
+                   <a href="#" class="title">Vejetaryenlik Hakkında</a>
+
+                   <span>İçerik Ekibi / 04 Aralık 2022</span>
+                   <p>Vejetaryen Hakkında Kısa Bir Deneyim Turu.</p>
+                   <a href="#" class="btn">İncele</a>
+               </div>
+           </div>
+
+           <div class="box">
+               <div class="image">
+                   <img src="{% static 'Blogs/Beynimiz_Hakkinda.png' %}" alt="">
+               </div>
+               <div class="content">
+                   <a href="#" class="title">Beynimiz Hakkında</a>
+
+                   <span>New LiFe İçerik Ekibi / 05 Aralık 2022</span>
+                   <p>Beynimiz Hakkında Kısa Soru Cevap Turu.</p>
+                   <a href="#" class="btn">incele</a>
+               </div>
+           </div>
+
+       </div>
+
+   </section>
+
+   <!--Blogs section ends -->
+    <script src="{% static 'js/main_page.js' %}"></script>
+
+{% endblock %}
