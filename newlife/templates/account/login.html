@@ -1,59 +1,83 @@
-{% extends "account/base.html" %}
+{% load static i18n%}
+<html lang="en">
+  <head>
+    <meta name="author" content="Zaur" />
+    <meta descryption content="Presentation of website" />
+    <meta name="keywords" content="technology, cyber security, software" />
+    <meta http-equiv="refresh" content="100" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <form action="" method="POST">
+          {% csrf_token %}
+             {% if form.non_field_errors %}
+            <div class="non-field-errors text-center">
+              {% for err in form.non_field_errors %}
+                <p class="form-error" style="color: red">{{ err }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="header">{% trans 'Giriş Yap' %}</div>
 
-{% load i18n %}
-{% load account socialaccount %}
-{% load crispy_forms_tags %}
+          <div class="button-input-group">
+            <div class="group input-group">
+              <input type="email" name="login" placeholder="Email"  />
+            </div>
+            <div>
+              {% for error in form.login.errors %}
+              <span class="help__text" style="color: #d40000">{{ error }}</span>
+              {% endfor %}
+            </div>
+            <div class="group input-group">
+              <input
+                type="password"
+                placeholder="{% trans 'Parola' %}"
+                name="password"
+              />
+            </div>
+            <div class="">
+              {% for error in form.password.errors %}
+              <span class="help__text" style="color: #d40000">{{ error }}</span>
+              {% endfor %}
+            </div>
+            <div class="form-link forgot">
+              <a href="#" class="login-link">{% trans 'Parolanı mı unuttun?' %}</a>
+            </div>
+            <div class="group button-group">
+              <button class="signin-btn" type="submit">
+                {% trans 'Giriş Yap' %}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-{% block head_title %}{% translate "Sign In" %}{% endblock %}
+      <div class="overlay-container">
+        <div class="overlay">
 
-{% block inner %}
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start your journey with us</p>
 
-<h1>{% translate "Sign In" %}</h1>
+            <div class="group button-group">
+              <a href="/accounts/signup/"><button  class="ghost">{% trans 'Kayıt Ol' %}</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-{% get_providers as socialaccount_providers %}
-
-{% if socialaccount_providers %}
-  <p>
-    {% translate "Please sign in with one of your existing third party accounts:" %}
-    {% if ACCOUNT_ALLOW_REGISTRATION %}
-      {% blocktranslate trimmed %}
-        Or, <a href="{{ signup_url }}">sign up</a>
-        for a {{ site_name }} account and sign in below:
-      {% endblocktranslate %}
-    {% endif %}
-  </p>
-
-  <div class="socialaccount_ballot">
-
-    <ul class="socialaccount_providers">
-      {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-    </ul>
-
-    <div class="login-or">{% translate "or" %}</div>
-
-  </div>
-
-  {% include "socialaccount/snippets/login_extra.html" %}
-
-{% else %}
-  {% if ACCOUNT_ALLOW_REGISTRATION %}
-    <p>
-      {% blocktranslate trimmed %}
-        If you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.
-      {% endblocktranslate %}
-    </p>
-  {% endif %}
-{% endif %}
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% translate "Forgot Password?" %}</a>
-  <button class="primaryAction btn btn-primary" type="submit">{% translate "Sign In" %}</button>
-</form>
-
-{% endblock %}
+  </body>
+</html>

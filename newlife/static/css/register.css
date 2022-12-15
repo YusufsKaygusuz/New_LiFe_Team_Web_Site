@@ -1,12 +1,12 @@
-/* ======================================================================== */ 
+/* ======================================================================== */
 
  /*                      NOT RELATED TO THE TTUTORIAL                        */
 
 /* ======================================================================== */
 
 *{
-	
-	
+
+
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -38,13 +38,13 @@
   --step-3: clamp(1.73rem, calc(1.21rem + 2.58vw), 3.05rem);
   --step-4: clamp(2.07rem, calc(1.39rem + 3.40vw), 3.82rem);
   --step-5: clamp(2.49rem, calc(1.60rem + 4.45vw), 4.77rem);
-	
+
 	/* Font style */
-	
+
 	--ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	
+
 	/* Color style */
-	
+
 	/*
 	--color-primary:#c51350;
 	--color-secondary:#ff9a3c;
@@ -57,7 +57,7 @@
 	--color-border:darkgrey;
 	--bs:#ffa857;
 	*/
-	
+
 	--color-primary: #d3ad7f;
 	--color-secondary: #6dd5ed;
 	--color-primary-dark:#192294;
@@ -72,7 +72,7 @@
 	--bs:#ffa857;
 	--color-dark-grey:#a4a3a3;
 	--gradient: linear-gradient(135deg var(--color-primary), var(--color-secondary));
-	
+
 	--main-color: #d3ad7f;
   --secondary-color: #d3ad7f;
   --gradient: linear-gradient(
@@ -80,8 +80,8 @@
     var(--main-color),
     var(--secondary-color)
   );
-	
-	
+
+
 }
 
 /* Remove default margin */
@@ -144,7 +144,7 @@ select {
   html:focus-within {
    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -157,7 +157,7 @@ select {
 
 
 
-/* ======================================================================== */ 
+/* ======================================================================== */
 
  /*                      RELATED TO THE TTUTORIAL                        */
 
@@ -434,19 +434,19 @@ a.social:hover::before {
 
 @keyframes social {
 	0%{
-		
+
 		left: -110%;
 		top: 90%;
 	}
-	
+
 	50%{
-		
+
 		left: 10%;
 		top: -30%;
 	}
-	
+
 	100%{
-		
+
 		top: -10%;
 		left: -10%;
 	}
@@ -464,10 +464,10 @@ a.social.google::before {
 }
 
 a.social.instagram::before {
-	background-color: background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background-color: background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 	background-position: center;
 	background-size: cover;
@@ -529,7 +529,6 @@ a.login-link:hover {
 }
 
 .alert-text .help__text{
-	position: absolute;
 	left: 3.2rem;
 	font-size: var(--step--2);
 	margin-top: -1rem;
@@ -537,7 +536,6 @@ a.login-link:hover {
 }
 
 .alert-text.signup__alert {
-	margin-bottom: 2.2rem;
 }
 
 .form-link.forgot {
@@ -621,7 +619,3 @@ button {
   background: #fff;
   color: var(--color-primary);
 }
-
-
-
-  

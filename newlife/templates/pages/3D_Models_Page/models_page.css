@@ -70,7 +70,7 @@ section{
 .btn:hover{
     background:var(--main-color);
     color:white
-    
+
 }
 
 .header{
@@ -238,7 +238,7 @@ section{
 }
 
 .gallery .box-container .box .icons a:hover{
-    
+
     color: white;
 }
 
@@ -417,14 +417,14 @@ section{
 
 /* Media Queries*/
 @media screen and (max-width: 991px){
-    
+
     html{
     font-size: 55%;
 }
     .header{
         padding: 1.5rem 2rem;
     }
-    
+
     section{
         padding: 2rem;
     }
@@ -432,12 +432,12 @@ section{
 
 @media screen and (max-width: 768px){
 
-    
+
     .search-form{
         width: 90%;
         right: 2rem;
     }
-   
+
 }
 
 

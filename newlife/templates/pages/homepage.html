@@ -29,7 +29,7 @@ NewLiFe
            <div class="fas fa-search" id="search-btn"></div>
             -->
 
-            <a href=""><div class="fas fa-user" id="cart-btn"></div></a>
+            <a href="/accounts/login/"><div class="fas fa-user" id="cart-btn"></div></a>
 
            <div class="fas fa-bars" id="menu-btn"></div>
 
@@ -107,7 +107,7 @@ NewLiFe
            <h3>{% trans 'Etkili Öğrenme' %}</h3>
 
            <div class="price">New LiFe<span> {% trans 'deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.' %}</span></div>
-           
+
        </div>
 
 
@@ -279,8 +279,8 @@ NewLiFe
               <div class="box">
                <img src="{% static 'quote-img.png' %}" alt="" class="quote">
                <p>{{ user_comment.comment }}</p>
-                {% if user_comment.image %}
-           <img src="{{ user_comment.image.url }}" class="user" alt="">
+                {% if user_comment.user_image %}
+           <img src="{{ user_comment.user_image.url }}" class="user" alt="">
                 {% endif %}
                <h3>{{ user_comment.user_full_name }}</h3>
                <div class="stars">

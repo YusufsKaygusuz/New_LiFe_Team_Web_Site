@@ -1,22 +1,95 @@
-{% extends "account/base.html" %}
+{% load static i18n%}
+<html lang="en">
+  <head>
 
-{% load i18n %}
-{% load crispy_forms_tags %}
+    <meta name="author" content="Zaur" />
+    <meta descryption content="Presentation of website" />
+    <meta name="keywords" content="technology, cyber security, software" />
+    <meta http-equiv="refresh" content="100" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container right-panel-active" id="container">
 
-{% block head_title %}{% translate "Signup" %}{% endblock %}
+      <div class="form-container sign-up-container">
+        <form method="post">
+           {% csrf_token %}
+          <div class="header">{% trans 'Kayıt Ol' %}</div>
 
-{% block inner %}
-<h1>{% translate "Sign Up" %}</h1>
+          <div class="button-input-group">
+            <div class="group input-group">
+              <input type="text" placeholder="{% trans 'Kullanıcı Adı' %}" name="username"  />
+            </div>
+                <div class="alert-text signup__alert">
+              {% for error in form.username.errors %}
+               <span class="help__text" style="display: block;color: red" >{{ error }}</span>
+            {% endfor %}
+            </div>
+            <div class="group input-group">
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+               <div class="alert-text signup__alert">
+              {% for error in form.email.errors %}
+               <span class="help__text" style="display: block;color: red" >{{ error }}</span>
+            {% endfor %}
+            </div>
+            <div class="group input-group">
+              <input
+                type="password"
+                placeholder="{% trans 'Parola' %}"
+                name="password1"
+              />
+            </div>
+                <div class="alert-text signup__alert">
+              {% for error in form.password1.errors %}
+               <span class="help__text" style="display: block;color: red" >{{ error }}</span>
+            {% endfor %}
+            </div>
+             <div class="group input-group">
+              <input
+                type="password"
+                placeholder="{% trans 'Parola (tekrar)' %}"
+                name="password2"
+              />
+            </div>
+            <div class="alert-text signup__alert">
+              {% for error in form.password2.errors %}
+               <span class="help__text" style="display: block;color: red" >{{ error }}</span>
+            {% endfor %}
+            </div>
+            <div class="group button-group">
+               <button type="submit" class="signup-btn">
+                {% trans 'Kayıt Ol' %}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-<p>{% blocktranslate %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktranslate %}</p>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>Please login your personal info</p>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button class="btn btn-primary" type="submit">{% translate "Sign Up" %} &raquo;</button>
-</form>
+            <div class="group button-group">
+              <a href="/accounts/login/"><button class="ghost" id="signIn">{% trans 'Giriş Yap' %}</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-{% endblock %}
+    <script src="{% static 'js/register.js' %}"></script>
+  </body>
+</html>
