@@ -1,13 +1,12 @@
 from urllib.parse import urlparse
-
 from django.conf import settings
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views import View
-
 from life.models import Comment, Molecule, NewLifeManagementMember
 
 
@@ -40,6 +39,13 @@ class HomePageView(View):
         return render(
             request=request, template_name="pages/homepage.html", context=context
         )
+
+
+class DashboardView(LoginRequiredMixin,View):
+    http_method_names = ["get"]
+
+    def get(self,request: HttpRequest) -> HttpResponse:
+        return render(request=request,template_name="pages/dashboard.html",context={})
 
 
 class MoleculeView(View):

@@ -1,12 +1,267 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="dasboard.css">
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="{% static 'css/dasboard.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+    .blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
 
+.blogs .box-container .box{
+    border: var(--border);
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+
+
+.blogs .box-container .box .content .title:hover{
+    color: var(--main-color);
+}
+
+
+.blogs .box-container .box .content span{
+    color:var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+}
+
+.gallery .box-container .box{
+    position: relative;
+    border:1rem solid #333;
+    border-radius: .5rem;
+    height: 25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box:hover img{
+    transform: scale(1.1);
+}
+
+.gallery .box-container .box .title{
+    position: absolute;
+    top:-10rem; left:0; right: 0;
+    background:#333;
+    color:#fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.gallery .box-container .box:hover .title{
+    top:0;
+}
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+.avatar-img,
+.avatar-initials,
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.avatar-img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.avatar-initials {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 0;
+  background-color: #a0aec0;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+.avatar-img,
+.avatar-initials,
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.avatar-img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.avatar-initials {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 0;
+  background-color: #a0aec0;
+}
+
+.avatar-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #a0aec0
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%23fff' d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'/%3e%3c/svg%3e")
+    no-repeat center/1.75rem;
+}
+
+.avatar-indicator {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 20%;
+  display: block;
+  background-color: #a0aec0;
+  border-radius: 50%;
+}
+
+.avatar-group {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.avatar-group .avatar + .avatar {
+  margin-left: -0.75rem;
+}
+
+.avatar-group .avatar:hover {
+  z-index: 1;
+}
+
+.avatar-sm,
+.avatar-group-sm > .avatar {
+  width: 2.125rem;
+  height: 2.125rem;
+  font-size: 1rem;
+}
+
+.avatar-sm .avatar-placeholder,
+.avatar-group-sm > .avatar .avatar-placeholder {
+  background-size: 1.25rem;
+}
+
+.avatar-group-sm > .avatar + .avatar {
+  margin-left: -0.53125rem;
+}
+
+.avatar-lg,
+.avatar-group-lg > .avatar {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
+.avatar-lg .avatar-placeholder,
+.avatar-group-lg > .avatar .avatar-placeholder {
+  background-size: 2.25rem;
+}
+
+.avatar-group-lg > .avatar + .avatar {
+  margin-left: -1rem;
+}
+
+.avatar-light .avatar-indicator {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
+}
+
+.avatar-group-light > .avatar {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
+}
+
+.avatar-dark .avatar-indicator {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.avatar-group-dark > .avatar {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+</style>
 
 </head>
 <body>
@@ -20,7 +275,7 @@
 
 
       <li class="menu-heading">Pages</li>
-      <li class="active"><a style="color:d3ad7f;" data-toggle="tab" href="#user-profile"><svg style="margin-right:3rem"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" fill="rgba(255,255,255,1)"/></svg> Kullanıcı Bilgileri</a></li>
+      <li class="active"><a style="color:#d3ad7f;" data-toggle="tab" href="#user-profile"><svg style="margin-right:3rem"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" fill="rgba(255,255,255,1)"/></svg> Kullanıcı Bilgileri</a></li>
 
     </ul>
   </div>
@@ -339,260 +594,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
 <script src='https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
 
-</body>
+</div></body>
 </html>
-<style>
-    .blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    gap: 1.5rem;
-}
 
-.blogs .box-container .box{
-    border: var(--border);
-}
-
-.blogs .box-container .box .image{
-    height: 25rem;
-    overflow: hidden;
-    width: 100%;
-}
-
-.blogs .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-
-.blogs .box-container .box:hover .image img{
-    transform: scale(1.2);
-}
-
-.blogs .box-container .box .content{
-    padding: 2rem;
-}
-
-.blogs .box-container .box .content .title{
-    font-size: 2.5rem;
-    line-height: 1.5;
-    color: #fff;
-}
-
-
-
-
-.blogs .box-container .box .content .title:hover{
-    color: var(--main-color);
-}
-
-
-.blogs .box-container .box .content span{
-    color:var(--main-color);
-    display: block;
-    padding-top: 1rem;
-    font-size: 2rem;
-}
-
-
-.blogs .box-container .box .content p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color: #ccc;
-    padding: 1rem 0;
-}
-.gallery .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:1.5rem;
-}
-
-.gallery .box-container .box{
-    position: relative;
-    border:1rem solid #333;
-    border-radius: .5rem;
-    height: 25rem;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.gallery .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.gallery .box-container .box:hover img{
-    transform: scale(1.1);
-    filter: grayscale();
-}
-
-.gallery .box-container .box .title{
-    position: absolute;
-    top:-10rem; left:0; right: 0;
-    background:#333;
-    color:#fff;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.gallery .box-container .box:hover .title{
-    top:0;
-}
-.avatar {
-  position: relative;
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.25rem;
-}
-
-.avatar-img,
-.avatar-initials,
-.avatar-placeholder {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-
-.avatar-img {
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.avatar-initials {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #fff;
-  line-height: 0;
-  background-color: #a0aec0;
-}
-
-.avatar {
-  position: relative;
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.25rem;
-}
-
-.avatar-img,
-.avatar-initials,
-.avatar-placeholder {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-
-.avatar-img {
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.avatar-initials {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #fff;
-  line-height: 0;
-  background-color: #a0aec0;
-}
-
-.avatar-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #a0aec0
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%23fff' d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'/%3e%3c/svg%3e")
-    no-repeat center/1.75rem;
-}
-
-.avatar-indicator {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 20%;
-  height: 20%;
-  display: block;
-  background-color: #a0aec0;
-  border-radius: 50%;
-}
-
-.avatar-group {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.avatar-group .avatar + .avatar {
-  margin-left: -0.75rem;
-}
-
-.avatar-group .avatar:hover {
-  z-index: 1;
-}
-
-.avatar-sm,
-.avatar-group-sm > .avatar {
-  width: 2.125rem;
-  height: 2.125rem;
-  font-size: 1rem;
-}
-
-.avatar-sm .avatar-placeholder,
-.avatar-group-sm > .avatar .avatar-placeholder {
-  background-size: 1.25rem;
-}
-
-.avatar-group-sm > .avatar + .avatar {
-  margin-left: -0.53125rem;
-}
-
-.avatar-lg,
-.avatar-group-lg > .avatar {
-  width: 4rem;
-  height: 4rem;
-  font-size: 1.5rem;
-}
-
-.avatar-lg .avatar-placeholder,
-.avatar-group-lg > .avatar .avatar-placeholder {
-  background-size: 2.25rem;
-}
-
-.avatar-group-lg > .avatar + .avatar {
-  margin-left: -1rem;
-}
-
-.avatar-light .avatar-indicator {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
-}
-
-.avatar-group-light > .avatar {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
-}
-
-.avatar-dark .avatar-indicator {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-}
-
-.avatar-group-dark > .avatar {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-}
-
-</style>

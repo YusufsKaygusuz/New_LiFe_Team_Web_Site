@@ -288,7 +288,6 @@ body {
 }
 .right #overview .content .row.invoice-task .col-sm-6 .invoice h5 small a, .right #overview .content .row.invoice-task .col-sm-6 .tasks h5 small a {
   color: #7f8fa4;
-  font-size: xs-small;
   margin-top: 5px;
   display: block;
 }
