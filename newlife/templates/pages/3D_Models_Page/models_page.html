@@ -10,6 +10,9 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="models_page.css">
@@ -96,197 +99,207 @@
     font-weight: 900;
     letter-spacing: -1.5px;
     max-width: 960px;
-    margin: 0 auto;" class="tagline text" data-v-76d4cf95=""> New LiFe <span class="accent" data-v-76d4cf95="">Deneyimleme</span> Merkezine Hoş Geldiniz </h1>
+    margin: 0 auto;" class="tagline text" data-v-76d4cf95=""> New LiFe <span class="accent"
+        style="font-weight: bold;">Deneyimleme</span> Merkezine Hoş Geldiniz </h1>
         </div>
 
 
 <!-- horizontal -->
-<div id="sorular">
-<h1 style="color:white;margin-bottom: 2rem;" >Sorular ve Cevaplar</h1>
-<div class="flip">
-    <div class="front" style="background-image: url(/1.jpeg)">
-       <h1 class="text-shadow">Nobel ödülünü alan ilk kadın kimdir?</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-<div class="flip">
-    <div class="front" style="background-image: url(/2.jpeg)">
-       <h1 class="text-shadow">Nobel ödülünü alan ilk kadın kimdir?</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-<div class="flip">
-    <div class="front" style="background-image: url(/3.jpeg)">
-       <h1 class="text-shadow">Nobel ödülünü alan ilk kadın kimdir?</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+<div class="container-fluid">
+    <div class="col-sm-10 offset-sm-1">
+         <h1 class="heading">Sorular ve <span>Cevaplar</span></h1>
+      
+
+        <div class="flip-card-click">
+            <div class="flip-card-inner" tab-index="0">
+                <div class="flip-card-front">
+                    <h2>Nobel ödülünü alan ilk kadın kimdir?</h2>
+                </div>
+                <div class="flip-card-back">
+                    <p>Card 1 Back</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card-click">
+            <div class="flip-card-inner" tabindex="0">
+                <div class="flip-card-front">
+                    <h2>İlk bilgisayarın adı nedir?</h2>
+                </div>
+                <div class="flip-card-back">
+                    <p>Card 2 Back</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card-click">
+            <div class="flip-card-inner" tab-index="0">
+                <div class="flip-card-front">
+                    <h2>Periyodik tablodaki element kısaltmalarında hangi harf yoktur?</h2>
+                </div>
+                <div class="flip-card-back">
+                    <p>Card 3 Back</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 
-<br>
-<br>
-
-<!-- vertical -->
-
-
-<div class="flip flip-vertical">
-    <div class="front" style="background-image: url(/4.jpeg)">
-       <h1 class="text-shadow">Nobel ödülünü alan ilk kadın kimdir?</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-<div class="flip flip-vertical">
-    <div class="front" style="background-image: url(/5.jpeg)">
-       <h1 class="text-shadow">Nobel ödülünü alan ilk kadın kimdir?</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-<div class="flip flip-vertical">
-    <div class="front" style="background-image: url(/6.jpeg)">
-       <h1 class="text-shadow">Nobel ödülünü alan ilk kadın kimdir?</hi>
-    </div>
-    <div class="back">
-       <h2>Angular</h2>
-       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
-    </div>
-</div>
-</div>
 <!-- gallery section starts  -->
+ <h1 class="heading">3D <span>Moleküller</span></h1>
+<!-- Control buttons -->
+<div id="sort-options">
+    <button class="btn active" onclick="filterSelection('all')"> Hepsini göster</button>
+    <button class="btn" onclick="filterSelection('10sinif')"> 10 Sınıf</button>
+    <button class="btn" onclick="filterSelection('11sinif')"> 11 sınıf</button>
+     <button class="btn" onclick="filterSelection('uni')"> Üniveriste</button>
+   
+</div>
 
-<section class="gallery" id="gallery">
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 
-    <h1 class="heading">3D <span>Moleküller</span></h1>
+<div class="cntr">
 
-    <div class="box-container">
+<div class="container4">
+    
+    <section class="gallery" id="gallery">
+         <div class="box-container">
+     <div class="box filterItems 10sinif">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls&cid=241"></iframe>
+         <h3 class="title">Benzen Gösterimi</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=241"></iframe>
-            <h3 class="title">Benzen Gösterimi</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
+             <a class="fas fa-eye" href="#openModal-about"> </a>
+             <!--modals-->
+             <div id="openModal-about" class="modalDialog" style="overflow-y: scroll;">
+                 <div style="overflow-y:scroll;">
+                     <a href="#close" title="Close" class="close">X</a>
+                     <h1 class="text-gradient"
+                         style="font-size: 30px;margin-bottom:2rem;background-image: -webkit-linear-gradient( 45deg, #d3ad7f 20%, black 45%, #d3ad7f 60% );">
+                         Etan</h1>
+                     <iframe
+                         style="border: 8px groove #d3ad7f; border-radius: 1rem; width: 100%; height: 300px;margin-bottom: 2rem;"
+                         frameborder="0"
+                         src="https://embed.molview.org/v1/?mode=balls&cid=6324"></iframe>
 
-                <a class="fas fa-eye" href="#openModal-about"> </a>
-                <!--modals-->
-                  <div id="openModal-about" class="modalDialog" style="overflow-y: scroll;">
-                      <div style="overflow-y:scroll;">
-                         <a href="#close" title="Close" class="close">X</a>
-                         <h1 class="text-gradient" style="font-size: 30px;margin-bottom:2rem;">Etan</h1>
-                         <iframe style="width: 100%; height: 300px;margin-bottom: 2rem;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=6324"></iframe>
-
-                      <div >
-                       <article  style="
+                     <div>
+                         <article style="
                        font-size: 14px;
                        text-align: initial;
                        margin-bottom: 2rem;
-                   ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt ex enim placeat quae modi vel tempore reiciendis dolore architecto provident, voluptatum labore nisi pariatur, sequi eius. Vero tenetur saepe, minus exercitationem quam molestias itaque optio possimus dolor corporis veritatis!</article>
-                      </div>
-                         <a href="#" class="btn">Daha Fazla Okumak için pdf indirebilirsiniz</a>
-                       </div>
-                   </div>
+                       margin-bottom: 2rem;
+                       line-height: 2.5rem;
+                       letter-spacing: 1px;
+                       font-family: 'Montserrat', sans-serif;
+                   ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt ex enim placeat quae
+                             modi vel tempore reiciendis dolore architecto provident, voluptatum labore nisi
+                             pariatur, sequi eius. Vero tenetur saepe, minus exercitationem quam molestias itaque
+                             optio possimus dolor corporis veritatis!</article>
+                     </div>
+                     <a href="#" class="btn">Daha fazlası için tıkla</a>
+                 </div>
+             </div>
 
 
-            </div>
-        </div>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=6324"></iframe>
-            <h3 class="title">Etan Gösterimi</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems color 10sinif">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls&cid=6324"></iframe>
+         <h3 class="title">Etan Gösterimi</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=1049"></iframe>
-            <h3 class="title">Piridin Gösterimi</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems 11sinif">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls&cid=1049"></iframe>
+         <h3 class="title">Piridin Gösterimi</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=1140"></iframe>
-            <h3 class="title">Toluen Gösterimi</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems 11sinif">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls&cid=1140"></iframe>
+         <h3 class="title">Toluen Gösterimi</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls"></iframe>
-            <h3 class="title">Vinil Klörür Gösterimi</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems  10sinif">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls"></iframe>
+         <h3 class="title">Vinil Klörür Gösterimi</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls"></iframe>
-            <h3 class="title">photos and events</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems uni">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls"></iframe>
+         <h3 class="title">photos and events</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls"></iframe>
-            <h3 class="title">photos and events</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems 10sinif">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls"></iframe>
+         <h3 class="title">photos and events</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls"></iframe>
-            <h3 class="title">photos and events</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
+     <div class="box filterItems uni">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls"></iframe>
+         <h3 class="title">photos and events</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
 
-        <div class="box">
-            <iframe style="width: 100%; height: 100%;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls"></iframe>
-            <h3 class="title">photos and events</h3>
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
+     <div class="box filterItems uni">
+         <iframe style="width: 100%; height: 100%;" frameborder="0"
+             src="https://embed.molview.org/v1/?mode=balls"></iframe>
+         <h3 class="title">photos and events</h3>
+         <div class="icons">
+             <a href="#" class="fas fa-heart"></a>
+             <a href="#" class="fas fa-share"></a>
+             <a href="#" class="fas fa-eye"></a>
+         </div>
+     </div>
+     </div>
+     </section>
+</div>
+</div>
 <!-- gallery section ends -->
 
 
@@ -331,6 +344,8 @@
 <!-- custom js file link  -->
 <script src="models_page.js"></script>
 <script src="coffe.js"></script>
+<script src="flip.js"></script>
+<script src="filter.js"></script>
 
 </body>
 </html>
