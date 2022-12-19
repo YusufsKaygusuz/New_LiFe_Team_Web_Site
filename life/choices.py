@@ -8,3 +8,10 @@ class CommentStarChoices(models.TextChoices):
     STAR_3 = "3", _("3 Star")
     STAR_4 = "4", _("4 Star")
     STAR_5 = "5", _("5 Star")
+
+
+class ClassesChoices(models.TextChoices):
+    CLASS_10 = "10sinif", _("10. Sınıf")
+    CLASS_11 = "11sinif", _("11. Sınıf")
+    CLASS_12 = "12sinif", _("12. Sınıf")
+    UNI = "uni", _("Universite")

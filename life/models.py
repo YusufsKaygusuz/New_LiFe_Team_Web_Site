@@ -1,7 +1,8 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from multiselectfield import MultiSelectField
 
-from life.choices import CommentStarChoices
+from life.choices import ClassesChoices, CommentStarChoices
 
 
 def management_member_image_path(instance, filename):
@@ -83,10 +84,33 @@ class Molecule(models.Model):
         verbose_name="Embed Link",
         help_text="ex: https://embed.molview.org/v1/?mode=balls&cid=1049",
     )
+    classes = MultiSelectField(
+        verbose_name="Classes", choices=ClassesChoices.choices, blank=True
+    )
+    description = models.TextField(verbose_name="Description", blank=True)
 
     def __str__(self) -> str:
         return f"{self.title}"
 
+    def get_all_classes(self):
+        return " ".join(list(self.classes))
+
     class Meta:
         verbose_name = _("Molecule")
         verbose_name_plural = _("Molecules")
+
+
+class Card(models.Model):
+    question_title = models.CharField(
+        verbose_name="Question Title", help_text="What is the ENIAC?", max_length=255
+    )
+    question_answer = models.CharField(
+        verbose_name="Question Answer", help_text="First Computer", max_length=255
+    )
+
+    def __str__(self):
+        return self.question_title
+
+    class Meta:
+        verbose_name = _("Card")
+        verbose_name_plural = _("Cards")

@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from modeltranslation.admin import TranslationAdmin
 
-from life.models import Comment, Molecule, NewLifeManagementMember
+from life.models import Card, Comment, Molecule, NewLifeManagementMember
 
 
 @admin.register(NewLifeManagementMember)
@@ -31,3 +31,9 @@ class MoleculeAdmin(TranslationAdmin):
     list_display = ("iframe", "title", "embed_link")
     list_display_links = ("title",)
     list_editable = ("embed_link",)
+
+
+@admin.register(Card)
+class CardAdmin(TranslationAdmin):
+    list_display = ("question_title", "question_answer")
+    list_display_links = ("question_title",)

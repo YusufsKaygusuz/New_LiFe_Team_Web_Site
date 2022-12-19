@@ -10,7 +10,6 @@ function filterSelection(str) {
     removeClass(item, 'show')
     if (item.className.indexOf(str) > -1) {
       addClass(item, 'show')
-      console.log("working")
     }
   })
 }
@@ -40,7 +39,6 @@ function removeClass(element, name) {
     }
   }
   element.className = itemClass.join(" ")
-  console.log("all")
 }
 
 Array.from(btns).forEach((btn) => {
@@ -52,6 +50,3 @@ Array.from(btns).forEach((btn) => {
 })
 
 filterSelection("all")
-console.log("all")
-
-

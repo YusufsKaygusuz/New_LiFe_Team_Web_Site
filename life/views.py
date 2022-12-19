@@ -1,4 +1,5 @@
 from urllib.parse import urlparse
+
 from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
@@ -7,7 +8,8 @@ from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views import View
-from life.models import Comment, Molecule, NewLifeManagementMember
+
+from life.models import Card, Comment, Molecule, NewLifeManagementMember
 
 
 def set_language(request: HttpRequest, language: str) -> HttpResponse:
@@ -41,11 +43,11 @@ class HomePageView(View):
         )
 
 
-class DashboardView(LoginRequiredMixin,View):
+class DashboardView(LoginRequiredMixin, View):
     http_method_names = ["get"]
 
-    def get(self,request: HttpRequest) -> HttpResponse:
-        return render(request=request,template_name="pages/dashboard.html",context={})
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request=request, template_name="pages/dashboard.html", context={})
 
 
 class MoleculeView(View):
@@ -53,7 +55,13 @@ class MoleculeView(View):
 
     def get(self, request: HttpRequest) -> HttpResponse:
         context = {}
-        context["molecules"] = Molecule.objects.all()
+        molecules = Molecule.objects.all()
+        context["cards"] = Card.objects.all()
+        if self.request.GET.get("search"):
+            molecules = molecules.filter(
+                title__icontains=self.request.GET.get("search")
+            )
+        context["molecules"] = molecules
         return render(
             request=request, template_name="pages/models_page.html", context=context
         )
