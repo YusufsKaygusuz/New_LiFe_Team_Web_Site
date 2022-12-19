@@ -714,14 +714,16 @@ section{
 
     .header .navbar.active{
         right: 0;
+        background-color: var(--black);
     }
 
     .header .navbar a{
-        color: var(--black);
+        color: white;
         display: block;
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
+        background-color: var(--main-color);
     }
 
     .header .search-form{

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
 
 :root{
-    --main-color:#3867d6;
+    --main-color:#d3ad7f;
 }
 
 *{
@@ -233,14 +233,15 @@ section{
 }
 
 .gallery .box-container .box .icons a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin:.5rem 1rem;
     color:#fff;
 }
 
 .gallery .box-container .box .icons a:hover{
 
-    color: white;
+    background-color: black;
+    color: var(--main-color);
 }
 
 .footer{
@@ -599,6 +600,7 @@ background-color: white;
     margin-bottom: 12px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
+    border-radius: 15px;
   }
   .flip-card-inner {
     position: relative;
@@ -607,6 +609,7 @@ background-color: white;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 15px;
   }
   .flip-card:hover .flip-card-inner,
   .flip-card:focus .flip-card-inner,
@@ -648,6 +651,7 @@ background-color: white;
   }
   .flip-card-front {
     background-color: #d3ad7f ;
+    border-radius: 15px;
   }
   .flip-card-back {
     background-color: #c89c66 ;
