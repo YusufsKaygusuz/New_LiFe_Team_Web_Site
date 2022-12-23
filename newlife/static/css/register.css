@@ -346,12 +346,12 @@ footer a {
 footer a:hover {
 	text-decoration: underline;
 }
-
+/*
 .container.right-panel-active .overlay-left {
     -webkit-transform: translateX(0);
 	transform: translateX(0);
   }
-
+*/
 .overlay-right {
     right: 0;
     top: 0;
@@ -366,7 +366,19 @@ footer a:hover {
 
 /* ----------------- The start of SideShift Design ----------------- */
 
-
+@media (max-width: 550px) {
+	.overlay-panel{
+		width: 70%;
+	}
+	.overlay-right{
+		left: 40%;
+	}
+	.container.right-panel-active.overlay-left {
+		-webkit-transform: translateX(-15%);
+		transform: translateX(-15%);
+	}
+  }
+  
 
 
 /* -----------------The start of Social media Design* ----------------- */

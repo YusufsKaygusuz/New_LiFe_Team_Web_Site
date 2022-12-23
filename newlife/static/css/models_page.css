@@ -655,5 +655,13 @@ background-color: white;
   }
   .flip-card-back {
     background-color: #c89c66 ;
+    border-radius: 15px;
     transform: rotateY(180deg);
   }
+
+  @media (max-width: 550px) {
+	.text_size{
+        font-size: 50px;
+    }
+  }
+  
