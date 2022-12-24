@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+a{
+  text-decoration: none;
+}
+
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #0061a0;
+  z-index: 2;
+  width: 0%;
+  transition: all 0.3s linear;
+}
+
+.content {
+  dispay: grid;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8em;
+}
+.content .poster {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  border-radius: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+  background: center no-repeat url(items/solar_system.jpg);
+  position: relative;
+  box-shadow: 0px 4px 100px -3px rgba(0, 5, 151, 0.2);
+}
+.content .poster .poster-title {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 40%;
+}
+.content .poster .poster-title h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 300;
+  margin: 20px 0;
+}
+.content .poster .poster-title .line {
+  background-color: #b4c4c5;
+  width: 100%;
+  height: 1px;
+}
+.content .poster .poster-title p {
+  color: #b4c4c5;
+  font-size: 12px;
+  line-height: 1.8em;
+}
+.content .poster .poster-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  text-align: center;
+}
+.content .poster .poster-buttons div {
+  cursor: pointer;
+}
+.content .poster .poster-buttons div:hover {
+  color: #ccc;
+}
+
+
+
+.info {
+  border-radius: 10px;
+  border: 1px solid #e9e9f6;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px auto;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  height: 60px;
+}
+.info .block {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  color: #242e47;
+}
+.info .block .mini-title {
+  font-size: 12px;
+  color: #999999;
+  font-weight: 700;
+}
+
+.words {
+  padding: 0 0 0 45px;
+  position: relative;
+}
+.words p {
+  margin: 20px auto;
+  position: relative;
+  color: #777;
+}
+.words p .buttons {
+  position: absolute;
+  right: 10px;
+  width: 40px;
+  height: 100px;
+  background-color: #777;
+}
+.words p .letter {
+  font-size: 100px;
+  position: absolute;
+  top: 15px;
+  left: -45px;
+  color: rgba(135, 135, 135, 0.0588235294);
+  font-weight: 700;
+}
+.words .buttons {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  right: -30px;
+  font-size: 20px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.words:hover .buttons {
+  opacity: 1;
+}
+
+.quote {
+  position: relative;
+  padding: 40px 40px 40px 45px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  min-height: 140px;
+  font-size: 22px;
+  line-height: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  color: #777;
+}
+.quote .letter {
+  font-size: 150px;
+  position: absolute;
+  top: 50px;
+  color: #ebebeb;
+}
+.quote .author {
+  font-size: 12px;
+}
+.quote .author::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 90%;
+  }
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+    height: 120px;
+  }
+  .content .poster {
+    height: 250px;
+  }
+  .content .poster .poster-title h1 {
+    font-size: 25px;
+  }
+  .content .poster .poster-title p, .content .poster .poster-title .line {
+    display: none;
+  }
+  .quote {
+    font-size: 16px;
+  }
+  .quote .letter {
+    left: 0px;
+  }
+}/*# sourceMappingURL=blog.css.map */
+
+
+.header
+{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0.85;
+    height: 15px;
+}
+
+.header .logo img{
+   width: 3rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.header .navbar a:hover
+{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form
+{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-content: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input
+{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label
+{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    margin-bottom: auto;
+    margin-top: auto;
+    color: var(--black);
+}
+
+.header .search-form label:hover
+{
+    color: var(--main-color);
+}
+
+.header .cart-item-container{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 40rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+.header .cart-item-container.active{
+    right: 0;
+}
+
+.header .cart-item-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .cart-item-container .cart-item .fa-times
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cart-item-container .cart-item .fa-times:hover{
+    color: var(--main-color);
+}
+
+.header .cart-item-container .cart-item img
+{
+    height: 8rem;
+    width: 11rem;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16), 
+                        6px 4px 4px 1px rgba(0,0,0,.30);
+}
+
+.header .cart-item-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-item-container .cart-item .content .price
+{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.header .cart-item-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
+.footer{
+ background: var(--bg);
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+    height: 3rem;
+width: 3rem;
+line-height: 3rem;
+font-size: 24px;
+    color: rgb(255, 255, 255);
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color:var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+   
+}
+
+.footer .links a:hover{
+    background-color: var(--main-color)
+}
+
+.footer .credit{
+    
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.footer .credit span{
+    color: var(--main-color);
+    font-weight:bolder;
+}
+
+.footer .credit span:hover
+{
+    font-weight: bold;
+}
+
+
+
+/* Media Queries*/
+@media screen and (max-width: 991px){
+    
+    html{
+    font-size: 55%;
+}
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    
+    section{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #menu-btn{
+    display: inline-block;
+}
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    
+    .header .navbar.active{
+        right: 0;
+    }
+    
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    
+    html{
+    font-size: 50%;
+}
+.footer .links a{
+  font-size: 5px;
+}
+    
+}
