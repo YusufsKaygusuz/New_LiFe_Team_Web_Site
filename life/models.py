@@ -5,6 +5,8 @@ from multiselectfield import MultiSelectField
 from life.choices import ClassesChoices, CommentStarChoices
 from ckeditor.fields import RichTextField
 
+from newlife.users.models import User
+
 
 def management_member_image_path(instance, filename):
     return f"management-member/image/{instance.id}/{filename}"
@@ -144,3 +146,19 @@ class Blog(models.Model):
     class Meta:
         verbose_name = _("Blog")
         verbose_name_plural = _("Blogs")
+
+
+class FavoriteBlog(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    blog = models.ForeignKey("Blog",on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.blog.title}"
+
+
+class FavoriteMolecule(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    molecule = models.ForeignKey("Molecule",on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.molecule.title}"

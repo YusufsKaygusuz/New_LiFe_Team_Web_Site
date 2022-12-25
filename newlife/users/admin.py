@@ -29,7 +29,7 @@ class UserAdmin(auth_admin.UserAdmin):
             },
         ),
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
-        (_("Information"), {"fields": ("class_choices", "university")}),
+        (_("Information"), {"fields": ("class_choices", "university","profile_image")}),
 
     )
     list_display = ["username", "name", "is_superuser"]

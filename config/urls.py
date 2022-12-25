@@ -5,7 +5,8 @@ from django.contrib import admin
 from django.urls import include, path
 from django.utils.translation import gettext_lazy as _
 from django.views import defaults as default_views
-from life.views import DashboardView, HomePageView, MoleculeView, set_language, MoleculeDetailView, BlogDetailView
+from life.views import DashboardView, HomePageView, MoleculeView, set_language, MoleculeDetailView, BlogDetailView, \
+    AddToFavoriteBlog, AddToFavoriteMolecule
 
 urlpatterns = [
     path("", HomePageView.as_view(), name="homepage"),
@@ -15,9 +16,12 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("dashboard/", DashboardView.as_view(), name="dashboard"),
     path(_("molekuller/<slug:slug>"),MoleculeDetailView.as_view(),name="molecule-detail"),
-    path(_("blog/<slug:slug>"),BlogDetailView.as_view(),name="blog-detail")
+    path(_("blog/<slug:slug>"),BlogDetailView.as_view(),name="blog-detail"),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("add-fav-blog",AddToFavoriteBlog.as_view(),name="add-fav-blog"),
+    path("add-fav-molecule", AddToFavoriteMolecule.as_view(), name="add-fav-molecule")
+
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),

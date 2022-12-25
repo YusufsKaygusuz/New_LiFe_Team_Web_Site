@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from modeltranslation.admin import TranslationAdmin
-from life.models import Card, Comment, Molecule, NewLifeManagementMember , Blog
+from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog, FavoriteBlog, FavoriteMolecule
 
 
 @admin.register(NewLifeManagementMember)
@@ -43,3 +43,13 @@ class BlogAdmin(TranslationAdmin):
     list_display = ("title",)
     list_display_links = ("title",)
     readonly_fields = ("created_at","slug")
+
+
+@admin.register(FavoriteBlog)
+class FavoriteBlogAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(FavoriteMolecule)
+class FavoriteMoleculeAdmin(admin.ModelAdmin):
+    pass

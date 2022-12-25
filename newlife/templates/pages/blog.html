@@ -61,7 +61,16 @@
               <div class="poster-buttons">
                 <div></div>
                 <div></div>
-                <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                <div>
+                  <form action="{% url 'add-fav-blog' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{ blog.slug }}" name="blog">
+                  <button type="submit" style="cursor: pointer;"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                    </form>
+                </div>
+
+
               </div>
                 </div>
             </div>
@@ -121,5 +130,4 @@
       </div>
 </body>
 </html>
-<script src="slider.js"></script>
-<script src="../../blog/navbar.js"></script>
+<script src="{% static 'js/navbar.js' %}"></script>

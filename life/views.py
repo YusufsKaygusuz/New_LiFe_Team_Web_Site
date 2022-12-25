@@ -11,7 +11,7 @@ from django.views import View
 from django.views.generic import DetailView, FormView, UpdateView
 
 from life.forms import UserDashboardForm
-from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog
+from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog, FavoriteBlog, FavoriteMolecule
 from newlife.users.models import User
 
 
@@ -88,3 +88,27 @@ class BlogDetailView(DetailView):
 
     def get_object(self, queryset=None):
         return get_object_or_404(Blog,slug=self.kwargs.get("slug"))
+
+
+class AddToFavoriteBlog(View):
+    http_method_names = ["post"]
+
+    def post(self,request):
+        obj = FavoriteBlog.objects.filter(user=self.request.user,blog__slug=request.POST.get("blog"))
+        if obj.exists():
+            obj.delete()
+        else:
+            FavoriteBlog.objects.create(user=self.request.user,blog=Blog.objects.get(slug=request.POST.get("blog")))
+        return redirect("blog-detail",slug=Blog.objects.get(slug=request.POST.get("blog")).slug)
+
+
+class AddToFavoriteMolecule(View):
+    http_method_names = ["post"]
+
+    def post(self,request):
+        obj = FavoriteMolecule.objects.filter(user=self.request.user,molecule__slug=request.POST.get("molecule"))
+        if obj.exists():
+            obj.delete()
+        else:
+            FavoriteMolecule.objects.create(user=self.request.user,molecule=Molecule.objects.get(slug=request.POST.get("molecule")))
+        return redirect("molecule-detail",slug=Molecule.objects.get(slug=request.POST.get("molecule")).slug)
