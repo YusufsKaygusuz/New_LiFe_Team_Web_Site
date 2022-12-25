@@ -369,45 +369,26 @@ NewLiFe
        <h1 class="heading"> {% trans 'Güncel <span>bloglar</span>' %}</h1>
 
        <div class="box-container">
-
-           <div class="box">
+        {% for blog in blogs %}
+        <div class="box">
                <div class="image">
-                   <img src="{% static 'Blogs/Gezegenler_Hakkinda.png' %}" alt="">
+                 {% if blog.image %}
+                   <img src="{{ blog.image.url }}" alt="">
+                 {% endif %}
                </div>
                <div class="content">
-                   <a href="#" class="title">Gezegenler Hakkında</a>
+                   <a href="#" class="title">{{ blog.title }}</a>
 
-                   <span>İçerik Ekibi / 04 Aralık 2022</span>
-                   <p>Gezegenler Hakkında Kısa Bir Deneyim Turu.</p>
-                   <a href="#" class="btn">İncele </a>
+                   <span>İçerik Ekibi / {{ blog.created_at|date }}</span>
+                   <p>{{ blog.short_description }}</p>
+                   <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
                </div>
            </div>
+        {% endfor %}
 
-           <div class="box">
-               <div class="image">
-                   <img src="{% static 'Blogs/Vejetaryen_Hakkinda.png' %}" alt="">
-               </div>
-               <div class="content">
-                   <a href="#" class="title">Vejetaryenlik Hakkında</a>
 
-                   <span>İçerik Ekibi / 04 Aralık 2022</span>
-                   <p>Vejetaryen Hakkında Kısa Bir Deneyim Turu.</p>
-                   <a href="#" class="btn">İncele</a>
-               </div>
-           </div>
 
-           <div class="box">
-               <div class="image">
-                   <img src="{% static 'Blogs/Beynimiz_Hakkinda.png' %}" alt="">
-               </div>
-               <div class="content">
-                   <a href="#" class="title">Beynimiz Hakkında</a>
 
-                   <span>New LiFe İçerik Ekibi / 05 Aralık 2022</span>
-                   <p>Beynimiz Hakkında Kısa Soru Cevap Turu.</p>
-                   <a href="#" class="btn">incele</a>
-               </div>
-           </div>
 
        </div>
 

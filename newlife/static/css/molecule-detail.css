@@ -14,6 +14,14 @@ body {
 a{
   text-decoration: none;
 }
+.text-gradient {
+  color: #f614b8;
+  background-image: -webkit-linear-gradient( 45deg, #d3ad7f 20%, white 45%, #d3ad7f 60% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 
 .scroll-indicator {
   position: fixed;
@@ -41,7 +49,7 @@ a{
   border-radius: 10px;
   margin-top: 40px;
   overflow: hidden;
-  background: center no-repeat url(items/solar_system.jpg);
+  background: center no-repeat url(../../static/images/solar_system.jpg);
   position: relative;
   box-shadow: 0px 4px 100px -3px rgba(0, 5, 151, 0.2);
 }
@@ -195,7 +203,7 @@ a{
   .quote .letter {
     left: 0px;
   }
-}/*# sourceMappingURL=blog.css.map */
+}/*# sourceMappingURL=molecule-detail.css.map */
 
 
 .header
@@ -330,7 +338,7 @@ a{
     height: 8rem;
     width: 11rem;
     border-radius: 4px;
-    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16), 
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16),
                         6px 4px 4px 1px rgba(0,0,0,.30);
 }
 
@@ -383,11 +391,11 @@ font-size: 24px;
 }
 
 .footer .links a{
-    
+
     padding: .7rem 2rem;
     color: #fff;
     border: var(--border);
-   
+
 }
 
 .footer .links a:hover{
@@ -395,7 +403,7 @@ font-size: 24px;
 }
 
 .footer .credit{
-    
+
     color: rgb(255, 255, 255);
     font-weight: lighter;
     padding: 1.5rem;
@@ -414,14 +422,14 @@ font-size: 24px;
 
 /* Media Queries*/
 @media screen and (max-width: 991px){
-    
+
     html{
     font-size: 55%;
 }
     .header{
         padding: 1.5rem 2rem;
     }
-    
+
     section{
         padding: 2rem;
     }
@@ -439,11 +447,11 @@ font-size: 24px;
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
-    
+
     .header .navbar.active{
         right: 0;
     }
-    
+
     .header .navbar a{
         color: var(--black);
         display: block;
@@ -451,7 +459,7 @@ font-size: 24px;
         padding: .5rem;
         font-size: 2rem;
     }
-    
+
     .header .search-form{
         width: 90%;
         right: 2rem;
@@ -469,12 +477,12 @@ font-size: 24px;
 }
 
 @media screen and (max-width: 450px){
-    
+
     html{
     font-size: 50%;
 }
 .footer .links a{
   font-size: 5px;
 }
-    
+
 }

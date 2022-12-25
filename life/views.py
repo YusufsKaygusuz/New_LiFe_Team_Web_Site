@@ -3,13 +3,16 @@ from urllib.parse import urlparse
 from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views import View
+from django.views.generic import DetailView, FormView, UpdateView
 
-from life.models import Card, Comment, Molecule, NewLifeManagementMember
+from life.forms import UserDashboardForm
+from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog
+from newlife.users.models import User
 
 
 def set_language(request: HttpRequest, language: str) -> HttpResponse:
@@ -38,16 +41,20 @@ class HomePageView(View):
         context = {}
         context["management_members"] = NewLifeManagementMember.objects.all()
         context["user_comments"] = Comment.objects.filter(is_active=True)
+        context["blogs"] = Blog.objects.all()
         return render(
             request=request, template_name="pages/homepage.html", context=context
         )
 
 
-class DashboardView(LoginRequiredMixin, View):
-    http_method_names = ["get"]
+class DashboardView(LoginRequiredMixin,UpdateView):
+    template_name = "pages/dashboard.html"
+    form_class = UserDashboardForm
+    success_url = "/dashboard/"
 
-    def get(self, request: HttpRequest) -> HttpResponse:
-        return render(request=request, template_name="pages/dashboard.html", context={})
+    def get_object(self):
+        return get_object_or_404(User, id=self.request.user.id)
+
 
 
 class MoleculeView(View):
@@ -65,3 +72,19 @@ class MoleculeView(View):
         return render(
             request=request, template_name="pages/models_page.html", context=context
         )
+
+
+class MoleculeDetailView(DetailView):
+    context_object_name = "molecule"
+    template_name = "pages/molecule_detail.html"
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(Molecule,slug=self.kwargs.get('slug'))
+
+
+class BlogDetailView(DetailView):
+    context_object_name = "blog"
+    template_name = "pages/blog.html"
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(Blog,slug=self.kwargs.get("slug"))

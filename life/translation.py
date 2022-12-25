@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 
-from life.models import Card, Comment, Molecule, NewLifeManagementMember
+from life.models import Card, Comment, Molecule, NewLifeManagementMember,Blog
 
 
 @register(NewLifeManagementMember)
@@ -21,3 +21,8 @@ class MoleculeTranslationOptions(TranslationOptions):
 @register(Card)
 class CardTranslationOptions(TranslationOptions):
     fields = ("question_title", "question_answer")
+
+
+@register(Blog)
+class BlogTranslationOptions(TranslationOptions):
+    fields = ("title","description")

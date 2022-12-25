@@ -149,38 +149,14 @@
 
            {% for molecule in molecules %}
            <div class="box filterItems {{ molecule.get_all_classes }}">
-         <iframe style="width: 100%; height: 100%;" frameborder="0"
-             src="{{ molecule.embed_link }}"></iframe>
+           {% if molecule.image %}
+             <img src="{{ molecule.image.url }}" alt="">
+             {% endif %}
          <h3 class="title">{{ molecule.title }}</h3>
          <div class="icons">
              <a href="#" class="fas fa-heart"></a>
 
-             <a class="fas fa-eye" href="#openModal-about-{{ molecule.id }}"> </a>
-             <!--modals-->
-             <div id="openModal-about-{{ molecule.id }}" class="modalDialog" style="overflow-y: scroll;">
-                 <div style="overflow-y:scroll;">
-                     <a href="#close" title="Close" class="close">X</a>
-                     <h1 class="text-gradient"
-                         style="font-size: 30px;margin-bottom:2rem;background-image: -webkit-linear-gradient( 45deg, #d3ad7f 20%, black 45%, #d3ad7f 60% );">
-                         {{ molecule.title }}</h1>
-                     <iframe
-                         style="border: 8px groove #d3ad7f; border-radius: 1rem; width: 100%; height: 300px;margin-bottom: 2rem;"
-                         frameborder="0"
-                         src="{{ molecule.embed_link }}"></iframe>
-
-                     <div>
-                         <article style="
-                       font-size: 14px;
-                       text-align: initial;
-                       margin-bottom: 2rem;
-                       margin-bottom: 2rem;
-                       line-height: 2.5rem;
-                       letter-spacing: 1px;
-                       font-family: 'Montserrat', sans-serif;
-                   ">{{ molecule.description }}</article>
-                     </div>
-                 </div>
-             </div>
+             <a class="fas fa-eye" href="{% url 'molecule-detail' molecule.slug %}"> </a>
 
          </div>
      </div>

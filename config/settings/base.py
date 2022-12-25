@@ -74,6 +74,7 @@ THIRD_PARTY_APPS = [
     "rest_framework.authtoken",
     "corsheaders",
     "drf_spectacular",
+    "ckeditor"
 ]
 
 LOCAL_APPS = ["newlife.users", "life.apps.LifeConfig"]

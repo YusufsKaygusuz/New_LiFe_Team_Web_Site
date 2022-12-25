@@ -1,17 +1,22 @@
 from django.db import models
+from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from multiselectfield import MultiSelectField
-
 from life.choices import ClassesChoices, CommentStarChoices
+from ckeditor.fields import RichTextField
 
 
 def management_member_image_path(instance, filename):
     return f"management-member/image/{instance.id}/{filename}"
 
+def molecule_image_path(instance, filename):
+    return f"molecules/image/{instance.id}/{filename}"
 
 def comment_user_image_path(instance, filename):
     return f"comment-user/image/{instance.id}/{filename}"
 
+def blog_image_path(instance, filename):
+    return f"blogs/image/{instance.id}/{filename}"
 
 class NewLifeManagementMember(models.Model):
     title = models.CharField(
@@ -88,6 +93,12 @@ class Molecule(models.Model):
         verbose_name="Classes", choices=ClassesChoices.choices, blank=True
     )
     description = models.TextField(verbose_name="Description", blank=True)
+    image = models.ImageField(verbose_name="Image",blank=True,null=True,help_text="Molecule Image",upload_to=molecule_image_path)
+    slug = models.SlugField(verbose_name="Slug",blank=True,null=True,editable=False,unique=True)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Molecule, self).save(*args, **kwargs)
 
     def __str__(self) -> str:
         return f"{self.title}"
@@ -114,3 +125,22 @@ class Card(models.Model):
     class Meta:
         verbose_name = _("Card")
         verbose_name_plural = _("Cards")
+
+
+class Blog(models.Model):
+    title = models.CharField(
+        verbose_name="Blog Title", help_text="Blog Title", max_length=255
+    )
+    short_description = models.CharField(verbose_name="Short Description",max_length=255,help_text="Gezegenler Hakkında Kısa Bir Deneyim Turu",blank=True,null=True  )
+    slug = models.SlugField(verbose_name="Slug",editable=False,unique=True)
+    description = RichTextField()
+    image = models.ImageField(verbose_name="Image",help_text="Blog Image",upload_to=blog_image_path)
+    created_at = models.DateTimeField(auto_now_add=True,blank=True,null=True)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Blog, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = _("Blog")
+        verbose_name_plural = _("Blogs")
