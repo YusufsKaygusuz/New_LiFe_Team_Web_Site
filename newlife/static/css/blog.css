@@ -118,6 +118,9 @@ a{
   position: relative;
   color: #777;
 }
+.words p img {
+  width: 100%;
+}
 .words p .buttons {
   position: absolute;
   right: 10px;
