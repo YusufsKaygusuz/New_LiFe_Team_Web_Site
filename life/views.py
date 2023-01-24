@@ -63,7 +63,7 @@ class MoleculeView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         context = {}
         molecules = Molecule.objects.all()
-        context["cards"] = Card.objects.all()
+        context["cards"] = Card.objects.order_by('?')[:5]
         if self.request.GET.get("search"):
             molecules = molecules.filter(
                 title__icontains=self.request.GET.get("search")
