@@ -67,7 +67,7 @@
              <h1 style="color:#d3ad7f">{{ molecule.title }}</h1>
             </div>
             <div class="words">
-                  {{ molecule.description|linebreaks }}
+                  {{ molecule.description|linebreaks|safe }}
             </div>
             <div class="author">
               <div class="image"></div>
