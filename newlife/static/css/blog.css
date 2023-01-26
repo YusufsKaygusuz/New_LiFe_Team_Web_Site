@@ -27,7 +27,7 @@ a{
 }
 
 .content {
-  dispay: grid;
+  display: grid;
   width: 60%;
   margin: 0 auto;
   font-size: 16px;

@@ -59,7 +59,7 @@ a{
   width: 40%;
 }
 .content .poster .poster-title h1 {
-  font-size: 40px;
+  font-size: 39px;
   color: white;
   font-weight: 300;
   margin: 20px 0;
@@ -114,14 +114,23 @@ a{
 }
 
 .words {
-  padding: 0 0 0 45px;
+  padding: 0 0 0 10px;
   position: relative;
+  margin-bottom: 5rem;
 }
 .words p {
   margin: 20px auto;
   position: relative;
   color: #777;
 }
+
+.words h2{
+  color: #d3ad7f;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .words p .letter {
   font-size: 100px;
   position: absolute;
