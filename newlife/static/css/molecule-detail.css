@@ -91,9 +91,6 @@ a{
 .content .poster .poster-buttons div:hover {
   color: #ccc;
 }
-
-
-
 .info {
   border-radius: 10px;
   border: 1px solid #e9e9f6;
@@ -126,13 +123,6 @@ a{
   position: relative;
   color: #777;
 }
-.words p .buttons {
-  position: absolute;
-  right: 10px;
-  width: 40px;
-  height: 100px;
-  background-color: #777;
-}
 .words p .letter {
   font-size: 100px;
   position: absolute;
@@ -140,18 +130,6 @@ a{
   left: -45px;
   color: rgba(135, 135, 135, 0.0588235294);
   font-weight: 700;
-}
-.words .buttons {
-  position: absolute;
-  opacity: 0;
-  top: 0px;
-  right: -30px;
-  font-size: 20px;
-  transition: all 0.3s linear;
-  cursor: pointer;
-}
-.words:hover .buttons {
-  opacity: 1;
 }
 
 .quote {
