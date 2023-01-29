@@ -6,7 +6,7 @@ from django.urls import include, path
 from django.utils.translation import gettext_lazy as _
 from django.views import defaults as default_views
 from life.views import DashboardView, HomePageView, MoleculeView, set_language, MoleculeDetailView, BlogDetailView, \
-    AddToFavoriteBlog, AddToFavoriteMolecule
+    AddToFavoriteBlog, AddToFavoriteMolecule, TestListView, TestDetailView
 
 urlpatterns = [
     path("", HomePageView.as_view(), name="homepage"),
@@ -17,6 +17,8 @@ urlpatterns = [
     path("dashboard/", DashboardView.as_view(), name="dashboard"),
     path(_("molekuller/<slug:slug>"),MoleculeDetailView.as_view(),name="molecule-detail"),
     path(_("blog/<slug:slug>"),BlogDetailView.as_view(),name="blog-detail"),
+    path(_("testler"),TestListView.as_view(),name="tests"),
+    path(_("test-detay/<str:test_id>"),TestDetailView.as_view(),name="test-detail"),
 
     path("add-fav-blog",AddToFavoriteBlog.as_view(),name="add-fav-blog"),
     path("add-fav-molecule", AddToFavoriteMolecule.as_view(), name="add-fav-molecule")

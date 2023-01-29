@@ -1,0 +1,39 @@
+{% load static i18n%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'tests/quiz_page_style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--Sınıf Ayrımı için Sınıflandırma kısmı  -->
+    <div id="classify">
+        <ul class="nav">
+           <li><a href="#">9. Sınıf</a></li>
+           <li><a href="#">10. Sınıf</a></li>
+           <li><a href="#">11. Sınıf</a></li>
+           <li><a href="#">12. Sınıf</a></li>
+           <li><a href="#">Üniversite</a></li>
+        </ul>
+
+<!-- Testlerin olduğu Kısımları -->
+
+        <div class="test">
+
+<!-- Bir birinin tekrar eden kart yapısı -->
+
+          {% for test in tests %}
+          <a href='{% url 'test-detail' test.test_id %}' class="item {{ test.get_all_classes }}">
+              <img src="{{ test.image.url }}" alt="" />
+              <h2>{{ test.title }}</h2>
+              <p>{{ test.question_count }} {% trans 'Sorudan oluşuyor' %}</p>
+              <div class="description">
+                 <p> {{ test.description }}</p>
+              </div>
+           </a>
+          {% endfor %}
+
+        </div>
+     </div>
+
+</html>

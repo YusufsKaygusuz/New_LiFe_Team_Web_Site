@@ -15,3 +15,11 @@ class ClassesChoices(models.TextChoices):
     CLASS_11 = "11sinif", _("11. Sınıf")
     CLASS_12 = "12sinif", _("12. Sınıf")
     UNI = "uni", _("Universite")
+
+
+class ClassesTestChoices(models.TextChoices):
+    CLASS_09 = "9sinif", _("9. Sınıf")
+    CLASS_10 = "10sinif", _("10. Sınıf")
+    CLASS_11 = "11sinif", _("11. Sınıf")
+    CLASS_12 = "12sinif", _("12. Sınıf")
+    UNI = "uni", _("Universite")

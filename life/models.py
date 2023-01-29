@@ -1,8 +1,10 @@
+import secrets
+
 from django.db import models
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from multiselectfield import MultiSelectField
-from life.choices import ClassesChoices, CommentStarChoices
+from life.choices import ClassesChoices, CommentStarChoices, ClassesTestChoices
 from ckeditor.fields import RichTextField
 
 from newlife.users.models import User
@@ -162,3 +164,28 @@ class FavoriteMolecule(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.molecule.title}"
+
+def gen_random_string():
+    return secrets.token_hex(16)
+
+
+class MoleculeTest(models.Model):
+    title = models.CharField(max_length=255,verbose_name="Title")
+    image = models.ImageField(upload_to="tests/images/")
+    description = models.TextField()
+    classes = MultiSelectField(
+        verbose_name="Classes", choices=ClassesTestChoices.choices, blank=True
+    )
+    question_count = models.PositiveSmallIntegerField(default=1)
+    test_id = models.CharField(max_length=32, unique=True, default=gen_random_string,editable=False)
+    custom_js = models.TextField(blank=True,null=True)
+
+    def get_all_classes(self):
+        return " ".join(list(self.classes))
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Test"
+        verbose_name_plural = "Tests"

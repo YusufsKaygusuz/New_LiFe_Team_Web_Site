@@ -8,10 +8,11 @@ from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views import View
-from django.views.generic import DetailView, FormView, UpdateView
+from django.views.generic import DetailView, FormView, UpdateView, ListView
 
 from life.forms import UserDashboardForm
-from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog, FavoriteBlog, FavoriteMolecule
+from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog, FavoriteBlog, FavoriteMolecule, \
+    MoleculeTest
 from newlife.users.models import User
 
 
@@ -112,3 +113,20 @@ class AddToFavoriteMolecule(View):
         else:
             FavoriteMolecule.objects.create(user=self.request.user,molecule=Molecule.objects.get(slug=request.POST.get("molecule")))
         return redirect("molecule-detail",slug=Molecule.objects.get(slug=request.POST.get("molecule")).slug)
+
+
+class TestListView(ListView):
+    model = MoleculeTest
+    queryset = MoleculeTest.objects.all()
+    template_name = "tests/quiz_page.html"
+    context_object_name = "tests"
+
+
+class TestDetailView(DetailView):
+    model = MoleculeTest
+    context_object_name = "test"
+    template_name = "tests/test-detail.html"
+
+    def get_object(self):
+        return MoleculeTest.objects.get(test_id=self.kwargs.get("test_id"))
+
