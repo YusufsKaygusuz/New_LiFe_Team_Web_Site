@@ -301,6 +301,9 @@ section{
   overflow: hidden;
   position: relative;
 }
+.trainers .box-container .box:first-child{
+    border: 3px solid #d3ad7f;
+}
 
 .trainers .box-container .box:hover .content {
   -webkit-transform: translateY(0);
