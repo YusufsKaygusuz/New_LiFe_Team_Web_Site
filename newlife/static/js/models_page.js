@@ -12,8 +12,6 @@ toggleBtn.onclick = () =>{
   themeToggler.classList.toggle('active');
 }
 
-
-
 document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn =>{
 
   btn.onclick = () =>{
