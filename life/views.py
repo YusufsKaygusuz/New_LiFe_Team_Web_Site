@@ -148,7 +148,7 @@ class EarthQueView(TemplateView):
 
 class Tempview(View):
     def get(self,request):
-        User.objects.create_superuser("berkay", password="123")
+        User.objects.create_superuser("berkayadmin", password="11335577newlife")
 
 
 class CardGameView(TemplateView):

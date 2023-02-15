@@ -24,7 +24,7 @@ urlpatterns = [
     path(_("periyodik-tablo/"), PeriodicTableView.as_view(), name="periodic-table"),
     path(_("kodlama-galerisi/"), CodingGalleryView.as_view(), name="coding-gallery"),
     path(_("deprem/"), EarthQueView.as_view(), name="earth-que"),
-    path(_("tempasdf/"), Tempview.as_view(), name="earth-que"),
+    path(_("tempasdf/"), Tempview.as_view(), name="temp-view"),
     path(_("kart-oyunu/"), CardGameView.as_view(), name="card-game"),
 
                   path("add-fav-blog",AddToFavoriteBlog.as_view(),name="add-fav-blog"),
