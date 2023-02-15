@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/card_game.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <script defer src="{% static 'js/card_game.js' %}"></script>
+
+    <title>New LiFe Card Game</title>
+</head>
+<body>
+    <div class="head">
+        <h2>New LiFe</h2>
+        <h2>Hafıza Oyunu</h2>
+        <div class="score">Skor: <span>0</span></div>
+    </div>
+
+    <div class="container">
+        <div class="cell">
+            <div class="front" data-index="1">
+                <img src="{% static 'images/Molecules/Acetic_acid.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="1">
+                <img src="{% static 'images/Molecules/Acetic_acid2.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="2">
+                <img src="{% static 'images/Molecules/Acetone.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="2">
+                <img src="{% static 'images/Molecules/Acetone2.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="3">
+                <img src="{% static 'images/Molecules/Aluminum_hydroxide.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="3">
+                <img src="{% static 'images/Molecules/Aluminum_hydroxide2.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="4">
+                <img src="{% static 'images/Molecules/Benzene.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="4">
+                <img src="{% static 'images/Molecules/Benzene2.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="5">
+                <img src="{% static 'images/Molecules/Glycerine.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="5">
+                <img src="{% static 'images/Molecules/Glycerine2.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="6">
+                <img src="{% static 'images/Molecules/Oxygen_difluoride.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+        <div class="cell">
+            <div class="front" data-index="6">
+                <img src="{% static 'images/Molecules/Oxygen_difluoride2.png' %}" alt="">
+            </div>
+            <div class="back"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

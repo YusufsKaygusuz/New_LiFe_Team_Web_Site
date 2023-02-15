@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akılda Kodlama</title>
+
+    <link rel="stylesheet" href="{% static 'css/coding_gallery.css' %}">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Kodlama Galerisi</h1>
+
+        <div class="image-container">
+            <div class="image"><img src="{% static 'images/1.png' %}"></div>
+            <div class="image"><img src="{% static 'images/2.png' %}"></div>
+            <div class="image"><img src="{% static 'images/3.png' %}"></div>
+            <div class="image"><img src="{% static 'images/4.png' %}"></div>
+            <div class="image"><img src="{% static 'images/5.png' %}"></div>
+
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/Space2_.jpg">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+}
+    </script>
+
+</body>
+</html>

@@ -8,7 +8,7 @@ from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 from django.views import View
-from django.views.generic import DetailView, FormView, UpdateView, ListView
+from django.views.generic import DetailView, FormView, UpdateView, ListView, TemplateView
 
 from life.forms import UserDashboardForm
 from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog, FavoriteBlog, FavoriteMolecule, \
@@ -130,3 +130,22 @@ class TestDetailView(DetailView):
     def get_object(self):
         return MoleculeTest.objects.get(test_id=self.kwargs.get("test_id"))
 
+
+class VideoView(TemplateView):
+    template_name = "video/video.html"
+
+
+class PeriodicTableView(TemplateView):
+    template_name = "periodic_table.html"
+
+
+class CodingGalleryView(TemplateView):
+    template_name = "coding_gallery.html"
+
+
+class EarthQueView(TemplateView):
+    template_name = "earth_que.html"
+
+
+class CardGameView(TemplateView):
+    template_name = "card_game.html"
