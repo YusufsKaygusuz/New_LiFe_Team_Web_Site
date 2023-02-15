@@ -1,3 +1,4 @@
+from typing import Any
 from urllib.parse import urlparse
 
 from django.conf import settings
@@ -12,7 +13,7 @@ from django.views.generic import DetailView, FormView, UpdateView, ListView, Tem
 
 from life.forms import UserDashboardForm
 from life.models import Card, Comment, Molecule, NewLifeManagementMember, Blog, FavoriteBlog, FavoriteMolecule, \
-    MoleculeTest
+    MoleculeTest, CodingGallery, Video
 from newlife.users.models import User
 
 
@@ -134,6 +135,10 @@ class TestDetailView(DetailView):
 class VideoView(TemplateView):
     template_name = "video/video.html"
 
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        ctx = super().get_context_data(**kwargs)
+        ctx["videos"] = Video.objects.all()
+        return ctx
 
 class PeriodicTableView(TemplateView):
     template_name = "periodic_table.html"
@@ -141,6 +146,11 @@ class PeriodicTableView(TemplateView):
 
 class CodingGalleryView(TemplateView):
     template_name = "coding_gallery.html"
+
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        ctx = super().get_context_data(**kwargs)
+        ctx["images"] = CodingGallery.objects.all()
+        return ctx
 
 
 class EarthQueView(TemplateView):

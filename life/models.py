@@ -189,3 +189,19 @@ class MoleculeTest(models.Model):
     class Meta:
         verbose_name = "Test"
         verbose_name_plural = "Tests"
+
+
+class Video(models.Model):
+    video = models.FileField(verbose_name="Video",upload_to="video/")
+
+    class Meta:
+        verbose_name = "Video"
+        verbose_name_plural = "Videolar"
+
+
+class CodingGallery(models.Model):
+    image = models.ImageField(verbose_name="Image",upload_to="coding-gallery")
+
+    class Meta:
+        verbose_name = "Kodlama Galerisi"
+        verbose_name_plural = "Kodlama Galerisi"
