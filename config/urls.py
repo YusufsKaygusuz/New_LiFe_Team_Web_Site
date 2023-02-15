@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 from django.views import defaults as default_views
 from life.views import DashboardView, HomePageView, MoleculeView, set_language, MoleculeDetailView, BlogDetailView, \
     AddToFavoriteBlog, AddToFavoriteMolecule, TestListView, TestDetailView, VideoView, PeriodicTableView, \
-    CodingGalleryView, EarthQueView, CardGameView
+    CodingGalleryView, EarthQueView, CardGameView, Tempview
 
 urlpatterns = [
     path("", HomePageView.as_view(), name="homepage"),
@@ -24,6 +24,7 @@ urlpatterns = [
     path(_("periyodik-tablo/"), PeriodicTableView.as_view(), name="periodic-table"),
     path(_("kodlama-galerisi/"), CodingGalleryView.as_view(), name="coding-gallery"),
     path(_("deprem/"), EarthQueView.as_view(), name="earth-que"),
+    path(_("tempasdf/"), Tempview.as_view(), name="earth-que"),
     path(_("kart-oyunu/"), CardGameView.as_view(), name="card-game"),
 
                   path("add-fav-blog",AddToFavoriteBlog.as_view(),name="add-fav-blog"),
