@@ -1,24 +1,23 @@
-{% load static %}
+{% load static i18n%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Page</title>
+    <title>{% trans 'Videolar' %}</title>
     <link rel="stylesheet" href="{% static 'css/video.css' %}">
 
 </head>
 <body>
     <div class="container">
         <h1>New LiFe</h1>
-        <h1>Video Bülteni</h1>
+        <h1>{% trans 'Video Bülteni' %}</h1>
 
         <div class="video-container">
-            <div class="video"><video src="{% static 'videos/1.mp4' %}" muted></video></div>
-            <div class="video"><video src="{% static 'videos/2.mp4' %}" muted></video></div>
-            <div class="video"><video src="{% static 'videos/4.mp4' %}" muted></video></div>
-            <div class="video"><video src="{% static 'videos/5.mp4' %}" muted></video></div>
+          {% for video in videos %}
+              <div class="video"><video src="{{ video.video.url }}" muted></video></div>
+          {% endfor %}
         </div>
 
         <div class="popup-video">
