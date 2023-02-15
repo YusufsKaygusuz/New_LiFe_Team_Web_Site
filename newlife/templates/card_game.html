@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +13,13 @@
 
     <script defer src="{% static 'js/card_game.js' %}"></script>
 
-    <title>New LiFe Card Game</title>
+    <title>New LiFe {% trans 'Kart Oyunu' %}</title>
 </head>
 <body>
     <div class="head">
         <h2>New LiFe</h2>
-        <h2>Hafıza Oyunu</h2>
-        <div class="score">Skor: <span>0</span></div>
+        <h2>{% trans 'Hafıza Oyunu' %}</h2>
+        <div class="score">{% trans 'Skor' %}: <span>0</span></div>
     </div>
 
     <div class="container">

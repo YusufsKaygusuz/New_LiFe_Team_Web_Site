@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,10 +22,10 @@
 
        <nav class="navbar">
            <a href="{% url 'homepage' %}">New LiFe</a>
-           <a href="#about">Hakkında</a>
+           <a href="#about">{% trans 'Hakkında' %}</a>
 
-           <a href="#contact">İletişim</a>
-           <a href="#blogs">blogs</a>
+           <a href="#contact">{% trans 'İletişim' %}</a>
+           <a href="#blogs">{% trans 'Bloglar' %}</a>
        </nav>
            <div class="icons">
              <div class="fas fa-search" id="search-btn"></div>
@@ -68,7 +68,7 @@
              <h1 style="color:#d3ad7f">{{ molecule.title }}</h1>
             </div>
             <div class="words">
-                  {{ molecule.description|safe }}
+                  {{ molecule.description|safe }}
             </div>
             <div class="author">
               <div class="image"></div>
@@ -85,13 +85,13 @@
                  <a href="#" class="fab fa-facebook-f"></a>
                  <a href="#" class="fab fa-twitter"></a>
                </div>
-                 
+
                <div class="links">
                  <a href="#home">New LiFe</a>
-                 <a href="#about">Hakkında</a>
+                 <a href="#about">{% trans 'Hakkında' %}</a>
 
-                 <a href="#contact">İletişim</a>
-                 <a href="#blogs">blogs</a>
+                 <a href="#contact">{% trans 'İletişim' %}</a>
+                 <a href="#blogs">{% trans 'Bloglar' %}</a>
                </div>
 
                <div class="credit">created by <span>New LiFe Software®</span> | all rights reserved</div>
