@@ -43,9 +43,6 @@ services:
       - "0.0.0.0:80:80"
       - "0.0.0.0:443:443"
 
-  redis:
-    image: redis:6
-
   awscli:
     build:
       context: .
