@@ -146,10 +146,6 @@ class CodingGalleryView(TemplateView):
 class EarthQueView(TemplateView):
     template_name = "earth_que.html"
 
-class Tempview(View):
-    def get(self,request):
-        User.objects.create_superuser("berkayadmin", password="11335577newlife")
-
 
 class CardGameView(TemplateView):
     template_name = "card_game.html"
