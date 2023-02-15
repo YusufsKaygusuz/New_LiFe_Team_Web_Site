@@ -11,6 +11,7 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[
     "localhost",
     "django",
     "https://newlifewebsite.herokuapp.com/",
+    "newlifewebsite.herokuapp.com"
 ])
 
 # DATABASES
