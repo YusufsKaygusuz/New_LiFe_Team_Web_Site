@@ -2,12 +2,13 @@ body,
 html {
    font-family: 'Roboto', sans-serif;
    font-size: 15px;
+   background-color: #333;
 }
-
+/*
 #classify {
    background: #eee;
 }
-
+*/
 .nav {
    text-align: center;
    background: #FFF;
@@ -87,6 +88,7 @@ html {
    background: rgba(0, 0, 0, .7);
    width: 0;
    padding: 0;
+   border-radius: 1.5rem;
    overflow: hidden;
    transition: width 500ms;
    -webkit-transition: width 500ms;

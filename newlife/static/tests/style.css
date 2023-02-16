@@ -6,8 +6,7 @@
 }
 
 body{
-    background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db, #d5d7d7 100% );
+    background-color: #3e3e3e;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -49,7 +48,7 @@ ul li label{
 }
 
 button{
-    background-color: #03cae4;
+    background-color: black;
     color: #fff;
     border: none;
     display: block;
@@ -60,9 +59,9 @@ button{
     padding: 1.3rem;
 }
 button:hover{
-    background-color: #03cae4;
+    background-color: #d3ad7f;
 }
 button:focus{
     outline: none;
-    background-color: #44b927;
+    background-color: #041a7f;
 }

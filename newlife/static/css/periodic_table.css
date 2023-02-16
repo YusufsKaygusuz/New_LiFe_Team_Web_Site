@@ -2144,3 +2144,14 @@ body {
     cursor: pointer;
   }
 
+
+  @media screen and (max-width: 740px) {
+    .atomic-mass {
+      display: none;
+    }
+    .element .atomic-weight{
+      max-width: fit-content;
+      font-size: smaller;
+    }
+  }
+
