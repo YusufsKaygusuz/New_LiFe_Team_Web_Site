@@ -285,6 +285,7 @@ section{
     color: #ccc;
     padding: 1rem 0;
     line-height: 1.8;
+    text-transform: none;
 }
 
 
@@ -387,7 +388,7 @@ section{
 
 .menu .box-container .box .price span{
     font-size: 1.5rem;
-    /*text-decoration: line-through;*/
+    text-transform: none;
 }
 
 .menu .box-container .box:hover{

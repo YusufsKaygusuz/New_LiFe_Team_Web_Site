@@ -83,7 +83,7 @@ NewLiFe
              <p>{% trans 'Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük ile sunar. Sizler için bilginin verimliliğini ve akılda kalıcılığını artırmayı olanaklı hale getirmek için çabalar.' %}</p>
 
 
-             <a href="#" class="btn">{% trans 'Daha Fazla' %}</a>
+           <!--  <a href="#" class="btn">{% trans 'Daha Fazla' %}</a> -->
 
          </div>
 
@@ -106,7 +106,7 @@ NewLiFe
 
            <h3>{% trans 'Etkili Öğrenme' %}</h3>
 
-           <div class="price">New LiFe<span> {% trans 'deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.' %}</span></div>
+           <div class="price">New LiFe<span> {% trans 'deneyleri bireysel olarak deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.' %}</span></div>
 
        </div>
 
@@ -117,7 +117,7 @@ NewLiFe
 
            <h3>{% trans 'Zaman Kazancı' %}</h3>
 
-           <div class="price">New LiFe<span> {% trans 'deneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle tekrarlanmaz.' %}</span></div>
+           <div class="price">New LiFe<span> {% trans 'deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler vakit kaybettirmez.' %}</span></div>
 
        </div>
 
@@ -139,7 +139,7 @@ NewLiFe
 
            <h3>{% trans 'Etkilenmeme' %}</h3>
 
-           <div class="price">New LiFe, <span> {% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan (pandemi gibi) etkilenmezsin' %}</span></div>
+           <div class="price">New LiFe <span> {% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan (pandemi gibi) etkilenmezsin.' %}</span></div>
 
        </div>
        </div>
@@ -309,7 +309,36 @@ NewLiFe
        </div>
    </section>
 
-   <!--Review section starts -->
+
+   <!--Blogs section starts -->
+
+   <section class="blogs" id="blogs">
+    <h1 class="heading"> {% trans 'Güncel <span>bloglar</span>' %}</h1>
+
+    <div class="box-container">
+     {% for blog in blogs %}
+     <div class="box">
+            <div class="image">
+              {% if blog.image %}
+                <img src="{{ blog.image.url }}" alt="">
+              {% endif %}
+            </div>
+            <div class="content">
+                <a href="#" class="title">{{ blog.title }}</a>
+
+                <span>İçerik Ekibi / {{ blog.created_at|date }}</span>
+                <p>{{ blog.short_description }}</p>
+                <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
+            </div>
+        </div>
+     {% endfor %}
+
+    </div>
+
+</section>
+<!--Blogs section ends -->
+
+   <!--Comment section starts -->
 
    <section class="review" id="review">
 
@@ -335,7 +364,9 @@ NewLiFe
 
    </section>
 
-   <!--Review section ends -->
+   <!--Comment section ends -->
+
+   <!--Team members section starts -->
 
     <section class="trainers" id="trainers">
 
@@ -361,14 +392,11 @@ NewLiFe
                   </div>
               </div>
       {% endfor %}
-
-
-
     </div>
 
 </section>
 
-
+<!--Team members section starts -->
 
    <!--Contact section starts -->
    <section class="contact" id="contact">
@@ -404,38 +432,7 @@ NewLiFe
    <!--Contact section ends -->
 
 
-   <!--Blogs section starts -->
 
-   <section class="blogs" id="blogs">
-       <h1 class="heading"> {% trans 'Güncel <span>bloglar</span>' %}</h1>
-
-       <div class="box-container">
-        {% for blog in blogs %}
-        <div class="box">
-               <div class="image">
-                 {% if blog.image %}
-                   <img src="{{ blog.image.url }}" alt="">
-                 {% endif %}
-               </div>
-               <div class="content">
-                   <a href="#" class="title">{{ blog.title }}</a>
-
-                   <span>İçerik Ekibi / {{ blog.created_at|date }}</span>
-                   <p>{{ blog.short_description }}</p>
-                   <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
-               </div>
-           </div>
-        {% endfor %}
-
-
-
-
-
-       </div>
-
-   </section>
-
-   <!--Blogs section ends -->
     <script src="{% static 'js/main_page.js' %}"></script>
 
 {% endblock %}
