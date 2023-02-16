@@ -42,7 +42,6 @@
 
   .card:hover .card-info-title > h3{
     color: #d3ad7f;
-    font-size: 1.2rem;
   }
 
   .card:hover .card-info-title > h4{
@@ -118,7 +117,7 @@
   }
 
   .card-image > i {
-    font-size: 6em;
+    font-size: 5rem;
     opacity: 0.4;
   }
 
@@ -203,9 +202,12 @@
     }
   }
 
-  @media(max-width: 320px) {
+  @media(max-width: 560px) {
     .card {
       width: 100%;
+    }
+    .card-image > i{
+      font-size: 5rem;
     }
   }
 
