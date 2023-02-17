@@ -183,3 +183,14 @@ button:focus{
     outline: none;
     background-color: #041a7f;
 }
+
+@media screen and (max-width: 560px) {
+   .header .navbar a{
+      font-size: 1.4rem;
+   }
+ }
+ @media screen and (max-width: 450px) {
+   .header .navbar a{
+      display: none;
+   }
+ }
