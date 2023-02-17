@@ -11,6 +11,31 @@
 </head>
 <body>
 
+    
+<header class="header">
+
+    <a href="{% url 'homepage' %}" class="logo">
+        <img src="{% static 'images/TeamLogo2.png' %}" alt="">
+    </a>
+ 
+    <nav class="navbar">
+       
+        <a href="{% url 'homepage' %}">New LiFe</a>
+        <a href="#home">Sorun Bildir</a>
+        <a href="{% url 'molecule' %}">3D Moleküller</a>
+        <!--
+        <a href="#sorular">{% trans 'Sorular ve Cevaplar' %}</a>
+        <a href="#gallery">3D {% trans 'Modeller' %}</a>
+        -->
+    </nav>
+ 
+    <div class="icons">
+       <div class="fas fa-user"></div>
+    </div>
+ </header>
+
+ 
+
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
             <h2 id="question">Question Text</h2>

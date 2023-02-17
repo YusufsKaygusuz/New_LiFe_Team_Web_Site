@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb{
 
 body
 {
-   background: var(--bg);
+   background:white;
 }
 
 section{
@@ -61,21 +61,6 @@ section{
 
 .heading span{
    color: #d3ad7f;
-}
-
-
-.btn{
-   margin-top: 1rem;
-   display: inline-block;
-   padding: .9rem 3rem;
-   font-size: 1.7rem;
-   color: #fff;
-   background: #d3ad7f;
-   cursor: pointer;
-}
-
-.btn:hover{
-   letter-spacing: .2rem;
 }
 
 .header
@@ -123,27 +108,7 @@ section{
    color: #d3ad7f;
 }
 
-.header .cart-item-container{
-   position: absolute;
-   top: 100%;
-   right: -100%;
-   height: calc(100vh - 9.5rem);
-   width: 40rem;
-   background: #fff;
-   padding: 0 1.5rem;
-}
 
-.header .cart-item-container.active{
-   right: 0;
-}
-
-.header .cart-item-container .cart-item{
-   position: relative;
-   margin: 2rem 0;
-   display: flex;
-   align-items: center;
-   gap: 1.5rem;
-}
 
 
 .nav {

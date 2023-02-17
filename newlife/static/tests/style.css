@@ -2,10 +2,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500&display=swap');
 
 *{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+ }
+ 
+ html
+ {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+ }
+ 
+ html::-webkit-scrollbar{
+    width: .8rem;
+ }
+ 
+ html::-webkit-scrollbar-track
+ {
+    background: transparent;
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+ }
+ 
+ body
+ {
+    background: var(--bg);
+ }
+ 
+ section{
+    padding: 2rem 7%;
+ }
+ 
+ .heading
+ {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+    font-size: 4rem;
+ }
+ 
+ .heading span{
+    color: #d3ad7f;
+ }
+ 
+ .header
+ {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: .92;
+    
+ }
+ 
+ .header .logo img{
+   width: 6rem;
+ }
+ 
+ .header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+ }
+ 
+ .header .navbar a:hover
+ {
+    color: #d3ad7f;
+    border-bottom: .1rem solid #d3ad7f;
+    padding-bottom: .5rem;
+ }
+ 
+ .header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+ }
+ 
+ .header .icons div:hover{
+    color: #d3ad7f;
+ }
 
 body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
     background-color: #3e3e3e;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
@@ -15,16 +116,28 @@ body{
     overflow: hidden;
     margin: 0;
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 .quiz-container{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-    width: 600px;
+    width: 60rem;
+    font-size: larger;
 }
 
 .quiz-header{
-    padding: 4rem;
+    padding: 10rem;
 }
 
 h2{
@@ -39,12 +152,17 @@ ul{
 }
 
 ul li{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin: 1rem 0;
+    font-weight: 600;
 }
 
 ul li label{
     cursor: pointer ;
+}
+
+#submit{
+    font-size: 1.5rem;
 }
 
 button{

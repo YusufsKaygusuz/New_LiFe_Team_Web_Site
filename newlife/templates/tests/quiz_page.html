@@ -3,18 +3,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{% static 'tests/quiz_page_style.css' %}">
-    
     <script src="https://kit.fontawesome.com/342744487d.js"></script>
-    
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    
 </head>
 
 <!-- header section starts  -->
 
 <header class="header">
 
-   <a href="#" class="logo">
+   <a href="{% url 'homepage' %}" class="logo">
        <img src="{% static 'images/TeamLogo2.png' %}" alt="">
    </a>
 
@@ -30,7 +26,7 @@
    </nav>
 
    <div class="icons">
-      <div class="fas fa-user" id="search-btn"></div>
+      <div class="fas fa-user"></div>
    </div>
 </header>
 
