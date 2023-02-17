@@ -1,14 +1,151 @@
+/*
 body,
 html {
    font-family: 'Roboto', sans-serif;
    font-size: 15px;
-   background-color: #333;
-}
-/*
-#classify {
-   background: #eee;
+   background-color: grey;
 }
 */
+
+*{
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: .2s linear;
+}
+
+html
+{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 9rem;
+   scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+   width: .8rem;
+}
+
+html::-webkit-scrollbar-track
+{
+   background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+   background: #fff;
+   border-radius: 5rem;
+}
+
+body
+{
+   background: var(--bg);
+}
+
+section{
+   padding: 2rem 7%;
+}
+
+.heading
+{
+   text-align: center;
+   color: #fff;
+   padding-bottom: 3rem;
+   padding-top: 4rem;
+   font-size: 4rem;
+}
+
+.heading span{
+   color: #d3ad7f;
+}
+
+
+.btn{
+   margin-top: 1rem;
+   display: inline-block;
+   padding: .9rem 3rem;
+   font-size: 1.7rem;
+   color: #fff;
+   background: #d3ad7f;
+   cursor: pointer;
+}
+
+.btn:hover{
+   letter-spacing: .2rem;
+}
+
+.header
+{
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem 7%;
+   border-bottom: var(--border);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   opacity: .92;
+   
+}
+
+.header .logo img{
+  width: 6rem;
+}
+
+.header .navbar a{
+   margin: 0 1rem;
+   font-size: 1.6rem;
+   color: #fff;
+}
+
+.header .navbar a:hover
+{
+   color: #d3ad7f;
+   border-bottom: .1rem solid #d3ad7f;
+   padding-bottom: .5rem;
+}
+
+.header .icons div{
+   color: #fff;
+   cursor: pointer;
+   font-size: 2.5rem;
+   margin-left: 2rem;
+}
+
+.header .icons div:hover{
+   color: #d3ad7f;
+}
+
+.header .cart-item-container{
+   position: absolute;
+   top: 100%;
+   right: -100%;
+   height: calc(100vh - 9.5rem);
+   width: 40rem;
+   background: #fff;
+   padding: 0 1.5rem;
+}
+
+.header .cart-item-container.active{
+   right: 0;
+}
+
+.header .cart-item-container .cart-item{
+   position: relative;
+   margin: 2rem 0;
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+
 .nav {
    text-align: center;
    background: #FFF;
@@ -43,6 +180,8 @@ html {
    text-align: center;
    max-width: 1200px;
    margin: auto;
+   padding-top: 15rem;
+   color:rgb(35, 33, 33);
 }
 
 .item {
