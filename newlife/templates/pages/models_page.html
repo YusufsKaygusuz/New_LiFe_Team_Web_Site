@@ -32,7 +32,7 @@
     </a>
 
     <nav class="navbar">
-        <a href="#home">New LiFe</a>
+        <a href="{% url 'homepage' %}">New LiFe</a>
         <a href="#sorular">{% trans 'Sorular ve Cevaplar' %}</a>
         <a href="#gallery">3D {% trans 'Modeller' %}</a>
     </nav>
@@ -64,7 +64,7 @@
     letter-spacing: -1.5px;
     max-width: 960px;
     margin: 0 auto;" class="tagline text text_size" data-v-76d4cf95=""> New LiFe <span class="accent"
-                                                                                       style="font-weight: bold;">{% trans 'Deneyimleme</span> Merkezine Hoş Geldiniz' %}</h1>
+        style="font-weight: bold;">{% trans 'Deneyimleme</span> Merkezine Hoş Geldiniz' %}</h1>
         </div>
 
 <!-- gallery section starts  -->
@@ -109,7 +109,7 @@
 <!-- gallery section ends -->
 
 <!-- General Culture Q_A start -->
-<div class="container-fluid">
+<div class="container-fluid" id="sorular">
     <div class="col-sm-10 offset-sm-1">
          <h1 class="heading">{% trans 'Genel Kültür <span>Soru & Cevap</span>' %}</h1>
       {% for card in cards %}
