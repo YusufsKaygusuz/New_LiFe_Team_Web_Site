@@ -5,13 +5,98 @@
     --border: .1rem solid rgba(255,255,255,.3);
 }
 
+
 *{
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+ }
+ 
+ html
+ {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+ }
+ 
+ html::-webkit-scrollbar{
+    width: .8rem;
+ }
+ 
+ html::-webkit-scrollbar-track
+ {
+    background: transparent;
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+ }
+
+ .header
+ {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: .92;
+    
+ }
+ 
+ .header .logo img{
+   width: 5rem;
+ }
+ 
+ .header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+ }
+ 
+ .header .navbar a:hover
+ {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+ }
+ 
+ .header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+ }
+ 
+ .header .icons div:hover{
+    color: var(--main-color);
+ }
+
+body{
+    background-color: #3e3e3e;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
 }
 
 .container{
+    padding-top: 8rem;
     position: relative;
     min-height: 100vh;
     background: black;
@@ -58,7 +143,7 @@
 
 .container .popup-image{
     position: fixed;
-    top: 0; left: 0;
+    top: 2.9rem; left: 0;
     background: rgba(0, 0, 0, .9);
     height: 100%;
     width: 100%;
@@ -68,7 +153,7 @@
 
 .container .popup-image span{
     position: absolute;
-    top: 0; right: 10px;
+    top: 4rem; right: 10px;
     font-size: 60px;
     font-weight: bolder;
     color: #fff;
@@ -90,5 +175,14 @@
 @media (max-width:768px) {
     .container .popup-image img{
         width: 95%;
+    }
+    .navbar a{
+        display: none;
+    }
+    .container .popup-image{
+        top: 0; left: 0;
+    }
+    .container .popup-image span{
+        top: 7rem; right: 10px;
     }
 }

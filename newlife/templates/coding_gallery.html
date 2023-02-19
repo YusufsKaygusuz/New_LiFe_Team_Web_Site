@@ -6,10 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% trans 'Akılda Kodlama' %}</title>
-
+    <script src="https://kit.fontawesome.com/342744487d.js"></script>
     <link rel="stylesheet" href="{% static 'css/coding_gallery.css' %}">
 </head>
+<header class="header">
+
+    <a href="{% url 'homepage' %}" class="logo">
+        <img src="{% static 'images/TeamLogo2.png' %}" alt="">
+    </a>
+ 
+    <nav class="navbar">
+       
+        <a href="{% url 'molecule' %}">3D Moleküller</a>
+        
+        <a href="{% url 'tests' %}">{% trans 'Testler' %}</a>
+        <a href="{% url 'video-list' %}">3D {% trans 'Video Bülten' %}</a>
+        
+    </nav>
+ 
+    <div class="icons">
+       <div class="fas fa-user"></div>
+    </div>
+ </header>
+
 <body>
+
     <div class="container">
 
         <h1>{% trans 'Kodlama Galerisi' %}</h1>

@@ -34,29 +34,7 @@
     background: #fff;
     border-radius: 5rem;
  }
- 
- body
- {
-    background: var(--bg);
- }
- 
- section{
-    padding: 2rem 7%;
- }
- 
- .heading
- {
-    text-align: center;
-    color: #fff;
-    padding-bottom: 3rem;
-    padding-top: 4rem;
-    font-size: 4rem;
- }
- 
- .heading span{
-    color: #d3ad7f;
- }
- 
+
  .header
  {
     background-color: black;
