@@ -41,7 +41,7 @@
 
  .header
  {
-    background-color: var(--black);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +53,6 @@
     right: 0;
     z-index: 1000;
     opacity: .92;
-    
  }
  
  .header .logo img{
@@ -98,7 +97,7 @@ body{
     padding-top: 8rem;
     position: relative;
     min-height: 100vh;
-    background: black;
+    background: rgb(11, 11, 11);
     width: 100%;
 }
 .container h1{

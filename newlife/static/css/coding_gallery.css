@@ -42,7 +42,7 @@
 
  .header
  {
-    background-color: var(--black);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +86,6 @@
  }
 
 body{
-    background-color: #3e3e3e;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -99,7 +98,7 @@ body{
     padding-top: 8rem;
     position: relative;
     min-height: 100vh;
-    background: black;
+    background: rgb(11, 11, 11);
 }
 
 .container h1{
