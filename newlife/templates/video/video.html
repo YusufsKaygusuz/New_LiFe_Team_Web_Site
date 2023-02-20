@@ -7,8 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% trans 'Videolar' %}</title>
     <link rel="stylesheet" href="{% static 'css/video.css' %}">
+    <script src="https://kit.fontawesome.com/342744487d.js"></script>
 
 </head>
+<header class="header">
+
+    <a href="{% url 'homepage' %}" class="logo">
+        <img src="{% static 'images/TeamLogo2.png' %}" alt="">
+    </a>
+ 
+    <nav class="navbar">
+       
+        <a href="{% url 'molecule' %}">3D Moleküller</a>
+        <a href="{% url 'tests' %}">{% trans 'Testler' %}</a>
+        <a href="{% url 'coding-gallery' %}">3D {% trans 'Kodlama Galerisi' %}</a>
+        
+    </nav>
+ 
+    <div class="icons">
+       <div class="fas fa-user"></div>
+    </div>
+ </header>
+
 <body>
     <div class="container">
         <h1>New LiFe</h1>

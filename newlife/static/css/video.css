@@ -1,21 +1,114 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,.3);
 }
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+ }
+ 
+ html
+ {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+ }
+ 
+ html::-webkit-scrollbar{
+    width: .8rem;
+ }
+ 
+ html::-webkit-scrollbar-track
+ {
+    background: transparent;
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+ }
+
+ .header
+ {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: .92;
+    
+ }
+ 
+ .header .logo img{
+   width: 5rem;
+ }
+ 
+ .header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+ }
+ 
+ .header .navbar a:hover
+ {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+ }
+ 
+ .header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+ }
+ 
+ .header .icons div:hover{
+    color: var(--main-color);
+ }
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
 /* Video Lists css Codes start*/
 .container{
+    padding-top: 8rem;
     position: relative;
     min-height: 100vh;
     background: black;
+    width: 100%;
 }
 .container h1{
-    color: #fff;
-    text-align: center;
-    padding: 15px;
     font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
+    padding: 15px;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: capitalize;
 }
 .container .video-container{
     display: flex;
@@ -47,7 +140,7 @@
 /* Popup Video css Codes start*/
 .container .popup-video{
     position: fixed;
-    top: 0; left: 0;
+    top: 2.9rem; left: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, .8);
     height: 100%;
@@ -65,8 +158,8 @@
 }
 .container .popup-video span{
     position: absolute;
-    top: 5px; right: 20px;
-    font-size: 50px;
+    top: 4rem; right: 10px;
+    font-size: 60px;
     color: #fff;
     font-weight: bolder;
     z-index: 100;
@@ -78,5 +171,14 @@
 @media (max-width:768px) {
     .container .popup-video video{
         width: 90%;
+    }
+    .navbar a{
+        display: none;
+    }
+    .container .popup-video{
+        top: 0; left: 0;
+    }
+    .container .popup-video span{
+        top: 7rem; right: 10px;
     }
 }
