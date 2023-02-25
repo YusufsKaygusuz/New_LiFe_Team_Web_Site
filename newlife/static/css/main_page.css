@@ -286,6 +286,7 @@ section{
     padding: 1rem 0;
     line-height: 1.8;
     text-transform: none;
+    text-align: justify;
 }
 
 
@@ -303,7 +304,7 @@ section{
   position: relative;
 }
 .trainers .box-container .box:first-child{
-    border: 3px solid #d3ad7f;
+    border: 4px solid #d3ad7f;
 }
 
 .trainers .box-container .box:hover .content {
