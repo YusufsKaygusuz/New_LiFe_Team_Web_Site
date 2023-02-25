@@ -39,7 +39,7 @@ a{
   height: 350px;
   display: grid;
   border-radius: 10px;
-  margin-top: 40px;
+
   overflow: hidden;
   background: center no-repeat url(../../static/images/solar_system.jpg);
   position: relative;
@@ -220,7 +220,7 @@ a{
 }
 
 .header .logo img{
-   width: 3rem;
+   width: 5rem;
 }
 
 .header .navbar a{
@@ -247,113 +247,6 @@ a{
     color: var(--main-color);
 }
 
-#menu-btn{
-    display: none;
-}
-
-.header .search-form
-{
-    position: absolute;
-    top: 115%; right: 7%;
-    background: #fff;
-    width: 50rem;
-    height: 5rem;
-    display: flex;
-    align-content: center;
-    transform: scaleY(0);
-    transform-origin: top;
-}
-
-.header .search-form.active{
-    transform: scaleY(1);
-}
-
-.header .search-form input
-{
-    height: 100%;
-    width: 100%;
-    font-size: 1.6rem;
-    color: var(--black);
-    padding: 1rem;
-    text-transform: none;
-}
-
-.header .search-form label
-{
-    cursor: pointer;
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
-    margin-bottom: auto;
-    margin-top: auto;
-    color: var(--black);
-}
-
-.header .search-form label:hover
-{
-    color: var(--main-color);
-}
-
-.header .cart-item-container{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    height: calc(100vh - 9.5rem);
-    width: 40rem;
-    background: #fff;
-    padding: 0 1.5rem;
-}
-
-.header .cart-item-container.active{
-    right: 0;
-}
-
-.header .cart-item-container .cart-item{
-    position: relative;
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.header .cart-item-container .cart-item .fa-times
-{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--black);
-}
-
-.header .cart-item-container .cart-item .fa-times:hover{
-    color: var(--main-color);
-}
-
-.header .cart-item-container .cart-item img
-{
-    height: 8rem;
-    width: 11rem;
-    border-radius: 4px;
-    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16),
-                        6px 4px 4px 1px rgba(0,0,0,.30);
-}
-
-.header .cart-item-container .cart-item .content h3{
-    font-size: 2rem;
-    color: var(--black);
-    padding-bottom: .5rem;
-}
-
-.header .cart-item-container .cart-item .content .price
-{
-    font-size: 1.5rem;
-    color: var(--main-color);
-}
-.header .cart-item-container .btn{
-    width: 100%;
-    text-align: center;
-}
-
 .footer{
  background: var(--bg);
     text-align: center;
@@ -365,9 +258,9 @@ a{
 
 .footer .share a{
     height: 3rem;
-width: 3rem;
-line-height: 3rem;
-font-size: 24px;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 24px;
     color: rgb(255, 255, 255);
     border: var(--border);
     margin: .3rem;
@@ -431,47 +324,6 @@ font-size: 24px;
     }
 }
 
-@media screen and (max-width: 768px){
-    #menu-btn{
-    display: inline-block;
-}
-    .header .navbar{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: #fff;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
-    }
-
-    .header .navbar.active{
-        right: 0;
-    }
-
-    .header .navbar a{
-        color: var(--black);
-        display: block;
-        margin: 1.5rem;
-        padding: .5rem;
-        font-size: 2rem;
-    }
-
-    .header .search-form{
-        width: 90%;
-        right: 2rem;
-    }
-    .home{
-        justify-content: center;
-        text-align: center;
-    }
-    .home .content h3{
-        font-size: 4.5rem;
-    }
-    .home .content p{
-        font-size: 1.5rem;
-    }
-}
-
 @media screen and (max-width: 450px){
 
     html{
@@ -480,5 +332,4 @@ font-size: 24px;
 .footer .links a{
   font-size: 5px;
 }
-
 }
