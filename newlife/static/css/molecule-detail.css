@@ -97,7 +97,7 @@ a{
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 25px auto;
+  margin: 25px 0;
   background-color: #fdfdfd;
   overflow: hidden;
   height: 60px;
