@@ -132,6 +132,10 @@ a{
   margin-bottom: 2rem;
 }
 
+.words h5{
+  font-size: 0.9em;
+}
+
 .words p .letter {
   font-size: 100px;
   position: absolute;
