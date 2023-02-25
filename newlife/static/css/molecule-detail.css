@@ -120,11 +120,6 @@ a{
   margin-bottom: 5rem;
   text-align: justify;
 }
-.words p {
-  margin: 20px auto;
-  position: relative;
-  color: #777;
-}
 
 .words h2{
   color: #d3ad7f;
@@ -135,6 +130,7 @@ a{
 
 .words h5{
   font-size: 0.9em;
+  color: #444;
 }
 
 .words p .letter {
