@@ -52,9 +52,9 @@ a{
   width: 40%;
 }
 .content .poster .poster-title h1 {
-  font-size: 40px;
+  font-size: 36px;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   margin: 20px 0;
 }
 .content .poster .poster-title .line {
@@ -63,8 +63,8 @@ a{
   height: 1px;
 }
 .content .poster .poster-title p {
-  color: #b4c4c5;
-  font-size: 12px;
+  color: white;
+  font-size: 14px;
   line-height: 1.8em;
 }
 .content .poster .poster-buttons {
@@ -112,6 +112,7 @@ a{
 .words {
   padding: 0 0 0 45px;
   position: relative;
+  text-align: justify;
 }
 .words p {
   margin: 20px auto;
