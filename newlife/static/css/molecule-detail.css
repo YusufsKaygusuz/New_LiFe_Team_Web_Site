@@ -118,6 +118,7 @@ a{
   padding: 0 0 0 10px;
   position: relative;
   margin-bottom: 5rem;
+  text-align: justify;
 }
 .words p {
   margin: 20px auto;
