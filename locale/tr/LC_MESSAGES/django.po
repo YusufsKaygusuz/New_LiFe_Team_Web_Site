@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-11 00:29+0300\n"
+"POT-Creation-Date: 2023-02-26 23:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: config/urls.py:14
+msgid "molekuller"
+msgstr ""
+
+#: config/urls.py:19
+msgid "molekuller/<slug:slug>"
+msgstr ""
+
+#: config/urls.py:20
+msgid "blog/<slug:slug>"
+msgstr ""
+
+#: config/urls.py:21
+msgid "testler"
+msgstr ""
+
+#: config/urls.py:22
+msgid "test-detay/<str:test_id>"
+msgstr ""
+
+#: config/urls.py:23
+msgid "videolar/"
+msgstr ""
+
+#: config/urls.py:24
+msgid "periyodik-tablo/"
+msgstr ""
+
+#: config/urls.py:25
+msgid "kodlama-galerisi/"
+msgstr ""
+
+#: config/urls.py:26
+msgid "deprem/"
+msgstr ""
+
+#: config/urls.py:27
+msgid "kart-oyunu/"
+msgstr ""
 
 #: life/choices.py:6
 msgid "1 Star"
@@ -38,60 +78,104 @@ msgstr ""
 msgid "5 Star"
 msgstr ""
 
-#: life/models.py:18
+#: life/choices.py:14 life/choices.py:22 newlife/users/models.py:20
+msgid "10. Sınıf"
+msgstr ""
+
+#: life/choices.py:15 life/choices.py:23 newlife/users/models.py:21
+msgid "11. Sınıf"
+msgstr ""
+
+#: life/choices.py:16 life/choices.py:24 newlife/users/models.py:22
+msgid "12. Sınıf"
+msgstr ""
+
+#: life/choices.py:17 life/choices.py:25 newlife/users/models.py:23
+msgid "Universite"
+msgstr ""
+
+#: life/choices.py:21 newlife/users/models.py:19
+msgid "9. Sınıf"
+msgstr ""
+
+#: life/models.py:27
 msgid "Title"
 msgstr ""
 
-#: life/models.py:23
+#: life/models.py:32
 msgid "Full Name"
 msgstr ""
 
-#: life/models.py:28
+#: life/models.py:37
 msgid "Linkedin URL"
 msgstr ""
 
-#: life/models.py:31
+#: life/models.py:40
 msgid "Instagram URL"
 msgstr ""
 
-#: life/models.py:34
+#: life/models.py:43
 msgid "Ordering Number"
 msgstr ""
 
-#: life/models.py:37
+#: life/models.py:46
 msgid "Member Image"
 msgstr ""
 
-#: life/models.py:43
+#: life/models.py:52
 msgid "Management Member"
 msgstr ""
 
-#: life/models.py:44
+#: life/models.py:53
 msgid "Management Members"
 msgstr ""
 
-#: life/models.py:50
+#: life/models.py:59
 msgid "User Full Name"
 msgstr ""
 
-#: life/models.py:53
+#: life/models.py:62
 msgid "User Image"
 msgstr ""
 
-#: life/models.py:56
+#: life/models.py:65
 msgid "Comment Star"
 msgstr ""
 
-#: life/models.py:62 life/models.py:75
+#: life/models.py:71 life/models.py:84
 msgid "User Comment"
 msgstr ""
 
-#: life/models.py:65
+#: life/models.py:74
 msgid "Is Active Comment"
 msgstr ""
 
-#: life/models.py:76
+#: life/models.py:85
 msgid "User Comments"
+msgstr ""
+
+#: life/models.py:114
+msgid "Molecule"
+msgstr ""
+
+#: life/models.py:115
+msgid "Molecules"
+msgstr ""
+
+#: life/models.py:130
+msgid "Card"
+msgstr ""
+
+#: life/models.py:131
+msgid "Cards"
+msgstr ""
+
+#: life/models.py:149
+msgid "Blog"
+msgstr ""
+
+#: life/models.py:150
+msgid "Blogs"
 msgstr ""
 
 #: newlife/templates/account/account_inactive.html:5
@@ -184,36 +268,25 @@ msgid ""
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
 
-#: newlife/templates/account/login.html:7
-#: newlife/templates/account/login.html:11
-#: newlife/templates/account/login.html:56
-msgid "Sign In"
-msgstr ""
-
-#: newlife/templates/account/login.html:17
-msgid "Please sign in with one of your existing third party accounts:"
-msgstr ""
-
-#: newlife/templates/account/login.html:19
-#, python-format
-msgid ""
-"Or, <a href=\"%(signup_url)s\">sign up</a> for a %(site_name)s account and "
-"sign in below:"
-msgstr ""
-
 #: newlife/templates/account/login.html:32
-msgid "or"
+#: newlife/templates/account/login.html:60
+#: newlife/templates/account/signup.html:86
+msgid "Giriş Yap"
 msgstr ""
 
-#: newlife/templates/account/login.html:41
-#, python-format
-msgid ""
-"If you have not created an account yet, then please <a href=\"%(signup_url)s"
-"\">sign up</a> first."
+#: newlife/templates/account/login.html:46
+#: newlife/templates/account/signup.html:49
+msgid "Parola"
 msgstr ""
 
-#: newlife/templates/account/login.html:55
-msgid "Forgot Password?"
+#: newlife/templates/account/login.html:56
+msgid "Parolanı mı unuttun?"
+msgstr ""
+
+#: newlife/templates/account/login.html:75
+#: newlife/templates/account/signup.html:27
+#: newlife/templates/account/signup.html:72
+msgid "Kayıt Ol"
 msgstr ""
 
 #: newlife/templates/account/logout.html:5
@@ -290,19 +363,12 @@ msgstr ""
 msgid "Set Password"
 msgstr ""
 
-#: newlife/templates/account/signup.html:6
-msgid "Signup"
+#: newlife/templates/account/signup.html:31
+msgid "Kullanıcı Adı"
 msgstr ""
 
-#: newlife/templates/account/signup.html:9
-#: newlife/templates/account/signup.html:19
-msgid "Sign Up"
-msgstr ""
-
-#: newlife/templates/account/signup.html:11
-#, python-format
-msgid ""
-"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+#: newlife/templates/account/signup.html:61
+msgid "Parola (tekrar)"
 msgstr ""
 
 #: newlife/templates/account/signup_closed.html:5
@@ -349,27 +415,421 @@ msgid ""
 "mail address</a>."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:11
-msgid "Teorik Eğitim Pratikte Güzel."
+#: newlife/templates/card_game.html:16
+msgid "Kart Oyunu"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:13
-msgid "New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar."
+#: newlife/templates/card_game.html:21
+msgid "Hafıza Oyunu"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:15
-msgid "Şimdi Deneyimle"
+#: newlife/templates/card_game.html:22
+msgid "Skor"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:26
+#: newlife/templates/coding_gallery.html:8
+msgid "Akılda Kodlama"
+msgstr ""
+
+#: newlife/templates/coding_gallery.html:21
+#: newlife/templates/pages/molecule_detail.html:26
+#: newlife/templates/video/video.html:22
+msgid "Testler"
+msgstr ""
+
+#: newlife/templates/coding_gallery.html:22
+#: newlife/templates/pages/molecule_detail.html:27
+msgid "Video Bülten"
+msgstr ""
+
+#: newlife/templates/coding_gallery.html:35
+#: newlife/templates/video/video.html:23
+msgid "Kodlama Galerisi"
+msgstr ""
+
+#: newlife/templates/components/footer.html:17
+#: newlife/templates/pages/blog.html:94
+#: newlife/templates/pages/homepage.html:18
+#: newlife/templates/pages/homepage.html:89
+#: newlife/templates/pages/molecule_detail.html:88
 msgid "Hakkında"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:35
+#: newlife/templates/components/footer.html:18
+#: newlife/templates/pages/homepage.html:19
+msgid "Yararlar"
+msgstr ""
+
+#: newlife/templates/components/footer.html:19
+#: newlife/templates/pages/homepage.html:20
+msgid "İçerikler"
+msgstr ""
+
+#: newlife/templates/components/footer.html:20
+#: newlife/templates/pages/blog.html:26 newlife/templates/pages/blog.html:97
+#: newlife/templates/pages/homepage.html:21
+#: newlife/templates/pages/molecule_detail.html:91
+msgid "Bloglar"
+msgstr ""
+
+#: newlife/templates/components/footer.html:21
+#: newlife/templates/pages/homepage.html:22
+msgid "Yorumlar"
+msgstr ""
+
+#: newlife/templates/components/footer.html:22
+#: newlife/templates/pages/homepage.html:23
+msgid "Yönetim"
+msgstr ""
+
+#: newlife/templates/components/footer.html:23
+#: newlife/templates/pages/blog.html:96
+#: newlife/templates/pages/homepage.html:24
+#: newlife/templates/pages/homepage.html:428
+#: newlife/templates/pages/molecule_detail.html:90
+msgid "İletişim"
+msgstr ""
+
+#: newlife/templates/earth_que.html:8
+msgid "Deprem'e Hazırlık"
+msgstr ""
+
+#: newlife/templates/earth_que.html:25
+msgid "Eşyalardan Kaynaklanacak Hasarlar (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:26
+msgid ""
+"Eşyalarımızın kayıp düşemesini önlemek için sabitleyecek aparatlar "
+"kullanılmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:42
+msgid "Acil Durum Planı (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:43
+msgid ""
+"Bulunduğunuz alanda herkesin katılımıyla bir plan oluşturulmalı, acil "
+"durumlarda nasıl iletişime geçilmesi gerektiği konuşulmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:59
+msgid "Acil Durum Çantası (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:60
+msgid ""
+"Her ihtimale karşın evde, iş yerinde ve araçta acil durum çantası "
+"bulundurmalıyız."
+msgstr ""
+
+#: newlife/templates/earth_que.html:76
+msgid "Su İhtiyacı (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:77
+msgid ""
+"Acil durum çantasında mutlaka bulunması gerekenlerin başında su gelmektedir."
+msgstr ""
+
+#: newlife/templates/earth_que.html:93
+msgid "Yiyecekler (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:94
+msgid ""
+"Acil durum çantasında bozulma ihtimali daha düşük konserve yiyecek "
+"bulundurulmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:110
+msgid "İlk Yardım (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:111
+msgid "Acil durum çantasında ufak da olsa ilk yardım kiti bulunmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:127
+msgid "İlaç İhtiyacı (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:128
+msgid ""
+"Bebek, çocuk ve yetişkinler için gerekli olan şurup ve ilaçlar acil durum "
+"çantasında bulundurulmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:144 newlife/templates/earth_que.html:161
+msgid "Battaniye (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:145
+msgid ""
+"Deprem çantasında bulunması gereken bir diğer gerekli ürün battaniyedir."
+msgstr ""
+
+#: newlife/templates/earth_que.html:162
+msgid ""
+"Deprem çantasında temiz iç çamaşırı, çorap, yağmurluk ve giysilik olmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:178
+msgid "Çikolata (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:179
+msgid ""
+"Yüksek kalorili, vitamin ve karbonhidrat içeren, su kaybını önleyen ve "
+"dayanıklı (çabuk bozulmayan) gıdalar deprem çantasında bulundurulmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:195
+msgid "Pil / Powerbank (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:196
+msgid "Acil durum çantası içinde mutlaka pil veya powerbank bulundurulmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:212
+msgid "Finansal Tedbirler (Deprem Öncesi)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:213
+msgid ""
+"Kimlik kartı, tapu, sigorta belgeleri, diplomalar, pasaport, banka cüzdanı "
+"vb. önemli evrakların kopyaları hazırlanmalı ve deprem sigortası "
+"yaptırılmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:229
+msgid "Çök-Kapan-Tutun (Deprem Anında)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:230
+msgid ""
+"Sarsıntı başladığı anda sağlam bir nesnenin yanına geçerek çök-kapan-tutun "
+"hareketi yapılmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:246
+msgid "Kapalı Alanda Kalmak (Deprem Anında)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:247
+msgid ""
+"Depremden sonra kapalı bir alanda kalmışsanız yardım edebilecek kimse olup "
+"olmadığını kontrol ediniz."
+msgstr ""
+
+#: newlife/templates/earth_que.html:263
+msgid "SMS veya Mobil Uygulama kullanın (Deprem Anında)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:264
+msgid ""
+"Depremde enkaz altındaysanız aralıklı sms ya da AFAD mobil uygulaması ile "
+"konum iletiminde bulunun."
+msgstr ""
+
+#: newlife/templates/earth_que.html:280
+msgid "Ses Kontrolü (Deprem Anında)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:281
+msgid ""
+"Enkaz altında kaldığınız esnada gereksiz yere bağırıp panik olmayınız, "
+"yardım duyduğunuz esnada sesinizi yükseltmeniz daha sağlıklı olacaktır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:297
+msgid "Acil Durum Çağrısı (Deprem Anında)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:298
+msgid ""
+"Deprem esnasında veya Deprem Sonrasında ilk olarak AFAD, ambulans, polis ve "
+"itfaiye aranmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:314
+msgid "Gereksiz Çağrı (Deprem Anında)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:315
+msgid ""
+"Deprem bölgesinde gereksiz yere telefon kullanımı yapılmamalı, hatlar meşgul "
+"edilmemelidir."
+msgstr ""
+
+#: newlife/templates/earth_que.html:331
+msgid "Acil 112 (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:332
+msgid ""
+"Deprem Sonrasında telefona ulaşabiliyorsanız 112 Acil hemen aranmalıdır. "
+"Kendi emniyetinizden emin olduktan sonra çevre için yardım edilmelidir."
+msgstr ""
+
+#: newlife/templates/earth_que.html:348
+msgid "Çevredeki Ses Kontrolü (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:349
+msgid ""
+"Deprem çevresinde enkaz altındaki insanlara daha rahat ulaşılabilmesi için "
+"çevrenin gereksiz ses yapmaması gerekmektedir."
+msgstr ""
+
+#: newlife/templates/earth_que.html:365
+msgid "Bilinçsiz Davranış (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:366
+msgid ""
+"Depremden sonra ilk yardım eğitimi almamışsanız, kendiniz de o esnada "
+"sağlıklı durumda değilseniz bilinçsiz bir harekette bulunmayınız."
+msgstr ""
+
+#: newlife/templates/earth_que.html:383
+msgid "Kan Bağışı (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:384
+msgid ""
+"Enkaz altında kalmış insanlar için kan bağışında bulunmak hayat kurtarır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:400
+msgid "Yardımlaşmak (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:401
+msgid ""
+"Depremden sonra ihtiyaç sahipleri için kullanıma uygun kıyafetler bağış "
+"yapılmalı ve yardımda bulunulmalıdır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:417
+msgid "Depreme Dayanıklı Ev (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:418
+msgid ""
+"Binalarımızın daha uzun ömürlü olması için su yalıtımlarına önem "
+"verilmelidir. Binaların temeli ilk günkü gibi sağlam kalacaktır."
+msgstr ""
+
+#: newlife/templates/earth_que.html:434
+msgid "Deprem Kültürü (Deprem Sonrası)"
+msgstr ""
+
+#: newlife/templates/earth_que.html:435
+msgid ""
+"Depremin hayatın bir gerçeği olduğunu hepimizin bilmesi ve alınması gereken "
+"tedbirlerin herkese iletilmesi bizim sorumluluğumuzdur."
+msgstr ""
+
+#: newlife/templates/earth_que.html:448
+msgid "Kod Kaynağı"
+msgstr ""
+
+#: newlife/templates/earth_que.html:454
+msgid "AFAD Deprem"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:6
+#: newlife/templates/pages/dashboard.html:272
+msgid "Dashboard"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:273
+#: newlife/templates/pages/dashboard.html:365
+msgid "Kullanıcı Bilgileri"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:274
+#: newlife/templates/pages/dashboard.html:292
+msgid "Kaydedilenler"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:280
+msgid "Cikis yap"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:294
+#: newlife/templates/pages/homepage.html:340
+msgid "Güncel <span>bloglar</span>"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:309
+msgid "incele"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:314
+msgid "Favorilere eklemiş olduğunuz blog bulunmamaktadır."
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:322
+#: newlife/templates/pages/models_page.html:71
+msgid "Moleküller"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:341
+msgid "Detaylar"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:348
+msgid "Favorilere eklemiş olduğunuz molekül bulunmamaktadır."
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:402
+msgid "İsim Soyisim"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:407
+msgid "Email"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:411
+msgid "Sınıf Bilgisi"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:421
+msgid "Okul Bilgisi"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:425
+msgid "Değişiklikleri Kaydet"
+msgstr ""
+
+#: newlife/templates/pages/dashboard.html:437
+#: newlife/templates/pages/models_page.html:36
+#: newlife/templates/tests/quiz_page.html:23
+#: newlife/templates/tests/test-detail.html:27
+msgid "Sorular ve Cevaplar"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:74
+msgid "Teorik Eğitim Pratikte Güzel."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:76
+msgid "New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:78
+msgid "Şimdi Deneyimle"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:98
 msgid "New LiFe Kullanıcılarına Ne sunar?"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:37
+#: newlife/templates/pages/homepage.html:100
 msgid ""
 "\n"
 "               <p><b>\n"
@@ -383,144 +843,206 @@ msgid ""
 "            "
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:44
+#: newlife/templates/pages/homepage.html:107
 msgid ""
 "Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi "
 "deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük "
-"ile sunar.Sizler için bilginin verimliliğini ve akılda kalıcılığını "
+"ile sunar. Sizler için bilginin verimliliğini ve akılda kalıcılığını "
 "artırmayı olanaklı hale getirmek için çabalar."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:47
-#: newlife/templates/pages/homepage.html:72
-#: newlife/templates/pages/homepage.html:85
-#: newlife/templates/pages/homepage.html:98
-#: newlife/templates/pages/homepage.html:111
+#: newlife/templates/pages/homepage.html:110
 msgid "Daha Fazla"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:61
+#: newlife/templates/pages/homepage.html:124
 msgid "Sizin <span>yararınız</span>"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:68
+#: newlife/templates/pages/homepage.html:131
 msgid "Etkili Öğrenme"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:70
+#: newlife/templates/pages/homepage.html:133
 msgid ""
-"deneyleri bireysel olarak da deneyimleme fırsatı sunduğu için etkili öğrenme "
+"deneyleri bireysel olarak deneyimleme fırsatı sunduğu için etkili öğrenme "
 "sağlar."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:81
+#: newlife/templates/pages/homepage.html:142
 msgid "Zaman Kazancı"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:83
+#: newlife/templates/pages/homepage.html:144
 msgid ""
-"eneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle "
-"tekrarlanmaz."
+"deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler vakit "
+"kaybettirmez."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:94
+#: newlife/templates/pages/homepage.html:153
 msgid "Yeni Deneyimler"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:96
+#: newlife/templates/pages/homepage.html:155
 msgid ""
 "farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler "
 "sunmayı hedefler."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:107
+#: newlife/templates/pages/homepage.html:164
 msgid "Etkilenmeme"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:109
+#: newlife/templates/pages/homepage.html:166
 msgid ""
 "ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan "
-"(pandemi gibi) etkilenmezsin"
+"(pandemi gibi) etkilenmezsin."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:126
+#: newlife/templates/pages/homepage.html:181
 msgid "İçeriklerimiz"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:140
-msgid "Kimya Deneyleri"
+#: newlife/templates/pages/homepage.html:195
+msgid "3D Moleküller"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:148
+#: newlife/templates/pages/homepage.html:203
 msgid "Gözlerini kamaştıracak!"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:162
-msgid "Hızlı Bir Deneyim"
+#: newlife/templates/pages/homepage.html:217
+msgid "Testleri Çöz"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:170
-msgid "Kendinle Yarış."
+#: newlife/templates/pages/homepage.html:225
+msgid "Sadece Kendinle Yarış."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:184
-msgid "Öğrendiklerini Pekiştirme"
+#: newlife/templates/pages/homepage.html:238
+msgid "Periyodik Tablo"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:192
-msgid "Kendini denemelisin."
+#: newlife/templates/pages/homepage.html:246
+msgid "Animasyonlu & akılda kalıcı."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:205
-msgid "Bileşenleri yakından görme"
+#: newlife/templates/pages/homepage.html:259
+msgid "Tepkime Zamanı"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:213
-msgid "Kişisel Deneyimleme!"
+#: newlife/templates/pages/homepage.html:267
+msgid "Tepkimeleri yakından incele!"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:226
-msgid "Genel Tekrar"
+#: newlife/templates/pages/homepage.html:280
+msgid "Kodlayarak Ezberle"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:234
-msgid "Her şey kontrol altında"
+#: newlife/templates/pages/homepage.html:288
+msgid "Ezberlemeye Gerek Yok."
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:244
+#: newlife/templates/pages/homepage.html:301
+msgid "Her zaman önlem"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:309
+msgid "Depreme tam hazırlık."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:322
+msgid "Bulmaca Oyunu"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:330
+msgid "Biraz Oyun fena olmaz."
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:355
+msgid "İncele"
+msgstr ""
+
+#: newlife/templates/pages/homepage.html:369
 msgid "Kullanıcı <span>Yorumları</span>"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:270
+#: newlife/templates/pages/homepage.html:397
 msgid "Yönetim <span>Ekibimiz</span>"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:304
-msgid "İletişim"
-msgstr ""
-
-#: newlife/templates/pages/homepage.html:310
+#: newlife/templates/pages/homepage.html:434
 msgid "Bizimle iletişime geç"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:313
+#: newlife/templates/pages/homepage.html:437
 msgid "Ad Soyad"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:318
-msgid "Email Adresi"
+#: newlife/templates/pages/homepage.html:442
+msgid "E-Mail Adresi"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:323
+#: newlife/templates/pages/homepage.html:447
 msgid "Telefon Numarası"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:325
+#: newlife/templates/pages/homepage.html:449
 msgid "İletişime geç"
 msgstr ""
 
-#: newlife/templates/pages/homepage.html:338
-msgid "Güncel <span>bloglar</span>"
+#: newlife/templates/pages/models_page.html:37
+#: newlife/templates/tests/quiz_page.html:24
+#: newlife/templates/tests/test-detail.html:28
+msgid "Modeller"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:67
+msgid "Deneyimleme</span> Merkezine Hoş Geldiniz"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:74
+msgid "Hepsini göster"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:75
+msgid "10 Sınıf"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:76
+msgid "11 sınıf"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:77
+msgid "12 sınıf"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:78
+msgid "Üniversite"
+msgstr ""
+
+#: newlife/templates/pages/models_page.html:114
+msgid "Genel Kültür <span>Soru & Cevap</span>"
+msgstr ""
+
+#: newlife/templates/tests/quiz_page.html:48
+msgid "Sorudan oluşuyor"
+msgstr ""
+
+#: newlife/templates/tests/test-detail.html:12
+msgid "Quiz App"
+msgstr ""
+
+#: newlife/templates/tests/test-detail.html:65
+msgid "Save"
+msgstr ""
+
+#: newlife/templates/video/video.html:8
+msgid "Videolar"
+msgstr ""
+
+#: newlife/templates/video/video.html:35
+msgid "Video Bülteni"
 msgstr ""
 
 #: newlife/users/admin.py:18
@@ -535,6 +1057,10 @@ msgstr ""
 msgid "Important dates"
 msgstr ""
 
+#: newlife/users/admin.py:32
+msgid "Information"
+msgstr ""
+
 #: newlife/users/apps.py:7
 msgid "Users"
 msgstr ""
@@ -543,11 +1069,11 @@ msgstr ""
 msgid "This username has already been taken."
 msgstr ""
 
-#: newlife/users/models.py:18
+#: newlife/users/models.py:26
 msgid "Name of User"
 msgstr ""
 
-#: newlife/users/models.py:22
+#: newlife/users/models.py:30
 msgid "Profile Image"
 msgstr ""
 
