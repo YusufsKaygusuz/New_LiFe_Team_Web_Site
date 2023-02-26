@@ -17,6 +17,85 @@
     transition: .2s linear;
 }
 
+/* Language Bar css start */
+.lang-menu {
+    text-align: right;
+    position: absolute;
+    right: 10%;
+}
+.lang-menu .selected-lang {
+    font-size: 1.2rem;
+    display: flex;   
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+}
+
+.lang-menu .selected-lang:before {
+    padding-right: 2rem;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1280px-Flag_of_Turkey.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    display: none;
+    margin-top: 0.2rem;
+    background-color: #fff;
+    border: 5px solid #f8f8f8;
+    position: absolute;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.52);
+}
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 0.7em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png);
+}
+
+.en:before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+/* Language Bar css end */
+
 html
 {
     font-size: 62.5%;
@@ -684,7 +763,7 @@ section{
 
 
 /* Media Queries*/
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1005px){
 
     html{
     font-size: 55%;
@@ -698,7 +777,7 @@ section{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     #menu-btn{
     display: inline-block;
 }
@@ -736,6 +815,9 @@ section{
     }
     .home .content p{
         font-size: 1.5rem;
+    }
+    .lang-menu {
+        margin-right: 5rem;
     }
 }
 
