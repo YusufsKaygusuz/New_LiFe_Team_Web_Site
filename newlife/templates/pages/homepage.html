@@ -21,7 +21,7 @@ NewLiFe
            <a href="#blogs">{% trans 'Bloglar' %}</a>
            <a href="#review">{% trans 'Yorumlar' %}</a>
            <a href="#trainers">{% trans 'Yönetim' %}</a>
-           <a href="#contact">{% trans 'İletişim' %}</a>   
+           <a href="#contact">{% trans 'İletişim' %}</a>
        </nav>
 <!--
        <div class="lang-menu">
@@ -60,9 +60,9 @@ NewLiFe
 
    <div class="language-menu">
     <ul class="language-bar">
-      <li><a href="#">Turkçe</a></li>
-      <li><a href="#">English</a></li>
-      <li><a href="#">Deutsch</a></li>
+      <li><a href="{% url 'set-language' 'tr' %}">Turkçe</a></li>
+      <li><a href="{% url 'set-language' 'en' %}">English</a></li>
+      <li><a href="{% url 'set-language' 'de' %}">Deutsch</a></li>
      </ul>
   </div>
 
