@@ -898,8 +898,7 @@ msgstr "Time Saver"
 msgid ""
 "deneyleri sanal ortama taşıdığı için yapılan deney hataları sebebiyle "
 "tekrarlanmaz."
-msgstr ""
-"As it carries the experiments to the virtual environment, the experiment is "
+msgstr "As it carries the experiments to the virtual environment, the experiment is "
 "not repeated due to the mistakes made"
 
 #: newlife/templates/pages/homepage.html:129
@@ -910,8 +909,7 @@ msgstr "New Experiences"
 msgid ""
 "farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler "
 "sunmayı hedefler."
-msgstr ""
-"It aims to offer different experiences and ideas by presenting different and "
+msgstr "It aims to offer different experiences and ideas by presenting different and "
 "eye-catching environments to you."
 
 #: newlife/templates/pages/homepage.html:140
@@ -942,7 +940,7 @@ msgstr "It will dazzle your eyes!"
 
 #: newlife/templates/pages/homepage.html:193
 msgid "Testleri Çöz"
-msgstr ""
+msgstr "Solve tests"
 
 #: newlife/templates/pages/homepage.html:201
 #, fuzzy
@@ -958,7 +956,7 @@ msgstr "periodic-table/"
 
 #: newlife/templates/pages/homepage.html:222
 msgid "Animasyonlu & akılda kalıcı."
-msgstr ""
+msgstr "Animated & memorable."
 
 #: newlife/templates/pages/homepage.html:235
 msgid "Tepkime Zamanı"
@@ -966,31 +964,31 @@ msgstr "Reaction Time"
 
 #: newlife/templates/pages/homepage.html:243
 msgid "Tepkimeleri yakından incele!"
-msgstr ""
+msgstr "Examine the reactions closely!"
 
 #: newlife/templates/pages/homepage.html:256
 msgid "Kodlayarak Ezberle"
-msgstr ""
+msgstr "Memorize by coding"
 
 #: newlife/templates/pages/homepage.html:264
 msgid "Ezberlemeye Gerek Yok"
-msgstr ""
+msgstr "No need to memorize"
 
 #: newlife/templates/pages/homepage.html:277
 msgid "Her zaman önlem"
-msgstr ""
+msgstr "Always precaution"
 
 #: newlife/templates/pages/homepage.html:285
 msgid "Depreme tam hazırlık"
-msgstr ""
+msgstr "Earthquake full preparation"
 
 #: newlife/templates/pages/homepage.html:298
 msgid "Bulmaca Oyunu"
-msgstr ""
+msgstr "Puzzle game"
 
 #: newlife/templates/pages/homepage.html:306
 msgid "Biraz Oyun fena olmaz"
-msgstr ""
+msgstr "A little game is not bad"
 
 #: newlife/templates/pages/homepage.html:316
 msgid "Kullanıcı <span>Yorumları</span>"
@@ -1032,7 +1030,7 @@ msgstr "molecules"
 
 #: newlife/templates/pages/models_page.html:104
 msgid "Deneyimleme</span> Merkezine Hoş Geldiniz"
-msgstr ""
+msgstr "Welcome to</span> the experience center"
 
 #: newlife/templates/pages/models_page.html:111
 #, fuzzy
@@ -1042,19 +1040,19 @@ msgstr "Current <span>blogs</span>"
 
 #: newlife/templates/pages/models_page.html:132
 msgid "Hepsini göster"
-msgstr ""
+msgstr "Show All"
 
 #: newlife/templates/pages/models_page.html:133
 msgid "10 Sınıf"
-msgstr ""
+msgstr "Class 12"
 
 #: newlife/templates/pages/models_page.html:134
 msgid "11 sınıf"
-msgstr ""
+msgstr "Class 12"
 
 #: newlife/templates/pages/models_page.html:135
 msgid "12 sınıf"
-msgstr ""
+msgstr "Class 12"
 
 #: newlife/templates/pages/models_page.html:136
 #: newlife/templates/tests/quiz_page.html:16
