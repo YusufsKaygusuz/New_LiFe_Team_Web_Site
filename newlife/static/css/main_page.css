@@ -32,7 +32,7 @@
 }
 
 .lang-menu .selected-lang:before {
-    padding-right: 2rem;
+    padding-right: 0.4rem;
     content: '';
     display: inline-block;
     width: 20px;
