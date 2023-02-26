@@ -896,7 +896,6 @@ msgid "Zaman Kazancı"
 msgstr "Time Saver"
 
 #: newlife/templates/pages/homepage.html:144
-#, fuzzy
 msgid ""
 "deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler vakit "
 "kaybettirmez."
