@@ -40,7 +40,7 @@
     font-weight: 400;
     line-height: 1.6em;
     vertical-align: baseline;
-      color: white;
+    color: white;
   }
   
   .language-bar li {
@@ -207,67 +207,6 @@ section{
 .header .search-form label:hover
 {
     color: var(--main-color);
-}
-
-.header .cart-item-container{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    height: calc(100vh - 9.5rem);
-    width: 40rem;
-    background: #fff;
-    padding: 0 1.5rem;
-}
-
-.header .cart-item-container.active{
-    right: 0;
-}
-
-.header .cart-item-container .cart-item{
-    position: relative;
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.header .cart-item-container .cart-item .fa-times
-{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--black);
-}
-
-.header .cart-item-container .cart-item .fa-times:hover{
-    color: var(--main-color);
-}
-
-.header .cart-item-container .cart-item img
-{
-    height: 8rem;
-    width: 11rem;
-    border-radius: 4px;
-    box-shadow: 5px 5px 5px 2px rgba(0,0,0,.16),
-                        6px 4px 4px 1px rgba(0,0,0,.30);
-}
-
-.header .cart-item-container .cart-item .content h3{
-    font-size: 2rem;
-    color: var(--black);
-    padding-bottom: .5rem;
-}
-
-.header .cart-item-container .cart-item .content .price
-{
-    font-size: 1.5rem;
-    color: var(--main-color);
-}
-.header .cart-item-container .btn{
-    width: 100%;
-    text-align: center;
 }
 
 .home{
@@ -506,7 +445,6 @@ section{
 .products .box-container .box .image img:hover
 {
     opacity: 0.80;
-    /*border-radius: 50%;*/
 }
 
 .products .box-container .box .content .price span
