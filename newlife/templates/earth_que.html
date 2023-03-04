@@ -1,16 +1,38 @@
 {% load static i18n%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New LiFe {% trans "Deprem'e Hazırlık" %}</title>
-    <script src="https://kit.fontawesome.com/342744487d.js"></script>
-    <link rel="stylesheet" href="{% static 'css/earth_que.css' %}">
-    <script src="{% static 'js/earth_que.js' %}"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New LiFe {% trans "Deprem'e Hazırlık" %}</title>
+  <script src="https://kit.fontawesome.com/342744487d.js"></script>
+  <link rel="stylesheet" href="{% static 'css/earth_que.css' %}">
+  <script src="{% static 'js/earth_que.js' %}"></script>
 
 </head>
+
+<!--Header section starts -->
+<header class="header">
+
+  <a href="{% url 'homepage' %}" class="logo">
+    <img src="{% static 'images/TeamLogo.png' %}" alt="">
+  </a>
+
+  <nav class="navbar">
+    <a href="{% url 'homepage' %}">New LiFe</a>
+    <a href="{% url 'molecule' %}">3D Moleküller</a>
+    <a href="{% url 'tests' %}">{% trans 'Testler' %}</a>
+    <a href="{% url 'video-list' %}">{% trans 'Video Bülten' %}</a>
+  </nav>
+  <div class="icons">
+    <div class="fas fa-user"></div>
+  </div>
+
+</header>
+
+
 <body>
   <div id="cards">
     <div class="card">
@@ -40,7 +62,8 @@
             <i class="fa-solid fa-people-line"></i>
             <div class="card-info-title">
               <h3>{% trans 'Acil Durum Planı (Deprem Öncesi)' %}</h3>
-              <h4>{% trans 'Bulunduğunuz alanda herkesin katılımıyla bir plan oluşturulmalı, acil durumlarda nasıl iletişime geçilmesi gerektiği konuşulmalıdır.' %}</h4>
+              <h4>{% trans 'Bulunduğunuz alanda herkesin katılımıyla bir plan oluşturulmalı, acil durumlarda nasıl
+                iletişime geçilmesi gerektiği konuşulmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -91,7 +114,8 @@
             <i class="fa-solid fa-bowl-food"></i>
             <div class="card-info-title">
               <h3>{% trans 'Yiyecekler (Deprem Öncesi)' %}</h3>
-              <h4>{% trans 'Acil durum çantasında bozulma ihtimali daha düşük konserve yiyecek bulundurulmalıdır.' %}</h4>
+              <h4>{% trans 'Acil durum çantasında bozulma ihtimali daha düşük konserve yiyecek bulundurulmalıdır.' %}
+              </h4>
             </div>
           </div>
         </div>
@@ -125,7 +149,8 @@
             <i class="fa-solid fa-capsules"></i>
             <div class="card-info-title">
               <h3>{% trans "İlaç İhtiyacı (Deprem Öncesi)" %}</h3>
-              <h4>{% trans 'Bebek, çocuk ve yetişkinler için gerekli olan şurup ve ilaçlar acil durum çantasında bulundurulmalıdır.' %}</h4>
+              <h4>{% trans 'Bebek, çocuk ve yetişkinler için gerekli olan şurup ve ilaçlar acil durum çantasında
+                bulundurulmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -176,7 +201,8 @@
             <i class="fa-solid fa-cookie-bite"></i>
             <div class="card-info-title">
               <h3>{% trans 'Çikolata (Deprem Öncesi)' %}</h3>
-              <h4>{% trans 'Yüksek kalorili, vitamin ve karbonhidrat içeren, su kaybını önleyen ve dayanıklı (çabuk bozulmayan) gıdalar deprem çantasında bulundurulmalıdır.' %}</h4>
+              <h4>{% trans 'Yüksek kalorili, vitamin ve karbonhidrat içeren, su kaybını önleyen ve dayanıklı (çabuk
+                bozulmayan) gıdalar deprem çantasında bulundurulmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -210,7 +236,8 @@
             <i class="fa-solid fa-file-signature"></i>
             <div class="card-info-title">
               <h3>{% trans 'Finansal Tedbirler (Deprem Öncesi)' %}</h3>
-              <h4>{% trans 'Kimlik kartı, tapu, sigorta belgeleri, diplomalar, pasaport, banka cüzdanı vb. önemli evrakların kopyaları hazırlanmalı ve deprem sigortası yaptırılmalıdır.' %}</h4>
+              <h4>{% trans 'Kimlik kartı, tapu, sigorta belgeleri, diplomalar, pasaport, banka cüzdanı vb. önemli
+                evrakların kopyaları hazırlanmalı ve deprem sigortası yaptırılmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -227,7 +254,8 @@
             <i class="fa-solid fa-person-praying"></i>
             <div class="card-info-title">
               <h3>{% trans 'Çök-Kapan-Tutun (Deprem Anında)' %}</h3>
-              <h4>{% trans 'Sarsıntı başladığı anda sağlam bir nesnenin yanına geçerek çök-kapan-tutun hareketi yapılmalıdır.' %}</h4>
+              <h4>{% trans 'Sarsıntı başladığı anda sağlam bir nesnenin yanına geçerek çök-kapan-tutun hareketi
+                yapılmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -244,7 +272,8 @@
             <i class="fa-solid fa-square-person-confined"></i>
             <div class="card-info-title">
               <h3>{% trans 'Kapalı Alanda Kalmak (Deprem Anında)' %}</h3>
-              <h4>{% trans 'Depremden sonra kapalı bir alanda kalmışsanız yardım edebilecek kimse olup olmadığını kontrol ediniz.' %}</h4>
+              <h4>{% trans 'Depremden sonra kapalı bir alanda kalmışsanız yardım edebilecek kimse olup olmadığını
+                kontrol ediniz.' %}</h4>
             </div>
           </div>
         </div>
@@ -261,7 +290,8 @@
             <i class="fa-solid fa-comment-sms"></i>
             <div class="card-info-title">
               <h3>{% trans 'SMS veya Mobil Uygulama kullanın (Deprem Anında)' %}</h3>
-              <h4>{% trans 'Depremde enkaz altındaysanız aralıklı sms ya da AFAD mobil uygulaması ile konum iletiminde bulunun.' %}</h4>
+              <h4>{% trans 'Depremde enkaz altındaysanız aralıklı sms ya da AFAD mobil uygulaması ile konum iletiminde
+                bulunun.' %}</h4>
             </div>
           </div>
         </div>
@@ -278,7 +308,8 @@
             <i class="fa-solid fa-head-side-cough"></i>
             <div class="card-info-title">
               <h3>{% trans 'Ses Kontrolü (Deprem Anında)' %}</h3>
-              <h4>{% trans 'Enkaz altında kaldığınız esnada gereksiz yere bağırıp panik olmayınız, yardım duyduğunuz esnada sesinizi yükseltmeniz daha sağlıklı olacaktır.' %}</h4>
+              <h4>{% trans 'Enkaz altında kaldığınız esnada gereksiz yere bağırıp panik olmayınız, yardım duyduğunuz
+                esnada sesinizi yükseltmeniz daha sağlıklı olacaktır.' %}</h4>
             </div>
           </div>
         </div>
@@ -295,7 +326,8 @@
             <i class="fa-solid fa-mobile-screen"></i>
             <div class="card-info-title">
               <h3>{% trans 'Acil Durum Çağrısı (Deprem Anında)' %}</h3>
-              <h4>{% trans 'Deprem esnasında veya Deprem Sonrasında ilk olarak AFAD, ambulans, polis ve itfaiye aranmalıdır.' %}</h4>
+              <h4>{% trans 'Deprem esnasında veya Deprem Sonrasında ilk olarak AFAD, ambulans, polis ve itfaiye
+                aranmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -312,7 +344,8 @@
             <i class="fa-solid fa-phone-slash"></i>
             <div class="card-info-title">
               <h3>{% trans 'Gereksiz Çağrı (Deprem Anında)' %}</h3>
-              <h4>{% trans 'Deprem bölgesinde gereksiz yere telefon kullanımı yapılmamalı, hatlar meşgul edilmemelidir.' %}</h4>
+              <h4>{% trans 'Deprem bölgesinde gereksiz yere telefon kullanımı yapılmamalı, hatlar meşgul edilmemelidir.'
+                %}</h4>
             </div>
           </div>
         </div>
@@ -329,7 +362,8 @@
             <i class="fa-solid fa-truck-medical"></i>
             <div class="card-info-title">
               <h3>{% trans 'Acil 112 (Deprem Sonrası)' %}</h3>
-              <h4>{% trans 'Deprem Sonrasında telefona ulaşabiliyorsanız 112 Acil hemen aranmalıdır. Kendi emniyetinizden emin olduktan sonra çevre için yardım edilmelidir.' %}</h4>
+              <h4>{% trans 'Deprem Sonrasında telefona ulaşabiliyorsanız 112 Acil hemen aranmalıdır. Kendi
+                emniyetinizden emin olduktan sonra çevre için yardım edilmelidir.' %}</h4>
             </div>
           </div>
         </div>
@@ -346,7 +380,8 @@
             <i class="fa-solid fa-head-side-cough-slash"></i>
             <div class="card-info-title">
               <h3>{% trans 'Çevredeki Ses Kontrolü (Deprem Sonrası)' %}</h3>
-              <h4>{% trans 'Deprem çevresinde enkaz altındaki insanlara daha rahat ulaşılabilmesi için çevrenin gereksiz ses yapmaması gerekmektedir.' %}</h4>
+              <h4>{% trans 'Deprem çevresinde enkaz altındaki insanlara daha rahat ulaşılabilmesi için çevrenin gereksiz
+                ses yapmaması gerekmektedir.' %}</h4>
             </div>
           </div>
         </div>
@@ -363,7 +398,8 @@
             <i class="fa-solid fa-handshake-slash"></i>
             <div class="card-info-title">
               <h3>{% trans 'Bilinçsiz Davranış (Deprem Sonrası)' %}</h3>
-              <h4>{% trans 'Depremden sonra ilk yardım eğitimi almamışsanız, kendiniz de o esnada sağlıklı durumda değilseniz bilinçsiz bir harekette bulunmayınız.' %}</h4>
+              <h4>{% trans 'Depremden sonra ilk yardım eğitimi almamışsanız, kendiniz de o esnada sağlıklı durumda
+                değilseniz bilinçsiz bir harekette bulunmayınız.' %}</h4>
             </div>
           </div>
         </div>
@@ -398,7 +434,8 @@
             <i class="fa-solid fa-people-carry-box"></i>
             <div class="card-info-title">
               <h3>{% trans 'Yardımlaşmak (Deprem Sonrası)' %}</h3>
-              <h4>{% trans 'Depremden sonra ihtiyaç sahipleri için kullanıma uygun kıyafetler bağış yapılmalı ve yardımda bulunulmalıdır.' %}</h4>
+              <h4>{% trans 'Depremden sonra ihtiyaç sahipleri için kullanıma uygun kıyafetler bağış yapılmalı ve
+                yardımda bulunulmalıdır.' %}</h4>
             </div>
           </div>
         </div>
@@ -415,7 +452,8 @@
             <i class="fa-solid fa-building-shield"></i>
             <div class="card-info-title">
               <h3>{% trans 'Depreme Dayanıklı Ev (Deprem Sonrası)' %}</h3>
-              <h4>{% trans 'Binalarımızın daha uzun ömürlü olması için su yalıtımlarına önem verilmelidir. Binaların temeli ilk günkü gibi sağlam kalacaktır.' %}</h4>
+              <h4>{% trans 'Binalarımızın daha uzun ömürlü olması için su yalıtımlarına önem verilmelidir. Binaların
+                temeli ilk günkü gibi sağlam kalacaktır.' %}</h4>
             </div>
           </div>
         </div>
@@ -432,7 +470,8 @@
             <i class="fa-solid fa-bullhorn"></i>
             <div class="card-info-title">
               <h3>{% trans 'Deprem Kültürü (Deprem Sonrası)' %}</h3>
-              <h4>{% trans 'Depremin hayatın bir gerçeği olduğunu hepimizin bilmesi ve alınması gereken tedbirlerin herkese iletilmesi bizim sorumluluğumuzdur.' %}</h4>
+              <h4>{% trans 'Depremin hayatın bir gerçeği olduğunu hepimizin bilmesi ve alınması gereken tedbirlerin
+                herkese iletilmesi bizim sorumluluğumuzdur.' %}</h4>
             </div>
           </div>
         </div>
@@ -440,10 +479,7 @@
     </div>
   </div>
 
-
-
-
-  <a id="source-link" class="link" href="https://www.linkedin.com/in/yusuf-sami-kaygusuz-69b992230" target="_blank">
+  <a id="source-link" class="link" href="https://github.com/YusufsKaygusuz/Preparing-for-Earthquake" target="_blank">
     <i class="fa-solid fa-link"></i>
     <span class="roboto-mono">{% trans 'Kod Kaynağı' %}</span>
   </a>
