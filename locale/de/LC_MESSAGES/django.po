@@ -181,123 +181,127 @@ msgstr ""
 #: newlife/templates/account/account_inactive.html:5
 #: newlife/templates/account/account_inactive.html:8
 msgid "Account Inactive"
-msgstr ""
+msgstr "Konto inaktiv"
 
 #: newlife/templates/account/account_inactive.html:10
 msgid "This account is inactive."
-msgstr ""
+msgstr "Dieser Account ist inaktiv."
 
 #: newlife/templates/account/email.html:7
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: newlife/templates/account/email.html:10
 msgid "E-mail Addresses"
-msgstr ""
+msgstr "E-Mail-Adressen"
 
 #: newlife/templates/account/email.html:13
 msgid "The following e-mail addresses are associated with your account:"
-msgstr ""
+msgstr "Die folgenden E-Mail-Adressen sind mit Ihrem Konto verknüpft:"
 
 #: newlife/templates/account/email.html:27
 msgid "Verified"
-msgstr ""
+msgstr "Überprüfen"
 
 #: newlife/templates/account/email.html:29
 msgid "Unverified"
-msgstr ""
+msgstr "Ungeprüft"
 
 #: newlife/templates/account/email.html:31
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #: newlife/templates/account/email.html:37
 msgid "Make Primary"
-msgstr ""
+msgstr "Primär machen"
 
 #: newlife/templates/account/email.html:38
 msgid "Re-send Verification"
-msgstr ""
+msgstr "Bestätigung erneut senden"
 
 #: newlife/templates/account/email.html:39
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #: newlife/templates/account/email.html:46
 msgid "Warning:"
-msgstr ""
+msgstr "Warnung:"
 
 #: newlife/templates/account/email.html:46
 msgid ""
 "You currently do not have any e-mail address set up. You should really add "
 "an e-mail address so you can receive notifications, reset your password, etc."
-msgstr ""
+msgstr "Sie haben derzeit keine E-Mail-Adresse eingerichtet. Sie sollten wirklich eine E-Mail-Adresse hinzufügen"
+"damit Sie Benachrichtigungen erhalten, Ihr Passwort zurücksetzen usw. können."
 
 #: newlife/templates/account/email.html:51
 msgid "Add E-mail Address"
-msgstr ""
+msgstr "E-Mail-Adresse hinzufügen"
 
 #: newlife/templates/account/email.html:56
 msgid "Add E-mail"
-msgstr ""
+msgstr "E-Mail hinzufügen"
 
 #: newlife/templates/account/email.html:66
 msgid "Do you really want to remove the selected e-mail address?"
-msgstr ""
+msgstr "Möchten Sie die ausgewählte E-Mail-Adresse wirklich entfernen?"
 
 #: newlife/templates/account/email_confirm.html:6
 #: newlife/templates/account/email_confirm.html:10
 msgid "Confirm E-mail Address"
-msgstr ""
+msgstr "E-Mail-Adresse bestätigen"
 
 #: newlife/templates/account/email_confirm.html:16
 #, python-format
 msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
-msgstr ""
+msgstr "Bitte bestätigen Sie das <a href=\"mailto:%(email)s\">%(email)s</a> ist eine E-Mail-Adresse für Benutzer"
 
 #: newlife/templates/account/email_confirm.html:20
 msgid "Confirm"
-msgstr ""
+msgstr "Bestätigen"
 
 #: newlife/templates/account/email_confirm.html:27
 #, python-format
 msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
-msgstr ""
+msgstr "Dieser E-Mail-Bestätigungslink ist abgelaufen oder ungültig."
+"Dieser E-Mail-Bestätigungslink ist abgelaufen oder ungültig. Bitte <a href="
+"\"%(email_url)s\" senden Sie eine neue E-Mail-Bestätigungsanfrage.</a>"
+
 
 #: newlife/templates/account/login.html:32
 #: newlife/templates/account/login.html:60
 #: newlife/templates/account/signup.html:86
 msgid "Giriş Yap"
-msgstr ""
+msgstr "Anmelden"
 
 #: newlife/templates/account/login.html:46
 #: newlife/templates/account/signup.html:49
 msgid "Parola"
-msgstr ""
+msgstr "Passwort"
 
 #: newlife/templates/account/login.html:56
 msgid "Parolanı mı unuttun?"
-msgstr ""
+msgstr "Passwort vergessen?"
 
 #: newlife/templates/account/login.html:75
 #: newlife/templates/account/signup.html:27
 #: newlife/templates/account/signup.html:72
 msgid "Kayıt Ol"
-msgstr ""
+msgstr "Registrieren"
 
 #: newlife/templates/account/logout.html:5
 #: newlife/templates/account/logout.html:8
 #: newlife/templates/account/logout.html:17
 msgid "Sign Out"
-msgstr ""
+msgstr "abmelden"
 
 #: newlife/templates/account/logout.html:10
 msgid "Are you sure you want to sign out?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie sich abmelden möchten?"
 
 #: newlife/templates/account/password_change.html:6
 #: newlife/templates/account/password_change.html:9
@@ -307,38 +311,38 @@ msgstr ""
 #: newlife/templates/account/password_reset_from_key_done.html:4
 #: newlife/templates/account/password_reset_from_key_done.html:7
 msgid "Change Password"
-msgstr ""
+msgstr "Passwort ändern"
 
 #: newlife/templates/account/password_reset.html:7
 #: newlife/templates/account/password_reset.html:11
 #: newlife/templates/account/password_reset_done.html:6
 #: newlife/templates/account/password_reset_done.html:9
 msgid "Password Reset"
-msgstr ""
+msgstr "Passwort zurücksetzen"
 
 #: newlife/templates/account/password_reset.html:16
 msgid ""
 "Forgotten your password? Enter your e-mail address below, and we'll send you "
 "an e-mail allowing you to reset it."
-msgstr ""
+msgstr "Forgotten your password? Enter your email address below, and we'll send you an email allowing you to reset it. "
 
 #: newlife/templates/account/password_reset.html:21
 msgid "Reset My Password"
-msgstr ""
+msgstr "Mein Passwort zurücksetzen"
 
 #: newlife/templates/account/password_reset.html:24
 msgid "Please contact us if you have any trouble resetting your password."
-msgstr ""
+msgstr "Bitte kontaktieren Sie uns, wenn Sie Probleme beim Zurücksetzen Ihres Passworts haben."
 
 #: newlife/templates/account/password_reset_done.html:15
 msgid ""
 "We have sent you an e-mail. Please contact us if you do not receive it "
 "within a few minutes."
-msgstr ""
+msgstr "Wir haben Ihnen eine E-Mail geschickt. Bitte kontaktieren Sie uns, wenn Sie es nicht innerhalb weniger Minuten erhalten."
 
 #: newlife/templates/account/password_reset_from_key.html:8
 msgid "Bad Token"
-msgstr ""
+msgstr "Schlechtes Token"
 
 #: newlife/templates/account/password_reset_from_key.html:12
 #, python-format
@@ -347,105 +351,113 @@ msgid ""
 "used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
 "a>."
 msgstr ""
+"Der Link zum Zurücksetzen des Passworts war ungültig, möglicherweise weil er bereits  "
+"verwendet wurde. Bitte fordern Sie ein <a href=\"%(passwd_reset_url)s\">neues Passwort an"
 
 #: newlife/templates/account/password_reset_from_key.html:18
 msgid "change password"
-msgstr ""
+msgstr "passwort ändern"
 
 #: newlife/templates/account/password_reset_from_key.html:21
 #: newlife/templates/account/password_reset_from_key_done.html:8
 msgid "Your password is now changed."
-msgstr ""
+msgstr "Ihr Passwort ist jetzt geändert."
 
 #: newlife/templates/account/password_set.html:6
 #: newlife/templates/account/password_set.html:9
 #: newlife/templates/account/password_set.html:14
 msgid "Set Password"
-msgstr ""
+msgstr "Passwort setzen"
 
 #: newlife/templates/account/signup.html:31
 msgid "Kullanıcı Adı"
-msgstr ""
+msgstr "Benutzername"
 
 #: newlife/templates/account/signup.html:61
 msgid "Parola (tekrar)"
-msgstr ""
+msgstr "Passwort (wiederholen)"
 
 #: newlife/templates/account/signup_closed.html:5
 #: newlife/templates/account/signup_closed.html:8
 msgid "Sign Up Closed"
-msgstr ""
+msgstr "Anmeldung geschlossen"
 
 #: newlife/templates/account/signup_closed.html:10
 msgid "We are sorry, but the sign up is currently closed."
-msgstr ""
+msgstr "Es tut uns leid, aber die Anmeldung ist derzeit geschlossen."
 
 #: newlife/templates/account/verification_sent.html:5
 #: newlife/templates/account/verification_sent.html:8
 #: newlife/templates/account/verified_email_required.html:5
 #: newlife/templates/account/verified_email_required.html:8
 msgid "Verify Your E-mail Address"
-msgstr ""
+msgstr "Verifizieren Sie Ihre E-Mail-Adresse"
 
 #: newlife/templates/account/verification_sent.html:10
 msgid ""
 "We have sent an e-mail to you for verification. Follow the link provided to "
 "finalize the signup process. Please contact us if you do not receive it "
 "within a few minutes."
-msgstr ""
+msgstr "Wir haben Ihnen eine E-Mail zur Verifizierung geschickt. Folgen Sie dem angegebenen Link, um den "
+"Anmeldevorgang abzuschließen. Bitte kontaktieren Sie uns, wenn Sie es nicht innerhalb weniger Minuten erhalten."
 
 #: newlife/templates/account/verified_email_required.html:12
 msgid ""
 "This part of the site requires us to verify that\n"
 "you are who you claim to be. For this purpose, we require that you\n"
 "verify ownership of your e-mail address. "
-msgstr ""
+msgstr "In diesem Teil der Website müssen wir überprüfen\n"
+"ob Sie der sind, für den Sie sich ausgeben. Zu diesem Zweck benötigen wir, dass\n"
+"Sie den Besitz Ihrer E-Mail-Adresse bestätigen."
 
 #: newlife/templates/account/verified_email_required.html:16
 msgid ""
 "We have sent an e-mail to you for\n"
 "verification. Please click on the link inside this e-mail. Please\n"
 "contact us if you do not receive it within a few minutes."
-msgstr ""
+msgstr "Wir haben Ihnen eine E-Mail zur Überprüfung\n"
+"gesendet. Bitte klicken Sie auf den Link in dieser E-mail. Bitte kontaktieren\n"
+"Sie uns, wenn Sie es nicht innerhalb weniger Minuten erhalten."
 
 #: newlife/templates/account/verified_email_required.html:20
 #, python-format
 msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
 "mail address</a>."
-msgstr ""
+msgstr "<strong>Hinweis:</strong> Sie können immer noch <a href=\"%(email_url)s\">Ihre E-Mail-Adresse ändern."
+"e-Mail-Adresse"
 
 #: newlife/templates/card_game.html:16
 msgid "Kart Oyunu"
-msgstr ""
+msgstr "Kartenspiel"
 
 #: newlife/templates/card_game.html:21
 msgid "Hafıza Oyunu"
-msgstr ""
+msgstr "Memory-Spiel"
 
 #: newlife/templates/card_game.html:22
 msgid "Skor"
-msgstr ""
+msgstr "Ergebnis"
 
 #: newlife/templates/coding_gallery.html:8
 msgid "Akılda Kodlama"
-msgstr ""
+msgstr "Codierung Im Kopf"
 
 #: newlife/templates/coding_gallery.html:21
 #: newlife/templates/pages/molecule_detail.html:26
 #: newlife/templates/video/video.html:22
 msgid "Testler"
-msgstr ""
+msgstr "Tests"
 
 #: newlife/templates/coding_gallery.html:22
 #: newlife/templates/pages/molecule_detail.html:27
 msgid "Video Bülten"
-msgstr ""
+msgstr "Video Newsletter"
 
 #: newlife/templates/coding_gallery.html:35
 #: newlife/templates/video/video.html:23
 msgid "Kodlama Galerisi"
-msgstr ""
+msgstr "Codierung Galerie"
 
 #: newlife/templates/components/footer.html:17
 #: newlife/templates/pages/blog.html:94
@@ -453,34 +465,34 @@ msgstr ""
 #: newlife/templates/pages/homepage.html:89
 #: newlife/templates/pages/molecule_detail.html:88
 msgid "Hakkında"
-msgstr ""
+msgstr "Über uns"
 
 #: newlife/templates/components/footer.html:18
 #: newlife/templates/pages/homepage.html:19
 msgid "Yararlar"
-msgstr ""
+msgstr "Vorteile"
 
 #: newlife/templates/components/footer.html:19
 #: newlife/templates/pages/homepage.html:20
 msgid "İçerikler"
-msgstr ""
+msgstr "Inhalt"
 
 #: newlife/templates/components/footer.html:20
 #: newlife/templates/pages/blog.html:26 newlife/templates/pages/blog.html:97
 #: newlife/templates/pages/homepage.html:21
 #: newlife/templates/pages/molecule_detail.html:91
 msgid "Bloglar"
-msgstr ""
+msgstr "Blogs"
 
 #: newlife/templates/components/footer.html:21
 #: newlife/templates/pages/homepage.html:22
 msgid "Yorumlar"
-msgstr ""
+msgstr "Kommentare"
 
 #: newlife/templates/components/footer.html:22
 #: newlife/templates/pages/homepage.html:23
 msgid "Yönetim"
-msgstr ""
+msgstr "Verwaltung"
 
 #: newlife/templates/components/footer.html:23
 #: newlife/templates/pages/blog.html:96
@@ -488,346 +500,355 @@ msgstr ""
 #: newlife/templates/pages/homepage.html:428
 #: newlife/templates/pages/molecule_detail.html:90
 msgid "İletişim"
-msgstr ""
+msgstr "Kontakt"
 
 #: newlife/templates/earth_que.html:8
 msgid "Deprem'e Hazırlık"
-msgstr ""
+msgstr "Erdbebenvorbereitung"
 
 #: newlife/templates/earth_que.html:25
 msgid "Eşyalardan Kaynaklanacak Hasarlar (Deprem Öncesi)"
-msgstr ""
+msgstr "Schäden, Die Durch Gegenstände Verursacht Werden (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:26
 msgid ""
 "Eşyalarımızın kayıp düşemesini önlemek için sabitleyecek aparatlar "
 "kullanılmalıdır."
-msgstr ""
+msgstr "Es sollten Befestigungsvorrichtungen verwendet werden, um zu verhindern, dass unsere Sachen ausrutschen und fallen."
 
 #: newlife/templates/earth_que.html:42
 msgid "Acil Durum Planı (Deprem Öncesi)"
-msgstr ""
+msgstr "Notfallplan (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:43
 msgid ""
 "Bulunduğunuz alanda herkesin katılımıyla bir plan oluşturulmalı, acil "
 "durumlarda nasıl iletişime geçilmesi gerektiği konuşulmalıdır."
-msgstr ""
+msgstr "Es sollte ein plan mit der Teilnahme aller in ihrem Bereich erstellt werden, und es sollte besprochen werden, wie sie im Notfall kontaktiert werden sollten."
 
 #: newlife/templates/earth_que.html:59
 msgid "Acil Durum Çantası (Deprem Öncesi)"
-msgstr ""
+msgstr "Notfalltasche (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:60
 msgid ""
 "Her ihtimale karşın evde, iş yerinde ve araçta acil durum çantası "
 "bulundurmalıyız."
-msgstr ""
+msgstr "Wir sollten eine Notfalltasche zu Hause, bei der Arbeit und im Auto haben, nur für den Fall."
 
 #: newlife/templates/earth_que.html:76
 msgid "Su İhtiyacı (Deprem Öncesi)"
-msgstr ""
+msgstr "Wasserbedarf (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:77
 msgid ""
 "Acil durum çantasında mutlaka bulunması gerekenlerin başında su gelmektedir."
-msgstr ""
+msgstr "In der Notfalltasche befindet sich Wasser."
 
 #: newlife/templates/earth_que.html:93
 msgid "Yiyecekler (Deprem Öncesi)"
-msgstr ""
+msgstr "Nahrung (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:94
 msgid ""
 "Acil durum çantasında bozulma ihtimali daha düşük konserve yiyecek "
 "bulundurulmalıdır."
-msgstr ""
+msgstr "In der Notfalltasche sollten Konserven mit geringerer Verderblichkeit aufbewahrt werden."
 
 #: newlife/templates/earth_que.html:110
 msgid "İlk Yardım (Deprem Öncesi)"
-msgstr ""
+msgstr "Erste Hilfe (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:111
 msgid "Acil durum çantasında ufak da olsa ilk yardım kiti bulunmalıdır."
-msgstr ""
+msgstr "In der Notfalltasche sollte auch ein kleines Erste-Hilfe-Kit enthalten sein."
 
 #: newlife/templates/earth_que.html:127
 msgid "İlaç İhtiyacı (Deprem Öncesi)"
-msgstr ""
+msgstr "Bedarf An Medikamenten (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:128
 msgid ""
 "Bebek, çocuk ve yetişkinler için gerekli olan şurup ve ilaçlar acil durum "
 "çantasında bulundurulmalıdır."
-msgstr ""
+msgstr "Sirup und Medikamente, die für Babys, Kinder und Erwachsene notwendig sind, sollten in der Notfalltasche aufbewahrt werden."
 
 #: newlife/templates/earth_que.html:144 newlife/templates/earth_que.html:161
 msgid "Battaniye (Deprem Öncesi)"
-msgstr ""
+msgstr "Decke (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:145
 msgid ""
 "Deprem çantasında bulunması gereken bir diğer gerekli ürün battaniyedir."
-msgstr ""
+msgstr "Ein weiteres notwendiges Produkt, das in der erdbebentasche enthalten sein sollte, ist die Decke."
 
 #: newlife/templates/earth_que.html:162
 msgid ""
 "Deprem çantasında temiz iç çamaşırı, çorap, yağmurluk ve giysilik olmalıdır."
-msgstr ""
+msgstr "In der erdbebentasche sollten saubere Unterwäsche, Socken, Regenmäntel und Kleidung sein."
 
 #: newlife/templates/earth_que.html:178
 msgid "Çikolata (Deprem Öncesi)"
-msgstr ""
+msgstr "Schokolade (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:179
 msgid ""
 "Yüksek kalorili, vitamin ve karbonhidrat içeren, su kaybını önleyen ve "
 "dayanıklı (çabuk bozulmayan) gıdalar deprem çantasında bulundurulmalıdır."
-msgstr ""
+msgstr "Lebensmittel mit hohem Kaloriengehalt, Vitaminen und Kohlenhydraten, die "
+"Wasserverlust verhindern und resistent (nicht schnell verderben) sind, sollten im erdbebenbeutel aufbewahrt werden. "
 
 #: newlife/templates/earth_que.html:195
 msgid "Pil / Powerbank (Deprem Öncesi)"
-msgstr ""
+msgstr "Pil / Powerbank (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:196
 msgid "Acil durum çantası içinde mutlaka pil veya powerbank bulundurulmalıdır."
-msgstr ""
+msgstr "In der Notfalltasche muss unbedingt eine Batterie oder eine lloyerbank aufbewahrt werden."
 
 #: newlife/templates/earth_que.html:212
 msgid "Finansal Tedbirler (Deprem Öncesi)"
-msgstr ""
+msgstr "Finanzielle Maßnahmen (Vor Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:213
 msgid ""
 "Kimlik kartı, tapu, sigorta belgeleri, diplomalar, pasaport, banka cüzdanı "
 "vb. önemli evrakların kopyaları hazırlanmalı ve deprem sigortası "
 "yaptırılmalıdır."
-msgstr ""
+msgstr "ID-Karte, Grundbuch, Versicherungsdokumente, Diplome, Reisepass, Bank Brieftasche, etc. "
+"Kopien wichtiger Dokumente müssen erstellt und eine Erdbebenversicherung abgeschlossen werden."
 
 #: newlife/templates/earth_que.html:229
 msgid "Çök-Kapan-Tutun (Deprem Anında)"
-msgstr ""
+msgstr "Knien-schließen-festhalten (Zum Zeitpunkt Des Erdbebens)"
 
 #: newlife/templates/earth_que.html:230
 msgid ""
 "Sarsıntı başladığı anda sağlam bir nesnenin yanına geçerek çök-kapan-tutun "
 "hareketi yapılmalıdır."
-msgstr ""
+msgstr "Sobald das Schütteln beginnt, muss es neben einem festen Objekt platziert werden, um eine "
+"Knien-schließen-festhalten zu machen. "
 
 #: newlife/templates/earth_que.html:246
 msgid "Kapalı Alanda Kalmak (Deprem Anında)"
-msgstr ""
+msgstr "Aufenthalt In Einem Geschlossenen Raum (Während Eines Erdbebens)"
 
 #: newlife/templates/earth_que.html:247
 msgid ""
 "Depremden sonra kapalı bir alanda kalmışsanız yardım edebilecek kimse olup "
 "olmadığını kontrol ediniz."
-msgstr ""
+msgstr "Wenn Sie sich nach dem Erdbeben in einem geschlossenen Raum aufhalten, überprüfen Sie, ob jemand helfen kann."
 
 #: newlife/templates/earth_que.html:263
 msgid "SMS veya Mobil Uygulama kullanın (Deprem Anında)"
-msgstr ""
+msgstr "Verwenden Sie SMS oder Mobile App (während eines Erdbebens)"
 
 #: newlife/templates/earth_que.html:264
 msgid ""
 "Depremde enkaz altındaysanız aralıklı sms ya da AFAD mobil uygulaması ile "
 "konum iletiminde bulunun."
-msgstr ""
+msgstr "Wenn Sie bei einem Erdbeben unter Trümmern liegen, senden Sie eine standortübertragung per intermittierender sms oder über die AFAD mobile app."
 
 #: newlife/templates/earth_que.html:280
 msgid "Ses Kontrolü (Deprem Anında)"
-msgstr ""
+msgstr "Lautstärkeregelung (Bei Erdbeben)"
 
 #: newlife/templates/earth_que.html:281
 msgid ""
 "Enkaz altında kaldığınız esnada gereksiz yere bağırıp panik olmayınız, "
 "yardım duyduğunuz esnada sesinizi yükseltmeniz daha sağlıklı olacaktır."
-msgstr ""
+msgstr "Schreien sie nicht unnötig und geraten sie nicht in panik, wenn Sie unter Trümmern bleiben, "
+"Es ist gesünder, ihre Stimme zu erheben, wenn Sie Hilfe erhalten."
 
 #: newlife/templates/earth_que.html:297
 msgid "Acil Durum Çağrısı (Deprem Anında)"
-msgstr ""
+msgstr "Notruf (Bei Erdbeben)"
 
 #: newlife/templates/earth_que.html:298
 msgid ""
 "Deprem esnasında veya Deprem Sonrasında ilk olarak AFAD, ambulans, polis ve "
 "itfaiye aranmalıdır."
-msgstr ""
+msgstr "Während oder nach einem Erdbeben sollten zuerst AFAD, Krankenwagen, Polizei und Feuerwehr gerufen werden."
 
 #: newlife/templates/earth_que.html:314
 msgid "Gereksiz Çağrı (Deprem Anında)"
-msgstr ""
+msgstr "Unnötige Anrufe (Bei Erdbeben)"
 
 #: newlife/templates/earth_que.html:315
 msgid ""
 "Deprem bölgesinde gereksiz yere telefon kullanımı yapılmamalı, hatlar meşgul "
 "edilmemelidir."
-msgstr ""
+msgstr "Im Erdbebengebiet sollte kein unnötiger Telefongebrauch durchgeführt werden, die Leitungen sollten NICHT besetzt sein."
 
 #: newlife/templates/earth_que.html:331
 msgid "Acil 112 (Deprem Sonrası)"
-msgstr ""
+msgstr "Notfall 112 (Nach Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:332
 msgid ""
 "Deprem Sonrasında telefona ulaşabiliyorsanız 112 Acil hemen aranmalıdır. "
 "Kendi emniyetinizden emin olduktan sonra çevre için yardım edilmelidir."
-msgstr ""
+msgstr "Wenn Sie das Telefon nach dem Erdbeben erreichen können, "
+"müssen Sie sofort den Notruf 112 anrufen. Sobald Sie sich ihrer eigenen Sicherheit sicher sind, sollten Sie der Umgebung helfen."
 
 #: newlife/templates/earth_que.html:348
 msgid "Çevredeki Ses Kontrolü (Deprem Sonrası)"
-msgstr ""
+msgstr "Lautstärkeregelung In Der Umgebung (Nach Erdbeben)"
 
 #: newlife/templates/earth_que.html:349
 msgid ""
 "Deprem çevresinde enkaz altındaki insanlara daha rahat ulaşılabilmesi için "
 "çevrenin gereksiz ses yapmaması gerekmektedir."
-msgstr ""
+msgstr "Um die Menschen unter den Trümmern rund um das Erdbeben leichter zu erreichen, sollte die Umgebung keine unnötigen Geräusche machen."
 
 #: newlife/templates/earth_que.html:365
 msgid "Bilinçsiz Davranış (Deprem Sonrası)"
-msgstr ""
+msgstr "Unbewusstes Verhalten (Nach Erdbeben)"
 
 #: newlife/templates/earth_que.html:366
 msgid ""
 "Depremden sonra ilk yardım eğitimi almamışsanız, kendiniz de o esnada "
 "sağlıklı durumda değilseniz bilinçsiz bir harekette bulunmayınız."
-msgstr ""
+msgstr "Wenn Sie nach dem Erdbeben keine Erste-Hilfe-Ausbildung erhalten haben, machen Sie keine unbewussten "
+"Bewegungen, wenn Sie sich zu diesem Zeitpunkt nicht in einem gesunden Zustand befinden."
 
 #: newlife/templates/earth_que.html:383
 msgid "Kan Bağışı (Deprem Sonrası)"
-msgstr ""
+msgstr "Blutspende (Nach Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:384
 msgid ""
 "Enkaz altında kalmış insanlar için kan bağışında bulunmak hayat kurtarır."
-msgstr ""
+msgstr "Blutspenden für Menschen, die in Trümmern stecken, retten Leben."
 
 #: newlife/templates/earth_que.html:400
 msgid "Yardımlaşmak (Deprem Sonrası)"
-msgstr ""
+msgstr "Hilfe (Nach Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:401
 msgid ""
 "Depremden sonra ihtiyaç sahipleri için kullanıma uygun kıyafetler bağış "
 "yapılmalı ve yardımda bulunulmalıdır."
-msgstr ""
+msgstr "Nach dem Erdbeben sollten geeignete Kleidung für bedürftige gespendet und Hilfe geleistet werden."
 
 #: newlife/templates/earth_que.html:417
 msgid "Depreme Dayanıklı Ev (Deprem Sonrası)"
-msgstr ""
+msgstr "Erdbebensicheres Haus (Nach Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:418
 msgid ""
 "Binalarımızın daha uzun ömürlü olması için su yalıtımlarına önem "
 "verilmelidir. Binaların temeli ilk günkü gibi sağlam kalacaktır."
-msgstr ""
+msgstr "Für eine längere Lebensdauer unserer Gebäude sollte auf die Abdichtung geachtet werden. "
+"Das Fundament der Gebäude bleibt so intakt wie am ersten Tag."
 
 #: newlife/templates/earth_que.html:434
 msgid "Deprem Kültürü (Deprem Sonrası)"
-msgstr ""
+msgstr "Erdbebenkultur (Nach Dem Erdbeben)"
 
 #: newlife/templates/earth_que.html:435
 msgid ""
 "Depremin hayatın bir gerçeği olduğunu hepimizin bilmesi ve alınması gereken "
 "tedbirlerin herkese iletilmesi bizim sorumluluğumuzdur."
-msgstr ""
+msgstr "Es ist unsere Verantwortung, dass wir alle wissen, dass das Erdbeben eine Tatsache des Lebens ist "
+"und dass die zu ergreifenden Maßnahmen an alle weitergegeben werden. "
+
 
 #: newlife/templates/earth_que.html:448
 msgid "Kod Kaynağı"
-msgstr ""
+msgstr "Code-Quelle"
 
 #: newlife/templates/earth_que.html:454
 msgid "AFAD Deprem"
-msgstr ""
+msgstr "Afad Erdbeben"
 
 #: newlife/templates/pages/dashboard.html:6
 #: newlife/templates/pages/dashboard.html:272
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
 #: newlife/templates/pages/dashboard.html:273
 #: newlife/templates/pages/dashboard.html:365
 msgid "Kullanıcı Bilgileri"
-msgstr ""
+msgstr "Benutzerinformationen"
 
 #: newlife/templates/pages/dashboard.html:274
 #: newlife/templates/pages/dashboard.html:292
 msgid "Kaydedilenler"
-msgstr ""
+msgstr "Gespeichert"
 
 #: newlife/templates/pages/dashboard.html:280
 msgid "Cikis yap"
-msgstr ""
+msgstr "Abmelden"
 
 #: newlife/templates/pages/dashboard.html:294
 #: newlife/templates/pages/homepage.html:340
 msgid "Güncel <span>bloglar</span>"
-msgstr ""
+msgstr "Aktuelle <span>Blogs</span>"
 
 #: newlife/templates/pages/dashboard.html:309
 msgid "incele"
-msgstr ""
+msgstr "Übersicht"
 
 #: newlife/templates/pages/dashboard.html:314
 msgid "Favorilere eklemiş olduğunuz blog bulunmamaktadır."
-msgstr ""
+msgstr "Es gibt keinen blog, den sie zu Ihren Favoriten hinzugefügt haben."
 
 #: newlife/templates/pages/dashboard.html:322
 #: newlife/templates/pages/models_page.html:71
 msgid "Moleküller"
-msgstr ""
+msgstr "Moleküle"
 
 #: newlife/templates/pages/dashboard.html:341
 msgid "Detaylar"
-msgstr ""
+msgstr "Details"
 
 #: newlife/templates/pages/dashboard.html:348
 msgid "Favorilere eklemiş olduğunuz molekül bulunmamaktadır."
-msgstr ""
+msgstr "Es gibt keine Moleküle, die Sie zu den Favoriten hinzugefügt haben."
 
 #: newlife/templates/pages/dashboard.html:402
 msgid "İsim Soyisim"
-msgstr ""
+msgstr "Vorname Nachname"
 
 #: newlife/templates/pages/dashboard.html:407
 msgid "Email"
-msgstr ""
+msgstr "E-Mail"
 
 #: newlife/templates/pages/dashboard.html:411
 msgid "Sınıf Bilgisi"
-msgstr ""
+msgstr "Klasseninformationen"
 
 #: newlife/templates/pages/dashboard.html:421
 msgid "Okul Bilgisi"
-msgstr ""
+msgstr "Schulwissen"
 
 #: newlife/templates/pages/dashboard.html:425
 msgid "Değişiklikleri Kaydet"
-msgstr ""
+msgstr "Änderungen Speichern"
 
 #: newlife/templates/pages/dashboard.html:437
 #: newlife/templates/pages/models_page.html:36
 #: newlife/templates/tests/quiz_page.html:23
 #: newlife/templates/tests/test-detail.html:27
 msgid "Sorular ve Cevaplar"
-msgstr ""
+msgstr "Fragen und Antworten"
 
 #: newlife/templates/pages/homepage.html:74
 msgid "Teorik Eğitim Pratikte Güzel."
-msgstr ""
+msgstr "Die Theoretische Ausbildung Ist In Der Praxis Gut."
 
 #: newlife/templates/pages/homepage.html:76
 msgid "New LiFe Teorik  Eğitimi kolayca deneyimleme fırsatı sunar."
-msgstr ""
+msgstr "Das "New LiFe" bietet die Möglichkeit, das theoretische Training leicht zu erleben."
 
 #: newlife/templates/pages/homepage.html:78
 msgid "Şimdi Deneyimle"
-msgstr ""
+msgstr "Jetzt Erleben"
 
 #: newlife/templates/pages/homepage.html:98
 msgid "New LiFe Kullanıcılarına Ne sunar?"
-msgstr ""
+msgstr "Was bietet "New LiFe" seinen Nutzern?"
 
 #: newlife/templates/pages/homepage.html:100
 msgid ""
@@ -842,6 +863,16 @@ msgid ""
 "               <b>New LiFe Team</b>'in en büyük hedefidir...</p>\n"
 "            "
 msgstr ""
+"\n"
+"               <p><b>\n"
+"               New LiFe Team</b>mit der virtuellen Umgebung, die erstellt wird,  "
+"ist überall eine erlebnisumgebung, wann immer Sie wollen.\n"
+"               New LiFe, theoretisch bietet es seinen Nutzern das Ziel,  "
+"die im Kurs bereitgestellten Informationen ,\n"
+"               mit 3D-und infografikinhalten effizienter zu machen. "
+"Die Erreichbarkeit und Einprägsamkeit von Informationen auf höchstem Niveau zu halten, ist das oberste Ziel\n"
+"               <b>New LiFe Team</b>...</p>\n"
+"            "
 
 #: newlife/templates/pages/homepage.html:107
 msgid ""
@@ -849,201 +880,206 @@ msgid ""
 "deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük "
 "ile sunar. Sizler için bilginin verimliliğini ve akılda kalıcılığını "
 "artırmayı olanaklı hale getirmek için çabalar."
-msgstr ""
+msgstr "Durch die Digitalisierung von Experimenten im Labor erhalten"
+"Sie die Möglichkeit, theoretisches Wissen mit der Virtual Reality (VR) - Brille zu erleben."
+"Wir bemühen uns, die Effizienz und Einprägsamkeit von Informationen für sie zu erhöhen."
 
 #: newlife/templates/pages/homepage.html:110
 msgid "Daha Fazla"
-msgstr ""
+msgstr "Mehr"
 
 #: newlife/templates/pages/homepage.html:124
 msgid "Sizin <span>yararınız</span>"
-msgstr ""
+msgstr "Ihr  <span>Vorteil</span>"
 
 #: newlife/templates/pages/homepage.html:131
 msgid "Etkili Öğrenme"
-msgstr ""
+msgstr "Effektives Lernen"
 
 #: newlife/templates/pages/homepage.html:133
 msgid ""
 "deneyleri bireysel olarak deneyimleme fırsatı sunduğu için etkili öğrenme "
 "sağlar."
-msgstr ""
+msgstr "es bietet effektives Lernen, da es die Möglichkeit bietet, Experimente individuell zu erleben."
 
 #: newlife/templates/pages/homepage.html:142
 msgid "Zaman Kazancı"
-msgstr ""
+msgstr "Zeitgewinn"
 
 #: newlife/templates/pages/homepage.html:144
 msgid ""
 "deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler vakit "
 "kaybettirmez."
-msgstr ""
+msgstr "fehlerhafte Experimente verschwenden keine Zeit, da sie die Experimente in die virtuelle Umgebung übertragen."
 
 #: newlife/templates/pages/homepage.html:153
 msgid "Yeni Deneyimler"
-msgstr ""
+msgstr "Neue Erfahrungen"
 
 #: newlife/templates/pages/homepage.html:155
 msgid ""
 "farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler "
 "sunmayı hedefler."
 msgstr ""
+"es zielt darauf ab, Ihnen verschiedene und glamouröse Umgebungen zu bieten, um Ihnen verschiedene Erfahrungen"
+"und fkirs zu bieten."
 
 #: newlife/templates/pages/homepage.html:164
 msgid "Etkilenmeme"
-msgstr ""
+msgstr "Nicht beeindruckt"
 
 #: newlife/templates/pages/homepage.html:166
 msgid ""
 "ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan "
 "(pandemi gibi) etkilenmezsin."
-msgstr ""
+msgstr "ohne Probleme in die Online-Trainingsplattform integriert werden 
+du bist inaktiv."
 
 #: newlife/templates/pages/homepage.html:181
 msgid "İçeriklerimiz"
-msgstr ""
+msgstr "Unsere Inhalte"
 
 #: newlife/templates/pages/homepage.html:195
 msgid "3D Moleküller"
-msgstr ""
+msgstr "3D-Moleküle"
 
 #: newlife/templates/pages/homepage.html:203
 msgid "Gözlerini kamaştıracak!"
-msgstr ""
+msgstr "Er wird dich blenden!"
 
 #: newlife/templates/pages/homepage.html:217
 msgid "Testleri Çöz"
-msgstr ""
+msgstr "Tests Lösen"
 
 #: newlife/templates/pages/homepage.html:225
 msgid "Sadece Kendinle Yarış."
-msgstr ""
+msgstr "Rennen Sie Nur Mit Sich Selbst."
 
 #: newlife/templates/pages/homepage.html:238
 msgid "Periyodik Tablo"
-msgstr ""
+msgstr "Periodensystem"
 
 #: newlife/templates/pages/homepage.html:246
 msgid "Animasyonlu & akılda kalıcı."
-msgstr ""
+msgstr "Animiert & eingängig."
 
 #: newlife/templates/pages/homepage.html:259
 msgid "Tepkime Zamanı"
-msgstr ""
+msgstr "Reaktionszeit"
 
 #: newlife/templates/pages/homepage.html:267
 msgid "Tepkimeleri yakından incele!"
-msgstr ""
+msgstr "Untersuche die Reaktionen genau!"
 
 #: newlife/templates/pages/homepage.html:280
 msgid "Kodlayarak Ezberle"
-msgstr ""
+msgstr "Auswendig Lernen"
 
 #: newlife/templates/pages/homepage.html:288
 msgid "Ezberlemeye Gerek Yok."
-msgstr ""
+msgstr "Du Musst Es Nicht Auswendig Lernen."
 
 #: newlife/templates/pages/homepage.html:301
 msgid "Her zaman önlem"
-msgstr ""
+msgstr "Immer Vorsicht"
 
 #: newlife/templates/pages/homepage.html:309
 msgid "Depreme tam hazırlık."
-msgstr ""
+msgstr "Volle erdbebenvorbereitung."
 
 #: newlife/templates/pages/homepage.html:322
 msgid "Bulmaca Oyunu"
-msgstr ""
+msgstr "Puzzle-Spiel"
 
 #: newlife/templates/pages/homepage.html:330
 msgid "Biraz Oyun fena olmaz."
-msgstr ""
+msgstr "Ein bisschen Spiel wäre nicht schlecht."
 
 #: newlife/templates/pages/homepage.html:355
 msgid "İncele"
-msgstr ""
+msgstr "Übersicht"
 
 #: newlife/templates/pages/homepage.html:369
 msgid "Kullanıcı <span>Yorumları</span>"
-msgstr ""
+msgstr "User <span>Kommentare</span>"
 
 #: newlife/templates/pages/homepage.html:397
-msgid "Yönetim <span>Ekibimiz</span>"
+msgid "Management <span>Team</span>"
 msgstr ""
 
 #: newlife/templates/pages/homepage.html:434
 msgid "Bizimle iletişime geç"
-msgstr ""
+msgstr "Kontaktieren Sie uns"
 
 #: newlife/templates/pages/homepage.html:437
 msgid "Ad Soyad"
-msgstr ""
+msgstr "Vorname Nachname"
 
 #: newlife/templates/pages/homepage.html:442
 msgid "E-Mail Adresi"
-msgstr ""
+msgstr "E-Mail-Adresse"
 
 #: newlife/templates/pages/homepage.html:447
 msgid "Telefon Numarası"
-msgstr ""
+msgstr "Telefonnummer"
 
 #: newlife/templates/pages/homepage.html:449
 msgid "İletişime geç"
-msgstr ""
+msgstr "Kontakt"
 
 #: newlife/templates/pages/models_page.html:37
 #: newlife/templates/tests/quiz_page.html:24
 #: newlife/templates/tests/test-detail.html:28
 msgid "Modeller"
-msgstr ""
+msgstr "Modelle"
 
 #: newlife/templates/pages/models_page.html:67
 msgid "Deneyimleme</span> Merkezine Hoş Geldiniz"
-msgstr ""
+msgstr "Willkommen </span> Im Erlebniszentrum."
 
 #: newlife/templates/pages/models_page.html:74
 msgid "Hepsini göster"
-msgstr ""
+msgstr "Alle Anzeigen"
 
 #: newlife/templates/pages/models_page.html:75
 msgid "10 Sınıf"
-msgstr ""
+msgstr "10. Klasse"
 
 #: newlife/templates/pages/models_page.html:76
 msgid "11 sınıf"
-msgstr ""
+msgstr "11. Klasse"
 
 #: newlife/templates/pages/models_page.html:77
 msgid "12 sınıf"
-msgstr ""
+msgstr "12. Klasse"
 
 #: newlife/templates/pages/models_page.html:78
 msgid "Üniversite"
-msgstr ""
+msgstr "Universität"
 
 #: newlife/templates/pages/models_page.html:114
 msgid "Genel Kültür <span>Soru & Cevap</span>"
-msgstr ""
+msgstr "Allgemeine Kultur <span>Frage & Antwort</span>"
 
 #: newlife/templates/tests/quiz_page.html:48
 msgid "Sorudan oluşuyor"
-msgstr ""
+msgstr "Besteht aus einer Frage"
 
 #: newlife/templates/tests/test-detail.html:12
 msgid "Quiz App"
-msgstr ""
+msgstr "Quiz-App"
 
 #: newlife/templates/tests/test-detail.html:65
 msgid "Save"
-msgstr ""
+msgstr "Speichern"
 
 #: newlife/templates/video/video.html:8
 msgid "Videolar"
-msgstr ""
+msgstr "Videos"
 
 #: newlife/templates/video/video.html:35
 msgid "Video Bülteni"
-msgstr ""
+msgstr "Video Newsletter"
 
 #: newlife/users/admin.py:18
 msgid "Personal info"
