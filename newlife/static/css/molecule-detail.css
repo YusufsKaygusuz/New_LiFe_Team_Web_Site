@@ -19,7 +19,6 @@ a{
   background-image: -webkit-linear-gradient( 45deg, #d3ad7f 20%, white 45%, #d3ad7f 60% );
   background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 

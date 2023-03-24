@@ -39,9 +39,7 @@ a{
   height: 350px;
   display: grid;
   border-radius: 10px;
-
   overflow: hidden;
-  background: center no-repeat url(../../static/images/solar_system.jpg);
   position: relative;
   box-shadow: 0px 4px 100px -3px rgba(0, 5, 151, 0.2);
 }
@@ -82,31 +80,6 @@ a{
 }
 .content .poster .poster-buttons div:hover {
   color: #ccc;
-}
-
-
-
-.info {
-  border-radius: 10px;
-  border: 1px solid #e9e9f6;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 40px auto;
-  background-color: #fdfdfd;
-  overflow: hidden;
-  height: 60px;
-}
-.info .block {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 300;
-  color: #242e47;
-}
-.info .block .mini-title {
-  font-size: 12px;
-  color: #999999;
-  font-weight: 700;
 }
 
 .words {
@@ -150,39 +123,9 @@ a{
   opacity: 1;
 }
 
-.quote {
-  position: relative;
-  padding: 40px 40px 40px 45px;
-  background-color: #fdfdfd;
-  border-radius: 10px;
-  min-height: 140px;
-  font-size: 22px;
-  line-height: 1.5em;
-  font-family: "Times New Roman", Times, serif;
-  color: #777;
-}
-.quote .letter {
-  font-size: 150px;
-  position: absolute;
-  top: 50px;
-  color: #ebebeb;
-}
-.quote .author {
-  font-size: 12px;
-}
-.quote .author::before {
-  content: "";
-  width: 40px;
-  height: 1px;
-}
-
 @media (max-width: 700px) {
   .content {
     width: 90%;
-  }
-  .info {
-    grid-template-columns: repeat(2, 1fr);
-    height: 120px;
   }
   .content .poster {
     height: 250px;
@@ -192,12 +135,6 @@ a{
   }
   .content .poster .poster-title p, .content .poster .poster-title .line {
     display: none;
-  }
-  .quote {
-    font-size: 16px;
-  }
-  .quote .letter {
-    left: 0px;
   }
 }/*# sourceMappingURL=molecule-detail.css.map */
 
@@ -306,7 +243,6 @@ a{
 {
     font-weight: bold;
 }
-
 
 
 /* Media Queries*/
