@@ -240,11 +240,11 @@ form {
 	color: #fff;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
-	background: linear-gradient(to right, #e5c29c, #2f5ac8);
+	background: linear-gradient(to bottom left, #b13bcc, #2f5ac8);
 	background-repeat: no-repeat;
 	background-size: cover;
-	-webkit-transition: transform .6s ease-in-out;
-	transition: transform .6s ease-in-out;
+	-webkit-transition: transform .5s ease-in-out;
+	transition: transform .5s ease-in-out;
 }
 
 
@@ -276,6 +276,7 @@ form {
 .overlay-left {
 	-webkit-transform: translateX(-5%);
 	transform: translateX(-5%);
+	
 }
 
 footer {
