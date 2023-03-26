@@ -65,10 +65,28 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #354052;
+  background: linear-gradient(-45deg, #6b9cd0, black, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   position: fixed;
   transition: all 0.5s;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
 .left:hover {
   width: 200px;
 }
@@ -117,7 +135,7 @@ body {
 .left ul .menu-heading {
   opacity: 0;
   padding: 10px 5px 10px 10px;
-  color: #b3b300;
+  color: white;
   font-size: smaller;
   border-bottom: 1px solid #2b3443;
   transition: all 0.5s;
@@ -1135,12 +1153,20 @@ body {
   background: white;
   display: block;
   border: 1px solid #e6e6e6;
-  padding: 15px 30px;
+  padding: 5px 30px;
   margin-left: -15px;
 }
 .right #user-profile .header h4 {
   display: inline-block;
   color: #354052;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+	 background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 font-size: 2rem;
+	 font-family: 'Poppins', sans-serif;
 }
 .right #user-profile .header ul {
   right: 0;
@@ -1224,7 +1250,9 @@ body {
 }
 .right #user-profile .content .row {
   padding-top: 20px;
+  background: linear-gradient(to right bottom, #6b9cd0, #07010a);
 }
+
 .right #user-profile .content .row .card-7, .right #user-profile .content .row .card-5 {
   background: white;
 }
@@ -1317,6 +1345,8 @@ body {
 .right #user-profile .content .row .card-5 {
   padding: 15px;
   margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .right #user-profile .content .row .card-5 .profile {
   width: 100%;
@@ -1330,9 +1360,40 @@ body {
   height: 100px;
 }
 .right #user-profile .content .row .card-5 .profile h4 {
+  position: absolute;
+  top: 33%;
+	text-transform: uppercase;
   font-weight: bold;
-  line-height: 40px;
+  font-size: 2rem;
+  font-family: monospace;
+	color: transparent;
+  align-self: center;
+  letter-spacing: 0.3rem;
+  
 }
+.right #user-profile .content .row .card-5 .profile h4:before {
+	content: attr(data-text);
+  position: absolute;
+	color: #000;
+	overflow: hidden;
+	border-right: 1px solid #000;
+	animation: type 10s steps(30) infinite;
+	white-space: nowrap;
+}
+
+@keyframes type {
+	0% {
+		width: 0;
+	}
+	
+	50% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
+	}
+}
+
 .right #user-profile .content .row .card-5 .profile h4 small {
   font-size: small;
   display: block;
@@ -1370,10 +1431,34 @@ body {
   color: black;
   font-weight: bold;
 }
+
+.right #user-profile .content .row .card-5 .fb input{
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+}
+
 .right #user-profile .content .row .card-5 .fb span {
-  background: #d3ad7f;
+  /*background: #d3ad7f;*/
+  background: linear-gradient(to top, #eac2aa, #3c87df);
   padding-top: 7px;
 }
+
+.right #user-profile .content .row .card-5 .fb .select-dropdown{
+  padding-top: 7px;
+}
+
+.right #user-profile .content .row .card-5 .fb .select-dropdown select{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  padding: 0.3rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .right #user-profile .content .row .card-5 .drop span {
   background: purple;
 }
@@ -1492,6 +1577,9 @@ body {
 }
 .right #candidates .header ul li .dropdown-avatar i.fa {
   padding-left: 8px;
+}
+.avatar-upload .avatar-preview{
+  box-shadow: 3px 8px 12px 3px rgba(0, 0, 0, 0.6)!important;
 }
 .right #candidates .content {
   margin: 0 30px 15px 15px;

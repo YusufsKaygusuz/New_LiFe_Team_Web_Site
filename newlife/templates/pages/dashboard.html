@@ -47,8 +47,6 @@
 }
 
 
-
-
 .blogs .box-container .box .content .title:hover{
     color: var(--main-color);
 }
@@ -388,7 +386,7 @@
 
                     </div>
                 </div>
-                  <h4>{% if request.user.name %}{{ request.user.name }} {% else %}{{ request.user.username }}{% endif %}
+                  <h4 data-text="{% if request.user.name %}{{ request.user.name }} {% else %}{{ request.user.username }}{% endif %}">{% if request.user.name %}{{ request.user.name }} {% else %}{{ request.user.username }}{% endif %}
                   </h4>
                 </div>
                <br>
@@ -420,7 +418,8 @@
                   <h5>{% trans 'Okul Bilgisi' %} <br><input name="university" value="{{ request.user.university }}" placeholder="Istanbul Teknik"></h5>
                 </div>
                 <hr>
-                <button type="submit" style="background-color: #d3ad7f!important;border-color: transparent!important;" class="btn btn-primary" >
+                <button type="submit" style="background: linear-gradient(to right bottom, #6b9cd0, #07010a);;
+                border-color: transparent!important;" class="btn btn-primary" >
                   {% trans 'Değişiklikleri Kaydet' %}
                  </button>
                 </form>
@@ -568,6 +567,7 @@
   border-radius: 100%;
   border: 6px solid #F8F8F8;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
 }
 .avatar-upload .avatar-preview > div {
   width: 100%;

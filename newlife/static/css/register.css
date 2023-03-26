@@ -406,13 +406,10 @@ a.login-link:hover {
 	opacity: .5;
 }
 
-.alert-text.signup_alert {}
-
 .form-link.forgot {
 	margin: -.3rem 0 1.5rem 0;
 }
 
-/* -----------------The start of Validation* ----------------- */
 
 input:focus,
 input:not(:placeholder-shown) {
