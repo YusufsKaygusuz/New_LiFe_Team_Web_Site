@@ -49,9 +49,9 @@ NewLiFe
 <section class="home" id="home">
 
     <div class="content">
-        <h3>{% trans 'Teorik Eğitim Pratikte Güzel.' %}</h3>
+        <h3>{% trans 'Teorik Eğitim Pratikte Güzel.'%}</h3>
 
-        <p>{% trans 'New LiFe Teorik Eğitimi kolayca deneyimleme fırsatı sunar.' %}</p>
+        <p>{% trans 'New LiFe Teorik Eğitimi kolayca deneyimleme fırsatı sunar.'%}</p>
 
         <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">{% trans 'Şimdi Deneyimle' %}</a>
 
@@ -64,7 +64,7 @@ NewLiFe
 <!--About Section Starts-->
 
 <section class="about" id="about">
-    <h1 class="heading"> <span>New LiFe</span> {% trans 'Hakkında' %}</h1>
+    <h1 class="heading"> <span>New LiFe </span>{% trans 'Hakkında'%}</h1>
 
     <div class="flex-container">
 
@@ -86,7 +86,7 @@ NewLiFe
             {% endblocktrans %}
             <p>{% trans 'Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi deneyimleme fırsatını sizlere
                 web site destekli Virtual Reality (VR) gözlük ile sunar. Sizler için bilginin verimliliğini ve akılda
-                kalıcılığını artırmayı olanaklı hale getirmek için çabalar.' %}</p>
+                kalıcılığını artırmayı olanaklı hale getirmek için çabalar.'%}</p>
 
             <!--  <a href="#" class="btn">{% trans 'Daha Fazla' %}</a> -->
 
@@ -102,7 +102,7 @@ NewLiFe
 
 <section class="menu" id="menu">
 
-    <h1 class="heading"> {% trans 'Sizin <span>yararınız</span>' %}</h1>
+    <h1 class="heading">{% trans 'Sizin <span>yararınız</span>'%}</h1>
 
     <div class="box-container">
         <div class="box">
@@ -111,8 +111,8 @@ NewLiFe
 
             <h3>{% trans 'Etkili Öğrenme' %}</h3>
 
-            <div class="price">New LiFe<span> {% trans 'deneyleri bireysel olarak deneyimleme fırsatı sunduğu için
-                    etkili öğrenme sağlar.' %}</span></div>
+            <div class="price">New LiFe <span>{% trans 'deneyleri bireysel olarak deneyimleme fırsatı sunduğu için
+                    etkili öğrenme sağlar.'%}</span></div>
 
         </div>
 
@@ -123,8 +123,8 @@ NewLiFe
 
             <h3>{% trans 'Zaman Kazancı' %}</h3>
 
-            <div class="price">New LiFe<span> {% trans 'deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler
-                    vakit kaybettirmez.' %}</span></div>
+            <div class="price">New LiFe <span>{% trans 'deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler
+                    vakit kaybettirmez.'%}</span></div>
 
         </div>
 
@@ -132,8 +132,8 @@ NewLiFe
         <div class="box">
 
             <img src="{% static 'VR/yeni_deneyimler.jpg' %}" alt="">
-
-            <h3> {% trans 'Yeni Deneyimler' %}</h3>
+            
+            <h3>{% trans 'Yeni Deneyimler' %}</h3>
 
             <div class="price">New LiFe, <span>{% trans 'farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler
                     ve fkirler sunmayı hedefler.' %}</span></div>
@@ -147,7 +147,7 @@ NewLiFe
 
             <h3>{% trans 'Etkilenmeme' %}</h3>
 
-            <div class="price">New LiFe <span> {% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz
+            <div class="price">New LiFe <span>{% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz
                     koşullardan (pandemi gibi) etkilenmezsin.' %}</span></div>
 
         </div>
@@ -322,15 +322,15 @@ NewLiFe
 <!--Blogs section starts -->
 
 <section class="blogs" id="blogs">
-    <h1 class="heading"> {% trans 'Güncel <span>bloglar</span>' %}</h1>
+    <h1 class="heading">{% trans 'Güncel <span>bloglar</span>' %}</h1>
 
     <div class="box-container">
-        {% for blog in blogs %}
+       {% for blog in blogs %}
         <div class="box">
             <div class="image">
-                {% if blog.image %}
+               {% if blog.image %}
                 <img src="{{ blog.image.url }}" alt="">
-                {% endif %}
+               {% endif %}
             </div>
             <div class="content">
                 <a href="#" class="title">{{ blog.title }}</a>
@@ -340,7 +340,7 @@ NewLiFe
                 <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
             </div>
         </div>
-        {% endfor %}
+       {% endfor %}
 
     </div>
 
@@ -354,21 +354,21 @@ NewLiFe
     <h1 class="heading">{% trans 'Kullanıcı <span>Yorumları</span>' %} </h1>
 
     <div class="box-container">
-        {% for user_comment in user_comments %}
+       {% for user_comment in user_comments %}
         <div class="box">
             <img src="{% static 'quote-img.png' %}" alt="" class="quote">
             <p>{{ user_comment.comment }}</p>
-            {% if user_comment.user_image %}
+           {% if user_comment.user_image %}
             <img src="{{ user_comment.user_image.url }}" class="user" alt="">
-            {% endif %}
+           {% endif %}
             <h3>{{ user_comment.user_full_name }}</h3>
             <div class="stars">
-                {% for counter in user_comment.get_total_range %}
+               {% for counter in user_comment.get_total_range %}
                 <i class="fas fa-star"></i>
-                {% endfor %}
+               {% endfor %}
             </div>
         </div>
-        {% endfor %}
+       {% endfor %}
     </div>
 
 </section>
@@ -382,28 +382,28 @@ NewLiFe
     <h1 class="heading">{% trans 'Yönetim <span>Ekibimiz</span>' %} </h1>
 
     <div class="box-container">
-        {% for management_member in management_members %}
+       {% for management_member in management_members %}
         <div class="box">
-            {% if management_member.image %}
+           {% if management_member.image %}
             <img src="{{ management_member.image.url }}" alt="">
-            {% endif %}
+           {% endif %}
             <div class="content">
                 <span>{{ management_member.title }}</span>
                 <h3>{{ management_member.full_name }}</h3>
                 <div class="share">
-                    {% if management_member.linkedin %}
+                   {% if management_member.linkedin %}
                     <a href="{{ management_member.linkedin }}" class="fab fa-linkedin"></a>
-                    {% endif %}
-                    {% if management_member.instagram %}
+                   {% endif %}
+                   {% if management_member.instagram %}
                     <a href="{{ management_member.instagram }}" class="fab fa-instagram"></a>
-                    {% endif %}
+                   {% endif %}
                     <a href="" class="fab fa-github"></a>
 
                     <a href="" class="fab fa-medium"></a>
                 </div>
             </div>
         </div>
-        {% endfor %}
+       {% endfor %}
     </div>
 
 </section>
