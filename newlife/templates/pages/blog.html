@@ -1,109 +1,115 @@
 {% load static i18n%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <link rel="shortcut icon" href="#">
-    <title>{{ blog.title }}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <link rel="shortcut icon" href="#">
+  <title>{{ blog.title }}</title>
 </head>
+
 <body>
-    <!--Header section starts -->
+  <!--Header section starts -->
 
-   <header class="header">
+  <header class="header">
 
-       <a href="#" class="logo">
-           <img src="{% static 'images/TeamLogo.png' %}" alt="">
-       </a>
+    <a href="#" class="logo">
+      <img src="{% static 'images/TeamLogo.png' %}" alt="">
+    </a>
 
-       <nav class="navbar">
-           <a href="{% url 'homepage' %}">New LiFe</a>
+    <nav class="navbar">
+      <a href="{% url 'homepage' %}">New LiFe</a>
 
-           <a href="{% url 'molecule' %}">3D Moleküller</a>
-           <a href="#blogs">{% trans 'Bloglar' %}</a>
-       </nav>
-         <div class="icons">
-          <div class="fas fa-user"></div>
-         </div>
+      <a href="{% url 'molecule' %}">3D Moleküller</a>
+      <a href="#blogs">{% trans 'Bloglar' %}</a>
+    </nav>
+    <div class="icons">
+      <div class="fas fa-user"></div>
+    </div>
 
-   </header>
+  </header>
 
-   <!--Header Section ends-->
-    <div class="wrapper" style="margin-top: 6rem;">
-        <div class="scroll-indicator"></div>
-        <div class="content-wrapper">
-          <div class="content">
-            <div class="poster" >
-              <div style="background: center no-repeat url('{{ blog.image.url }}');">
-              <div class="poster-title">
-                <h1> {{ blog.title }} </h1>
-                <div class="line"></div>
-                <p> {{ blog.short_description }} </p>
-              </div>
-              <div class="poster-buttons">
-                <div></div>
-                <div></div>
-                <div>
-                  <form action="{% url 'add-fav-blog' %}" method="POST">
-                    {% csrf_token %}
-                    <input type="hidden" value="{{ blog.slug }}" name="blog">
-                  <button type="submit" style="cursor: pointer;"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                </button>
-                    </form>
-                </div>
-
-              </div>
-                </div>
+  <!--Header Section ends-->
+  <div class="wrapper" style="margin-top: 6rem;">
+    <div class="scroll-indicator"></div>
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="poster">
+          <div style="background: center no-repeat url('{{ blog.image.url }}');">
+            <div class="poster-title">
+              <h1> {{ blog.title }} </h1>
+              <div class="line"></div>
+              <p> {{ blog.short_description }} </p>
             </div>
-
-            <div class="words">
-
-              <div class="buttons">
+            <div class="poster-buttons">
+              <div></div>
+              <div></div>
+              <div>
+                <form action="{% url 'add-fav-blog' %}" method="POST">
+                  {% csrf_token %}
+                  <input type="hidden" value="{{ blog.slug }}" name="blog">
+                  <button type="submit" style="cursor: pointer;"><svg viewBox="0 0 24 24" width="24" height="24"
+                      stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                      class="css-i6dzq1">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                    </svg>
+                  </button>
+                </form>
               </div>
-            </div>
-
-            <div class="words">
-              {{ blog.description|safe }}
-              <div class="buttons">
-              </div>
-            </div>
-            <div class="author">
-              <div class="image"></div>
             </div>
           </div>
         </div>
-        <div class="footer">
-             <!-- footer section starts -->
-             <section class="footer">
 
-               <div class="share">
-                 <a href="#" class="fab fa-instagram"></a>
-                 <a href="#" class="fab fa-linkedin"></a>
-                 <a href="#" class="fab fa-facebook-f"></a>
-                 <a href="#" class="fab fa-twitter"></a>
-                 <!--
-              <a href="#" class="fab fa-pinterest"></a>
-                -->
-               </div>
+        <div class="words">
 
-               <div class="links">
-                 <a href="#home">New LiFe</a>
-                 <a href="#about">{% trans 'Hakkında' %}</a>
+          <div class="buttons">
+          </div>
+        </div>
 
-                 <a href="#contact">{% trans 'İletişim' %}</a>
-                 <a href="#blogs">{% trans 'Bloglar' %}</a>
-               </div>
-
-               <div class="credit">created by <span>New LiFe Software®</span> | all rights reserved</div>
-
-             </section>
-
-             <!-- footer section ends -->
+        <div class="words">
+          {{ blog.description|safe }}
+          <div class="buttons">
+          </div>
+        </div>
+        <div class="author">
+          <div class="image"></div>
         </div>
       </div>
+    </div>
+
+    <div class="footer">
+      <!-- footer section starts -->
+      <section class="footer">
+
+        <div class="share">
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <!--
+              <a href="#" class="fab fa-pinterest"></a>
+                -->
+        </div>
+
+        <div class="links">
+          <a href="#home">New LiFe</a>
+          <a href="#about">{% trans 'Hakkında' %}</a>
+          <a href="#blogs">{% trans 'Bloglar' %}</a>
+        </div>
+
+        <div class="credit">created by <span>New LiFe Software®</span> | all rights reserved</div>
+
+      </section>
+
+      <!-- footer section ends -->
+    </div>
+  </div>
 </body>
+
 </html>
-<script src="{% static 'js/navbar.js' %}"></script>
