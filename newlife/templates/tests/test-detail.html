@@ -1,78 +1,83 @@
-{% load static i18n%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'tests/style.css' %}">
-    
-    <script src="https://kit.fontawesome.com/342744487d.js"></script>
-
-    <title>{% trans 'Quiz App' %}</title>
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="{% static 'tests/test-detail-style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    
-<header class="header">
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Sınavı Başlat</button></div>
 
-    <a href="{% url 'homepage' %}" class="logo">
-        <img src="{% static 'images/TeamLogo2.png' %}" alt="">
-    </a>
- 
-    <nav class="navbar">
-       
-        <a href="{% url 'coding-gallery' %}">Kodlama Galeri</a>
-        <a href="{% url 'molecule' %}">3D Moleküller</a>
-        <!--
-        <a href="#sorular">{% trans 'Sorular ve Cevaplar' %}</a>
-        <a href="#gallery">3D {% trans 'Modeller' %}</a>
-        -->
-    </nav>
- 
-    <div class="icons">
-       <div class="fas fa-user"></div>
-    </div>
- </header>
-
- 
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-            <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Answer</label>
-                </li>
-
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer">
-                    <label for="b" id="b_text">Answer</label>
-                </li>
-
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer">
-                    <label for="c" id="c_text">Answer</label>
-                </li>
-
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer">
-                    <label for="d" id="d_text">Answer</label>
-                </li>
-
-            </ul>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Sınav ile ilgili bazı kurallar</span></div>
+        <div class="info-list">
+            <div class="info">1. Her soru için <span>15 saniye </span> süreniz olacaktır.</div>
+            <div class="info">2. Cevabınızı seçtikten sonra, geri alınamaz.</div>
+            <div class="info">3. Zaman geçtikten sonra herhangi bir seçenek seçemezsiniz.</div>
+            <div class="info">4. Sınavı çözerken sınavdan çıkamazsın.</div>
+            <div class="info">5. Doğru cevaplarınıza dayanarak puan kazanacaksınız.</div>
         </div>
-
-    <button id="submit">{% trans 'Save' %}</button>
-
+        <div class="buttons">
+            <button class="quit">Geri Gel</button>
+            <button class="restart">Devam Et</button>
+        </div>
     </div>
 
-    <script>
-      {{ test.custom_js|safe }}
-const quiz=document.getElementById("quiz"),answerEls=document.querySelectorAll(".answer"),questionEl=document.getElementById("question"),a_text=document.getElementById("a_text"),b_text=document.getElementById("b_text"),c_text=document.getElementById("c_text"),d_text=document.getElementById("d_text"),submitBtn=document.getElementById("submit");let currentQuiz=0,score=0;function loadQuiz(){deselectAnswers();let e=quizData[currentQuiz];questionEl.innerText=e.question,a_text.innerText=e.a,b_text.innerText=e.b,c_text.innerText=e.c,d_text.innerText=e.d}function deselectAnswers(){answerEls.forEach(e=>e.checked=!1)}function getSelected(){let e;return answerEls.forEach(t=>{t.checked&&(e=t.id)}),e}loadQuiz(),submitBtn.addEventListener("click",()=>{let e=getSelected();e&&(e===quizData[currentQuiz].correct&&score++,++currentQuiz<quizData.length?loadQuiz():quiz.innerHTML=`
-            <h2>Cevaplarınız doğrultusunda ${score}/${quizData.length} puan aldınız. </h2>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">New LiFe Sınav Uygulaması</div>
+            <div class="timer">
+                <div class="time_left_txt">Kalan süre</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Burada javascript'ten soru ekledim -->
+            </div>
+            <div class="option_list">
+                <!-- Buraya javascript'ten seçenekler ekledim -->
+            </div>
+        </section>
 
-            <button onclick="location.reload()">Yeniden \xc7\xf6z
-            `)});
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Burada javascript'ten Soru Sayısı Numarası ekledim -->
+            </div>
+            <button class="next_btn">Diğer Soru</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Sınavı tamamladın!</div>
+        <div class="score_text">
+            <!-- Buraya javascript'ten Puan Sonucu ekledim -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Sınavı Tekrarla</button>
+            <button class="quit">Sınavdan Çık</button>
+        </div>
+    </div>
+
+    <!-- Bu JavaScript dosyasının içine yalnızca Sorular ve Seçenekler ekledim -->
+<script>
+      {{ test.custom_js|safe }}
     </script>
+    <!-- Bu JavaScript dosyasının içinde tüm Sınav Kodlarını kodladım -->
+    <script src="{% static 'tests/script.js' %}"></script>
+
 </body>
 </html>
+
