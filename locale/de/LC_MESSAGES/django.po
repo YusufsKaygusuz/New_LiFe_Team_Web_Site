@@ -1103,23 +1103,23 @@ msgstr "Übersicht"
 #, fuzzy
 #| msgid "Güncel <span>bloglar</span>"
 msgid "Ders <span>Notları</span>"
-msgstr "Aktuelle <span>Blogs</span>"
+msgstr "Vorlesungsnotizen <span></span>"
 
 #: newlife/templates/pages/homepage.html:355
 msgid "12.Sınıf Ders Notu"
-msgstr ""
+msgstr "12.Klasse Vorlesungsnotiz"
 
 #: newlife/templates/pages/homepage.html:358
 msgid "Akılda Kalıcılığı yüksek notlarla hazırlan"
-msgstr ""
+msgstr "Machen Sie sich mit hohen eingängigen Noten bereit"
 
 #: newlife/templates/pages/homepage.html:369
 msgid "11.Sınıf Ders Notu"
-msgstr ""
+msgstr "11.Klasse Vorlesungsnotiz"
 
 #: newlife/templates/pages/homepage.html:372
 msgid "Sınavlarda New LiFe yanında"
-msgstr ""
+msgstr "Wir stehen Ihnen bei den Prüfungen zur Seite"
 
 #: newlife/templates/pages/homepage.html:383
 #, fuzzy
@@ -1135,11 +1135,11 @@ msgstr "Volle erdbebenvorbereitung."
 
 #: newlife/templates/pages/homepage.html:396
 msgid "9.Sınıf Ders Notu"
-msgstr ""
+msgstr "9.Klasse Vorlesungsnotiz"
 
 #: newlife/templates/pages/homepage.html:399
-msgid "Kimyaya sağlam başlangıçk"
-msgstr ""
+msgid "Kimyaya sağlam başlangıç"
+msgstr "Guter Anfang in der Chemie"
 
 #: newlife/templates/pages/homepage.html:414
 msgid "Kullanıcı <span>Yorumları</span>"
