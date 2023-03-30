@@ -53,7 +53,7 @@
               {% endfor %}
             </div>
             <div class="form-link forgot">
-              <a href="#" class="login-link">{% trans 'Parolanı mı unuttun?' %}</a>
+              <a href="{% url 'account_reset_password' %}" class="login-link">{% trans 'Parolanı mı unuttun?' %}</a>
             </div>
             <div class="group button-group">
               <button class="signin-btn" type="submit">
