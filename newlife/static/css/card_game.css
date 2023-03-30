@@ -4,12 +4,11 @@
     box-sizing: border-box;
   }
   body {
-    background-color: #e9e9e9;
+    background-color: #0e0e0e;
   }
 
   .head {
     max-width: 480px;
-    border: 2px solid #a6a6a6;
     margin: auto;
     height: 150px;
     display: flex;
@@ -18,6 +17,7 @@
     flex-direction: column;
     margin-top: 20px;
     font-family: "Orbitron", sans-serif;
+    border-radius: 10px;
     color: white;
     letter-spacing: 2px;
     background: linear-gradient(to right top, #5160dd, #e67654);
