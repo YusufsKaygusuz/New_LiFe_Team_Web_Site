@@ -312,37 +312,7 @@ NewLiFe
     </div>
 </section>
 
-
-<!--Blogs section starts -->
-
-<section class="blogs" id="blogs">
-    <h1 class="heading">{% trans 'Güncel <span>bloglar</span>' %}</h1>
-
-    <div class="box-container">
-       {% for blog in blogs %}
-        <div class="box">
-            <div class="image">
-               {% if blog.image %}
-                <img src="{{ blog.image.url }}" alt="">
-               {% endif %}
-            </div>
-            <div class="content">
-                <a href="#" class="title">{{ blog.title }}</a>
-
-                <span>{% trans 'İçerik Ekibi' %} / {{ blog.created_at|date }}</span>
-                <p>{{ blog.short_description }}</p>
-                <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
-            </div>
-        </div>
-       {% endfor %}
-
-    </div>
-
-</section>
-<!--Blogs section ends
-<img src="{% static 'VR/OurLogo.png' %}" alt="">
--->
-
+<!--Ders Notları section start -->
 <section class="blogs" id="blogs">
     <h1 class="heading">{% trans 'Ders <span>Notları</span>' %}</h1>
 
@@ -404,8 +374,41 @@ NewLiFe
 </div>
 </section>
 
+<!--Ders notları section end-->
 
 
+
+
+
+
+
+<!--Blogs section starts -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">{% trans 'Güncel <span>bloglar</span>' %}</h1>
+
+    <div class="box-container">
+       {% for blog in blogs %}
+        <div class="box">
+            <div class="image">
+               {% if blog.image %}
+                <img src="{{ blog.image.url }}" alt="">
+               {% endif %}
+            </div>
+            <div class="content">
+                <a href="#" class="title">{{ blog.title }}</a>
+
+                <span>{% trans 'İçerik Ekibi' %} / {{ blog.created_at|date }}</span>
+                <p>{{ blog.short_description }}</p>
+                <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
+            </div>
+        </div>
+       {% endfor %}
+
+    </div>
+
+</section>
+<!--Blogs section ends -->
 
 <!--Comment section starts -->
 

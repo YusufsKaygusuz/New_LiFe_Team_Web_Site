@@ -420,11 +420,11 @@ msgstr "card-game/"
 
 #: newlife/templates/card_game.html:21
 msgid "Hafıza Oyunu"
-msgstr ""
+msgstr "Memory Game"
 
 #: newlife/templates/card_game.html:22
 msgid "Skor"
-msgstr ""
+msgstr "Scor"
 
 #: newlife/templates/coding_gallery.html:8
 msgid "Akılda Kodlama"
@@ -439,7 +439,7 @@ msgstr "tests"
 #: newlife/templates/coding_gallery.html:22 newlife/templates/earth_que.html:27
 #: newlife/templates/pages/molecule_detail.html:26
 msgid "Video Bülten"
-msgstr ""
+msgstr "Video Newsletter"
 
 #: newlife/templates/coding_gallery.html:35
 #: newlife/templates/video/video.html:23
@@ -490,250 +490,251 @@ msgstr "Contact"
 
 #: newlife/templates/earth_que.html:9
 msgid "Deprem'e Hazırlık"
-msgstr ""
+msgstr "Preparing for an Earthquake"
 
 #: newlife/templates/earth_que.html:47
 msgid "Eşyalardan Kaynaklanacak Hasarlar (Deprem Öncesi)"
-msgstr ""
+msgstr "Damage Caused by Objects (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:48
 msgid ""
 "Eşyalarımızın kayıp düşemesini önlemek için sabitleyecek aparatlar "
 "kullanılmalıdır."
-msgstr ""
+msgstr "In order to prevent our belongings from slipping and falling, fixation devices should be used."
 
 #: newlife/templates/earth_que.html:64
 msgid "Acil Durum Planı (Deprem Öncesi)"
-msgstr ""
+msgstr "Emergency Plan (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:65
 msgid ""
 "Bulunduğunuz alanda herkesin katılımıyla bir plan oluşturulmalı, acil "
 "durumlarda nasıl iletişime geçilmesi gerektiği konuşulmalıdır."
-msgstr ""
+msgstr "A plan should be created with the participation of everyone in your area, and how to contact should be discussed in case of emergency."
 
 #: newlife/templates/earth_que.html:81
 msgid "Acil Durum Çantası (Deprem Öncesi)"
-msgstr ""
+msgstr "Emergency Bag (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:82
 msgid ""
 "Her ihtimale karşın evde, iş yerinde ve araçta acil durum çantası "
 "bulundurmalıyız."
-msgstr ""
+msgstr "Just in case, we should keep an emergency bag at home, at work and in the car."
 
 #: newlife/templates/earth_que.html:98
 msgid "Su İhtiyacı (Deprem Öncesi)"
-msgstr ""
+msgstr "The Need for Water (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:99
 msgid ""
 "Acil durum çantasında mutlaka bulunması gerekenlerin başında su gelmektedir."
-msgstr ""
+msgstr "Water is one of the first things that must be included in an emergency bag."
 
 #: newlife/templates/earth_que.html:115
 msgid "Yiyecekler (Deprem Öncesi)"
-msgstr ""
+msgstr "Food (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:116
 msgid ""
 "Acil durum çantasında bozulma ihtimali daha düşük konserve yiyecek "
 "bulundurulmalıdır."
-msgstr ""
+msgstr "Canned food should be kept in the emergency bag, which is less likely to spoil."
 
 #: newlife/templates/earth_que.html:133
 msgid "İlk Yardım (Deprem Öncesi)"
-msgstr ""
+msgstr "First Aid (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:134
 msgid "Acil durum çantasında ufak da olsa ilk yardım kiti bulunmalıdır."
-msgstr ""
+msgstr "A first aid kit should be included in the emergency bag, even if it is small."
 
 #: newlife/templates/earth_que.html:150
 msgid "İlaç İhtiyacı (Deprem Öncesi)"
-msgstr ""
+msgstr "The Need for Medicine (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:151
 msgid ""
 "Bebek, çocuk ve yetişkinler için gerekli olan şurup ve ilaçlar acil durum "
 "çantasında bulundurulmalıdır."
-msgstr ""
+msgstr "Syrups and medicines necessary for babies, children and adults should be kept in an emergency bag."
 
 #: newlife/templates/earth_que.html:167 newlife/templates/earth_que.html:184
 msgid "Battaniye (Deprem Öncesi)"
-msgstr ""
+msgstr "Blanket (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:168
 msgid ""
 "Deprem çantasında bulunması gereken bir diğer gerekli ürün battaniyedir."
-msgstr ""
+msgstr "Another necessary product that should be included in the earthquake bag is a blanket."
 
 #: newlife/templates/earth_que.html:185
 msgid ""
 "Deprem çantasında temiz iç çamaşırı, çorap, yağmurluk ve giysilik olmalıdır."
-msgstr ""
+msgstr "Clean underwear, socks, raincoat and clothing should be in the earthquake bag Jul."
 
 #: newlife/templates/earth_que.html:201
 msgid "Çikolata (Deprem Öncesi)"
-msgstr ""
+msgstr "Chocolate (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:202
 msgid ""
 "Yüksek kalorili, vitamin ve karbonhidrat içeren, su kaybını önleyen ve "
 "dayanıklı (çabuk bozulmayan) gıdalar deprem çantasında bulundurulmalıdır."
-msgstr ""
+msgstr "High-calorie, vitamin and carbohydrate-containing, water-loss-preventing and durable (non-perishable) foods should be kept in the earthquake bag."
 
 #: newlife/templates/earth_que.html:218
 msgid "Pil / Powerbank (Deprem Öncesi)"
-msgstr ""
+msgstr "Battery/ Powerbank (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:219
 msgid "Acil durum çantası içinde mutlaka pil veya powerbank bulundurulmalıdır."
-msgstr ""
+msgstr "The battery or power bank should definitely be kept in the emergency bag."
 
 #: newlife/templates/earth_que.html:235
 msgid "Finansal Tedbirler (Deprem Öncesi)"
-msgstr ""
+msgstr "Financial Measures (Before the Earthquake)"
 
 #: newlife/templates/earth_que.html:236
 msgid ""
 "Kimlik kartı, tapu, sigorta belgeleri, diplomalar, pasaport, banka cüzdanı "
 "vb. önemli evrakların kopyaları hazırlanmalı ve deprem sigortası "
 "yaptırılmalıdır."
-msgstr ""
+msgstr "Identity card, land registry, insurance documents, diplomas, passport, bank wallet, etc. copies of important documents should be prepared and earthquake insurance should be taken out."
 
 #: newlife/templates/earth_que.html:252
 msgid "Çök-Kapan-Tutun (Deprem Anında)"
-msgstr ""
+msgstr "Crouch-Grab-Hold (In Case of Earthquake)"
 
 #: newlife/templates/earth_que.html:253
 msgid ""
 "Sarsıntı başladığı anda sağlam bir nesnenin yanına geçerek çök-kapan-tutun "
 "hareketi yapılmalıdır."
-msgstr ""
+msgstr "As soon as the shaking starts, Crouch-Grab-Hold movement should be performed by moving next to a solid object."
 
 #: newlife/templates/earth_que.html:269
 msgid "Kapalı Alanda Kalmak (Deprem Anında)"
-msgstr ""
+msgstr "Staying Indoors (During an Earthquake)"
 
 #: newlife/templates/earth_que.html:270
 msgid ""
 "Depremden sonra kapalı bir alanda kalmışsanız yardım edebilecek kimse olup "
 "olmadığını kontrol ediniz."
-msgstr ""
+msgstr "If you have stayed in a closed area after the earthquake, please check if there is anyone who can help."
 
 #: newlife/templates/earth_que.html:286
 msgid "SMS veya Mobil Uygulama kullanın (Deprem Anında)"
-msgstr ""
+msgstr "Use SMS or Mobile Application (At the Time of the Earthquake)"
 
 #: newlife/templates/earth_que.html:287
 msgid ""
 "Depremde enkaz altındaysanız aralıklı sms ya da AFAD mobil uygulaması ile "
 "konum iletiminde bulunun."
-msgstr ""
+msgstr "If you are under the rubble during the earthquake, send location transmission via sms or AFAD mobile application intermittently."
 
 #: newlife/templates/earth_que.html:303
 msgid "Ses Kontrolü (Deprem Anında)"
-msgstr ""
+msgstr "Sound Control (In Case of Earthquake)"
 
 #: newlife/templates/earth_que.html:304
 msgid ""
 "Enkaz altında kaldığınız esnada gereksiz yere bağırıp panik olmayınız, "
 "yardım duyduğunuz esnada sesinizi yükseltmeniz daha sağlıklı olacaktır."
-msgstr ""
+msgstr "Do not scream unnecessarily and panic while you are under the wreckage, it will be healthier to raise your voice when you hear help."
 
 #: newlife/templates/earth_que.html:320
 msgid "Acil Durum Çağrısı (Deprem Anında)"
-msgstr ""
+msgstr "Emergency Call (In Case of Earthquake)"
 
 #: newlife/templates/earth_que.html:321
 msgid ""
 "Deprem esnasında veya Deprem Sonrasında ilk olarak AFAD, ambulans, polis ve "
 "itfaiye aranmalıdır."
-msgstr ""
+msgstr "AFAD, ambulance, police and fire department should be called first during the Earthquake or After the Earthquake."
 
 #: newlife/templates/earth_que.html:337
 msgid "Gereksiz Çağrı (Deprem Anında)"
-msgstr ""
+msgstr "Unnecessary Call (During an Earthquake)"
 
 #: newlife/templates/earth_que.html:338
 msgid ""
 "Deprem bölgesinde gereksiz yere telefon kullanımı yapılmamalı, hatlar meşgul "
 "edilmemelidir."
-msgstr ""
+msgstr "Phone usage should not be made unnecessarily in the earthquake zone, the lines should not be busy."
 
 #: newlife/templates/earth_que.html:354
 msgid "Acil 112 (Deprem Sonrası)"
-msgstr ""
+msgstr "Emergency 112 (After the Earthquake)"
 
 #: newlife/templates/earth_que.html:355
 msgid ""
 "Deprem Sonrasında telefona ulaşabiliyorsanız 112 Acil hemen aranmalıdır. "
 "Kendi emniyetinizden emin olduktan sonra çevre için yardım edilmelidir."
-msgstr ""
+msgstr "If you can reach the phone after the earthquake, 112 Emergency should be called immediately.  After making sure of your own safety, you should be helped for the environment."
 
 #: newlife/templates/earth_que.html:371
 msgid "Çevredeki Ses Kontrolü (Deprem Sonrası)"
-msgstr ""
+msgstr "Sound Control in the Surrounding Area (After the Earthquake)"
 
 #: newlife/templates/earth_que.html:372
 msgid ""
 "Deprem çevresinde enkaz altındaki insanlara daha rahat ulaşılabilmesi için "
 "çevrenin gereksiz ses yapmaması gerekmektedir."
-msgstr ""
+msgstr "In order to reach the people under the rubble more easily around the earthquake, the environment should not make unnecessary noise."
 
 #: newlife/templates/earth_que.html:388
 msgid "Bilinçsiz Davranış (Deprem Sonrası)"
-msgstr ""
+msgstr "Unconscious Behavior (After an Earthquake)"
 
 #: newlife/templates/earth_que.html:389
 msgid ""
 "Depremden sonra ilk yardım eğitimi almamışsanız, kendiniz de o esnada "
 "sağlıklı durumda değilseniz bilinçsiz bir harekette bulunmayınız."
-msgstr ""
+msgstr "If you have not received first aid training after the earthquake, do not make any unconscious movements if you are not in a healthy state yourself at the time."
 
 #: newlife/templates/earth_que.html:406
 msgid "Kan Bağışı (Deprem Sonrası)"
-msgstr ""
+msgstr "Blood Donation (After the Earthquake)"
 
 #: newlife/templates/earth_que.html:407
 msgid ""
 "Enkaz altında kalmış insanlar için kan bağışında bulunmak hayat kurtarır."
-msgstr ""
+msgstr "Donating blood for people trapped under the rubble saves lives."
 
 #: newlife/templates/earth_que.html:423
 msgid "Yardımlaşmak (Deprem Sonrası)"
-msgstr ""
+msgstr "To Help (After the Earthquake)"
 
 #: newlife/templates/earth_que.html:424
 msgid ""
 "Depremden sonra ihtiyaç sahipleri için kullanıma uygun kıyafetler bağış "
 "yapılmalı ve yardımda bulunulmalıdır."
-msgstr ""
+msgstr "Depremden sonra ihtiyaç sahipleri için kullanıma uygun kıyafetler bağış "
+"yapılmalı ve yardımda bulunulmalıdır."
 
 #: newlife/templates/earth_que.html:440
 msgid "Depreme Dayanıklı Ev (Deprem Sonrası)"
-msgstr ""
+msgstr "Earthquake Resistant House (After the Earthquake)"
 
 #: newlife/templates/earth_que.html:441
 msgid ""
 "Binalarımızın daha uzun ömürlü olması için su yalıtımlarına önem "
 "verilmelidir. Binaların temeli ilk günkü gibi sağlam kalacaktır."
-msgstr ""
+msgstr "Importance should be given to waterproofing in order for our buildings to last longer. The foundation of the buildings will remain intact as on the first day."
 
 #: newlife/templates/earth_que.html:457
 msgid "Deprem Kültürü (Deprem Sonrası)"
-msgstr ""
+msgstr "Earthquake Culture (After the Earthquake)"
 
 #: newlife/templates/earth_que.html:458
 msgid ""
 "Depremin hayatın bir gerçeği olduğunu hepimizin bilmesi ve alınması gereken "
 "tedbirlerin herkese iletilmesi bizim sorumluluğumuzdur."
-msgstr ""
+msgstr "It is our responsibility that we all know that an earthquake is a fact of life and that the measures that need to be taken are communicated to everyone."
 
 #: newlife/templates/earth_que.html:468
 msgid "Kod Kaynağı"
-msgstr ""
+msgstr "Code Source"
 
 #: newlife/templates/earth_que.html:474
 msgid "AFAD Deprem"
@@ -752,11 +753,11 @@ msgstr "Username"
 #: newlife/templates/pages/dashboard.html:272
 #: newlife/templates/pages/dashboard.html:290
 msgid "Kaydedilenler"
-msgstr ""
+msgstr "Saved"
 
 #: newlife/templates/pages/dashboard.html:278
 msgid "Cikis yap"
-msgstr ""
+msgstr "Log out"
 
 #: newlife/templates/pages/dashboard.html:292
 #: newlife/templates/pages/homepage.html:319
@@ -769,7 +770,7 @@ msgstr "Review"
 
 #: newlife/templates/pages/dashboard.html:312
 msgid "Favorilere eklemiş olduğunuz blog bulunmamaktadır."
-msgstr ""
+msgstr "There is no blog you have added to favorites."
 
 #: newlife/templates/pages/dashboard.html:320
 #: newlife/templates/pages/models_page.html:71
@@ -778,37 +779,37 @@ msgstr "molecules"
 
 #: newlife/templates/pages/dashboard.html:339
 msgid "Detaylar"
-msgstr ""
+msgstr "Details"
 
 #: newlife/templates/pages/dashboard.html:346
 msgid "Favorilere eklemiş olduğunuz molekül bulunmamaktadır."
-msgstr ""
+msgstr "There is no molecule you have added to favorites."
 
 #: newlife/templates/pages/dashboard.html:400
 msgid "İsim Soyisim"
-msgstr ""
+msgstr "Name Surname"
 
 #: newlife/templates/pages/dashboard.html:405
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: newlife/templates/pages/dashboard.html:409
 msgid "Sınıf Bilgisi"
-msgstr ""
+msgstr "Class Information"
 
 #: newlife/templates/pages/dashboard.html:419
 msgid "Okul Bilgisi"
-msgstr ""
+msgstr "School Information"
 
 #: newlife/templates/pages/dashboard.html:424
 msgid "Değişiklikleri Kaydet"
-msgstr ""
+msgstr "Save Changes"
 
 #: newlife/templates/pages/dashboard.html:436
 #: newlife/templates/pages/models_page.html:36
 #: newlife/templates/tests/quiz_page.html:23
 msgid "Sorular ve Cevaplar"
-msgstr ""
+msgstr "Questions and Answer"
 
 #: newlife/templates/pages/homepage.html:52
 msgid "Teorik Eğitim Pratikte Güzel."
@@ -1017,29 +1018,29 @@ msgstr "Review"
 #, fuzzy
 #| msgid "Güncel <span>bloglar</span>"
 msgid "Ders <span>Notları</span>"
-msgstr "Current <span>blogs</span>"
+msgstr "Lecture <span>Notes</span>"
 
 #: newlife/templates/pages/homepage.html:355
 msgid "12.Sınıf Ders Notu"
-msgstr ""
+msgstr "Class 12 Lecture Note"
 
 #: newlife/templates/pages/homepage.html:358
 msgid "Akılda Kalıcılığı yüksek notlarla hazırlan"
-msgstr ""
+msgstr "Prepare with memorable notes"
 
 #: newlife/templates/pages/homepage.html:369
 msgid "11.Sınıf Ders Notu"
-msgstr ""
+msgstr "Class 11 Lecture Note"
 
 #: newlife/templates/pages/homepage.html:372
 msgid "Sınavlarda New LiFe yanında"
-msgstr ""
+msgstr "Next to New LiFe in exams"
 
 #: newlife/templates/pages/homepage.html:383
 #, fuzzy
 #| msgid "10 Sınıf"
 msgid "10.Sınıf Ders Notu"
-msgstr "Class 12"
+msgstr "Class 10 Lecture Note"
 
 #: newlife/templates/pages/homepage.html:386
 #, fuzzy
@@ -1049,11 +1050,11 @@ msgstr "Earthquake full preparation"
 
 #: newlife/templates/pages/homepage.html:396
 msgid "9.Sınıf Ders Notu"
-msgstr ""
+msgstr "Class 9 Lecture Note"
 
 #: newlife/templates/pages/homepage.html:399
-msgid "Kimyaya sağlam başlangıçk"
-msgstr ""
+msgid "Kimyaya sağlam başlangıç"
+msgstr "Solid start to chemistry"
 
 #: newlife/templates/pages/homepage.html:414
 msgid "Kullanıcı <span>Yorumları</span>"
@@ -1114,7 +1115,7 @@ msgstr "University"
 
 #: newlife/templates/pages/models_page.html:114
 msgid "Genel Kültür <span>Soru & Cevap</span>"
-msgstr ""
+msgstr "General Culture <span>Que & Answer</span>"
 
 #: newlife/templates/tests/quiz_page.html:48
 msgid "Sorudan oluşuyor"
@@ -1126,7 +1127,7 @@ msgstr "Videos"
 
 #: newlife/templates/video/video.html:35
 msgid "Video Bülteni"
-msgstr ""
+msgstr "Video Bulletin"
 
 #: newlife/users/admin.py:18
 msgid "Personal info"
