@@ -128,7 +128,7 @@ NewLiFe
         <div class="box">
 
             <img src="{% static 'VR/yeni_deneyimler.jpg' %}" alt="">
-            
+
             <h3>{% trans 'Yeni Deneyimler' %}</h3>
 
             <div class="price">New LiFe, <span>{% trans 'farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler sunmayı hedefler.' %}</span></div>
@@ -329,7 +329,7 @@ NewLiFe
             <div class="content">
                 <a href="#" class="title">{{ blog.title }}</a>
 
-                <span>İçerik Ekibi / {{ blog.created_at|date }}</span>
+                <span>{% trans 'İçerik Ekibi' %} / {{ blog.created_at|date }}</span>
                 <p>{{ blog.short_description }}</p>
                 <a href="{% url 'blog-detail' blog.slug %}" class="btn">{% trans 'İncele' %} </a>
             </div>
@@ -339,7 +339,7 @@ NewLiFe
     </div>
 
 </section>
-<!--Blogs section ends 
+<!--Blogs section ends
 <img src="{% static 'VR/OurLogo.png' %}" alt="">
 -->
 
@@ -352,11 +352,11 @@ NewLiFe
                 <img src="{% static 'VR/12.jpg' %}" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">12.Sınıf Ders Notu</a>
+                <a href="#" class="title">{% trans '12.Sınıf Ders Notu' %}</a>
 
-                <span>İçerik Ekibi / 30.03.2023</span>
-                <p>Akılda Kalıcılığı yüksek notlarla hazırlan</p>
-                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">İncele</a>
+                <span>{% trans 'İçerik Ekibi' %} / 30.03.2023</span>
+                <p>{% trans 'Akılda Kalıcılığı yüksek notlarla hazırlan' %}</p>
+                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">{% trans 'İncele' %}</a>
             </div>
         </div>
 
@@ -366,11 +366,11 @@ NewLiFe
                 <img src="{% static 'VR/11.jpg' %}" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">11.Sınıf Ders Notu</a>
+                <a href="#" class="title">{% trans '11.Sınıf Ders Notu' %}</a>
 
-                <span>İçerik Ekibi / 30.03.2023</span>
-                <p>Sınavlarda New LiFe yanında</p>
-                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">İncele</a>
+                <span>{% trans 'İçerik Ekibi' %} / 30.03.2023</span>
+                <p>{% trans 'Sınavlarda New LiFe yanında' %}</p>
+                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">{% trans 'İncele' %}</a>
             </div>
         </div>
 
@@ -380,11 +380,11 @@ NewLiFe
                 <img src="{% static 'VR/10.jpg' %}" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">10.Sınıf Ders Notu</a>
+                <a href="#" class="title">{% trans '10.Sınıf Ders Notu' %}</a>
 
-                <span>İçerik Ekibi / 30.03.2023</span>
-                <p>Kimya için tam hazırlık</p>
-                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">İncele</a>
+                <span>{% trans 'İçerik Ekibi' %} / 30.03.2023</span>
+                <p>{% trans 'Kimya için tam hazırlık' %}</p>
+                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">{% trans 'İncele' %}</a>
             </div>
         </div>
 
@@ -393,11 +393,11 @@ NewLiFe
                 <img src="{% static 'VR/9.jpg' %}" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">9.Sınıf Ders Notu</a>
+                <a href="#" class="title">{% trans '9.Sınıf Ders Notu' %}</a>
 
-                <span>İçerik Ekibi / 30.03.2023</span>
-                <p>Kimyaya sağlam başlangıçk</p>
-                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">İncele</a>
+                <span>{% trans 'İçerik Ekibi' %} / 30.03.2023</span>
+                <p>{% trans 'Kimyaya sağlam başlangıçk' %}</p>
+                <a href="https://drive.google.com/drive/folders/163KamBPnHOULmvB2zPkzc5zPfNv64FAy" class="btn">{% trans 'İncele' %}</a>
             </div>
         </div>
 
