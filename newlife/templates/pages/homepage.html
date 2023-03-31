@@ -456,9 +456,10 @@ NewLiFe
                    {% if management_member.instagram %}
                     <a href="{{ management_member.instagram }}" class="fab fa-instagram"></a>
                    {% endif %}
-                   <!-- 
-                    <a href="" class="fab fa-github"></a>
-                    -->
+                  {% if management_member.github %}
+                    <a href="{{ management_member.github }}" class="fab fa-github"></a>
+                   {% endif %}
+                   
                 </div>
             </div>
         </div>

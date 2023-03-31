@@ -33,6 +33,9 @@ class NewLifeManagementMember(models.Model):
         max_length=255,
         help_text="Full Name ( ex: Elon Musk )",
     )
+    github = models.URLField(
+        verbose_name=_("Github URL"), help_text="Github link", blank=True
+    )
     linkedin = models.URLField(
         verbose_name=_("Linkedin URL"), help_text="Linkedin link", blank=True
     )
