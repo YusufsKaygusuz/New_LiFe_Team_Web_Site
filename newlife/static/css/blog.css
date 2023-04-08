@@ -232,10 +232,13 @@ a{
     color: rgb(255, 255, 255);
     font-weight: lighter;
     padding: 1.5rem;
+    font-size: 1.3rem;
+    
 }
 .footer .credit span{
     color: var(--main-color);
     font-weight:bolder;
+    
 }
 
 .footer .credit span:hover
@@ -266,5 +269,8 @@ a{
 }
 .footer .links a{
   font-size: 5px;
+}
+.navbar a{
+  display: none;
 }
 }
