@@ -14,12 +14,12 @@ NewLiFe
     </a>
 
     <nav class="navbar">
-        <a href="#home">New LiFe</a>
-        <a href="#about">{% trans 'Hakkında' %}</a>
+        <a href="#about">{% trans 'Hakkımızda' %}</a>
         <a href="#menu">{% trans 'Yararlar' %}</a>
         <a href="#products">{% trans 'İçerikler' %}</a>
         <a href="#lecture">{% trans 'Ders Notları' %}</a>
         <a href="#blogs">{% trans 'Bloglar' %}</a>
+        <a href="#pricing">{% trans 'Fiyatlarımız' %}</a>
         <a href="#review">{% trans 'Yorumlar' %}</a>
         <a href="#trainers">{% trans 'Yönetim' %}</a>
         <a href="#contact">{% trans 'İletişim' %}</a>
@@ -55,9 +55,7 @@ NewLiFe
         <p>{% trans 'New LiFe ile günlerini planlayarak başlamak ister misin?' %}</p>
 
         <a href="https://drive.google.com/file/d/1EL-6w6x-1PHS6mP7MbDi2Gr0XswcnXJu/view?usp=sharing" class="btn">{% trans 'Şimdi Dene' %}</a>
-
     </div>
-
 </section>
 
 <!--Home section Ends -->
@@ -345,7 +343,6 @@ NewLiFe
             </div>
         </div>
 
-
         <div class="box">
             <div class="image">
                 <img src="{% static 'VR/11.jpg' %}" alt="">
@@ -361,7 +358,6 @@ NewLiFe
                 -->
             </div>
         </div>
-
 
         <div class="box">
             <div class="image">
@@ -393,12 +389,9 @@ NewLiFe
 
 </div>
 </section>
-
 <!--Ders notları section end-->
 
-
 <!--Blogs section starts -->
-
 <section class="blogs" id="blogs">
     <h1 class="heading">{% trans 'Güncel <span>bloglar</span>' %}</h1>
 
@@ -419,11 +412,51 @@ NewLiFe
             </div>
         </div>
        {% endfor %}
+    </div>
+</section>
+<!--Blogs section ends -->
+<h1 id="pricing" class="heading">{% trans 'fiyatlandırma <span>Planı</span>' %}</h1>
+<section class="pricing" id="">
+    <div class="information">
+        <span>fiyatlandırma planı</span>
+        <h3>sizin için uygun fiyatlandırma planı</h3>
+        <p> <span>Kurumsal</span> olarak kurulum hizmetimizden yararlanmak isterseniz bizimle iletişime geçerek fiyat alabilirsiniz.</p>
+        <p> <i class="fas fa-check"></i> 7/24 Teknik Destek </p>
+        <p> <i class="fas fa-check"></i> Profesyonel Destek </p>
+        <p> <i class="fas fa-check"></i> Hızlı ve Güvenilir Kurulum </p>
+        <p> <i class="fas fa-check"></i> Özelleştirme İmkanı</p>
+        <a href="#" class="btn">İletişime Geç</a>
+    </div>
 
+    <div class="plan basic">
+        <h3>Deneyim Odaklı Paket</h3>
+        <div class="price"><span>₺</span>30<span>/Ay</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> Bütün Ders Notlarına Erişim  </p>
+        <p> <i class="fas fa-check"></i> Ayda 5 Akıllı Blog Erişimi </p>
+        <p> <i class="fas fa-check"></i> 3D Moleküllere Erişim </p>
+        <p> <i class="fas fa-check"></i> Ayda 2 Online Deneme Sınavı</p>
+        <p> <i class="fas fa-check"></i> Ayda 1 Sanal Deney Gerçekleştirme </p>
+       </div>
+       <a href="#" class="btn">Hemen Başla</a>
+    </div>
+
+    <div class="plan">
+        <h3>İnovatif Eğitim Destek Paketi</h3>
+        <div class="price"><span>₺</span>90<span>/Ay</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> Bütün Ders Notlarına Erişim </p>
+        <p> <i class="fas fa-check"></i> Bütün Akıllı Bloglara Erişim </p>
+        <p> <i class="fas fa-check"></i> 3D Moleküllere Erişim & Tasarlama Hakkı </p>
+        <p> <i class="fas fa-check"></i> Ayda 2 Online Deneme Sınavı </p>
+        <p> <i class="fas fa-check"></i> Bütün Sanal Deneyleri Gerçekleştirme </p>
+       </div>
+       <a href="#" class="btn">Hemen Başla</a>
     </div>
 
 </section>
-<!--Blogs section ends -->
+
+
 
 <!--Comment section starts -->
 
@@ -519,9 +552,7 @@ NewLiFe
             <input type="submit" value="{% trans 'İletişime geç' %}" class="btn">
 
         </form>
-
     </div>
-
 </section>
 <!--Contact section ends -->
 
