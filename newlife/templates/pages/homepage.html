@@ -15,7 +15,6 @@ NewLiFe
 
     <nav class="navbar">
         <a href="#about">{% trans 'Hakkımızda' %}</a>
-        <a href="#menu">{% trans 'Yararlar' %}</a>
         <a href="#products">{% trans 'İçerikler' %}</a>
         <a href="#lecture">{% trans 'Ders Notları' %}</a>
         <a href="#blogs">{% trans 'Bloglar' %}</a>
@@ -26,13 +25,10 @@ NewLiFe
     </nav>
 
     <div class="icons">
-
         <a href="/accounts/login/">
             <div class="fas fa-user" id="cart-btn"></div>
         </a>
-
         <div class="fas fa-bars" id="menu-btn"></div>
-
     </div>
 
 </header>
@@ -51,114 +47,53 @@ NewLiFe
 
     <div class="content">
         <h3>{% trans 'Teorik Eğitim Pratikte Güzel.' %}</h3>
-
         <p>{% trans 'New LiFe ile günlerini planlayarak başlamak ister misin?' %}</p>
-
         <a href="https://drive.google.com/file/d/1EL-6w6x-1PHS6mP7MbDi2Gr0XswcnXJu/view?usp=sharing" class="btn">{% trans 'Şimdi Dene' %}</a>
     </div>
 </section>
-
 <!--Home section Ends -->
 
-<!--About Section Starts-->
-
 <section class="about" id="about">
-    <h1 class="heading"> <span>New LiFe </span>{% trans 'Hakkında' %}</h1>
-
-    <div class="flex-container">
-
-        <div class="image">
-            <img src="{% static 'VR/vrBackground2.jpg' %}" alt="">
-        </div>
-
-        <div class="content">
-            <h3>{% trans 'New LiFe Kullanıcılarına Ne sunar?' %}</h3>
-
-            {% blocktrans %}
-            <p><b>
-                    New LiFe Team</b>'in oluşturduğu sanal ortam ile istediğiniz an her yer bir deneyim ortamı.
-                New LiFe, teorik olarak derste verilen bilgileri daha verimli hale getirme hedefini,
-                kullanıcılarına 3D ve infografik içerikler ile sağlar. Bilginin ulaşılabilirliği ve akılda kalıcılığı en
-                üst seviyede tutmak
-                <b>New LiFe Team</b>'in en büyük hedefidir...
-            </p>
-            {% endblocktrans %}
-            <p>{% trans 'Laboratuvardaki deneyleri dijital ortama aktararak Teorik bilgiyi deneyimleme fırsatını sizlere web site destekli Virtual Reality (VR) gözlük ile sunar. Sizler için bilginin verimliliğini ve akılda kalıcılığını artırmayı olanaklı hale getirmek için çabalar.' %}</p>
-
-            <!--  <a href="#" class="btn">{% trans 'Daha Fazla' %}</a> -->
-
-        </div>
-
+    <div class="image">
+        <img src="{% static 'VR/vrBackground2.jpg' %}" alt="">
     </div>
+    <div class="content">
+        
+        <span>New LiFe Hakkında</span>
+        <h3 class="title">{% trans 'New LiFe Kullanıcılarına Ne sunar?' %}</h3>
+        {% blocktrans %}
+        <p>
+            <b>New LiFe Team</b>, kullanıcılara 3D ve infografik içeriklerle teorik bilgileri daha verimli hale getirme hedefini benimseyerek, her an her yerde deneyim ortamı
+              sunan bir sanal platform oluştururken, bilginin ulaşılabilirliği ve akılda kalıcılığını en üst seviyede tutmayı hedefler.
+        </p>
+        {% endblocktrans %}
 
-</section>
-
-<!--About Section Ends -->
-
-<!-- Menu section starts-->
-
-<section class="menu" id="menu">
-
-    <h1 class="heading">{% trans 'Sizin <span>yararınız</span>' %}</h1>
-
-    <div class="box-container">
-        <div class="box">
-
-            <img src="{% static 'VR/etkili_ogrenme.jpg' %}" alt="">
-
-            <h3>{% trans 'Etkili Öğrenme' %}</h3>
-
-            <div class="price">New LiFe<span>{% trans 'deneyleri bireysel olarak deneyimleme fırsatı sunduğu için etkili öğrenme sağlar.' %}</span></div>
-
-        </div>
-
-
-        <div class="box">
-
-            <img src="{% static 'VR/zaman_kazanci.jpg' %}" alt="">
-
-            <h3>{% trans 'Zaman Kazancı' %}</h3>
-
-            <div class="price">New LiFe <span>{% trans 'deneyleri sanal ortama taşıdığı için hatalı yapılan deneyler vakit kaybettirmez.' %}</span></div>
-
-        </div>
-
-
-        <div class="box">
-
-            <img src="{% static 'VR/yeni_deneyimler.jpg' %}" alt="">
-
-            <h3>{% trans 'Yeni Deneyimler' %}</h3>
-
-            <div class="price">New LiFe, <span>{% trans 'farklı ve göz alıcı ortamları sizlere sunarak farklı deneyimler ve fkirler sunmayı hedefler.' %}</span></div>
-
-        </div>
-
-
-        <div class="box">
-
-            <img src="{% static 'VR/etkilenmeme.jpg' %}" alt="">
-
-            <h3>{% trans 'Etkilenmeme' %}</h3>
-
-            <div class="price">New LiFe <span>{% trans 'ile çevrimiçi eğitim platformuna dahil olacağın için olumsuz koşullardan (pandemi gibi) etkilenmezsin.' %}</span></div>
-
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>{% trans 'Etkili Öğrenme' %}</h3>
+                <p>{% trans 'Bireysel olarak deneyimlemeye dayanan deneyler, etkili öğrenme sağlar.' %}</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>{% trans 'Zaman Kazancı' %}</h3>
+                <p>{% trans 'Sanal ortamda yapılan deneyler, hatalı yapıldığında zaman kaybına neden olmaz.' %}</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>{% trans 'Yeni Deneyimler' %}</h3>
+                <p>{% trans 'Farklı ve göz alıcı ortamlar sunarak, farklı deneyimler ve fikirler sunmayı hedefler.' %}</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>{% trans 'Etkilenmeme' %}</h3>
+                <p>{% trans 'Çevrimiçi eğitim platformuna katıldığın için, olumsuz koşullardan etkilenmezsin.' %}</p>
+            </div>
         </div>
     </div>
-
 </section>
-
-<!-- Menu section ends-->
-
 
 <!-- Products section starts -->
-
 <section class="products" id="products">
-
     <h1 class="heading">
         <span>{% trans 'İçeriklerimiz' %}</span>
     </h1>
-
     <div class="box-container">
 
         <div class="box">
@@ -183,7 +118,6 @@ NewLiFe
                 <div class="price">{% trans 'Gözlerini kamaştıracak!' %} <span></span></div>
             </div>
         </div>
-
 
         <div class="box">
             <div class="icons">
@@ -328,7 +262,6 @@ NewLiFe
 <!--Ders Notları section start -->
 <section class="blogs" id="lecture">
     <h1 class="heading">{% trans 'Ders <span>Notları</span>' %}</h1>
-
     <div class="box-container">
         <div class="box">
             <div class="image">
@@ -430,11 +363,11 @@ NewLiFe
 
     <div class="plan basic">
         <h3>Deneyim Odaklı Paket</h3>
-        <div class="price"><span>₺</span>30<span>/Ay</span></div>
+        <div class="price"><span>₺</span>19,99<span>/Ay</span></div>
        <div class="list">
         <p> <i class="fas fa-check"></i> Bütün Ders Notlarına Erişim  </p>
         <p> <i class="fas fa-check"></i> Ayda 5 Akıllı Blog Erişimi </p>
-        <p> <i class="fas fa-check"></i> 3D Moleküllere Erişim </p>
+        <p> <i class="fas fa-check"></i> 3D Moleküllere Erişim Hakkı </p>
         <p> <i class="fas fa-check"></i> Ayda 2 Online Deneme Sınavı</p>
         <p> <i class="fas fa-check"></i> Ayda 1 Sanal Deney Gerçekleştirme </p>
        </div>
@@ -443,7 +376,7 @@ NewLiFe
 
     <div class="plan">
         <h3>İnovatif Eğitim Destek Paketi</h3>
-        <div class="price"><span>₺</span>90<span>/Ay</span></div>
+        <div class="price"><span>₺</span>49,99<span>/Ay</span></div>
        <div class="list">
         <p> <i class="fas fa-check"></i> Bütün Ders Notlarına Erişim </p>
         <p> <i class="fas fa-check"></i> Bütün Akıllı Bloglara Erişim </p>
@@ -455,8 +388,6 @@ NewLiFe
     </div>
 
 </section>
-
-
 
 <!--Comment section starts -->
 

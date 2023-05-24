@@ -204,6 +204,105 @@ section {
 }
 /* Header Selection Css Codes End */
 
+/* About (Hakkımızda) Selection Css Codes Start */
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8rem;
+  }
+  
+  .about .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    position: relative;
+  }
+  
+  .about .image::before, .about .image::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--main-color);
+    height: 15rem;
+    width: 15rem;
+  }
+  
+  .about .image::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .about .image::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .about .image img {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .about .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+  .about .content span {
+    font-size: 2rem;
+    color: var(--main-color);
+  }
+  
+  .about .content .title {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: .5rem;
+  }
+  
+  .about .content p {
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 2;
+    text-transform: none;
+  }
+  .about .content p b{
+    color: var(--main-color);
+  }
+  
+  .about .content .box-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .about .content .box-container .box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+  }
+  
+  .about .content .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .about .content .box-container .box h3 i {
+    padding-right: 1.5rem;
+    color: var(--main-color);
+  }
+/* About (Hakkımızda) Selection Css Codes End */
+
 /* Home (Hakkımızda) Selection Css Codes Start */
 .home {
     min-height: 100vh;
@@ -232,41 +331,6 @@ section {
     color: #eee;
 }
 /* Home (Tanıtım) Selection Css Codes End */
-
-/* About (Hakkımızda) Selection Css Codes Start */
-.about .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background: var(--black);
-}
-
-.about .flex-container .image {
-    flex: 1 1 45rem;
-}
-
-.about .flex-container .image img {
-    width: 100%;
-}
-
-.about .flex-container .content {
-    flex: 1 1 45rem;
-    padding: 2rem;
-}
-
-.about .flex-container .content h3 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.about .flex-container .content p {
-    font-size: 1.6rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
-    text-transform: none;
-    text-align: justify;
-}
-/* About (Hakkımızda) Selection Css Codes Ends */
 
 /* Trainers (Yönetim) Selection Css Codes Start */
 .trainers .box-container {
@@ -338,49 +402,6 @@ section {
 }
 /* Trainers (Yönetim) Selection Css Codes End */
 
-/* Menu (Yararınız) Selection Css Codes Start */
-.menu .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.menu .box-container .box {
-    padding: 5rem;
-    text-align: center;
-    border: var(--border);
-}
-
-.menu .box-container .box img {
-    height: 15rem;
-    border-radius: 15rem;
-}
-
-.menu .box-container .box h3 {
-    color: var(--main-color);
-    font-size: 2.2rem;
-    padding: 1rem 0;
-}
-
-.menu .box-container .box .price {
-    color: #fff;
-    font-size: 1.6rem;
-    padding: 5rem 0;
-}
-
-.menu .box-container .box .price span {
-    font-size: 1.5rem;
-    text-transform: none;
-}
-
-.menu .box-container .box:hover {
-    background: #fff;
-}
-
-.menu .box-container .box:hover>* {
-    color: var(--black);
-}
-/* Menu (Yararınız) Selection Css Codes End */
 
 /* Products (İçerikler) Selection Css Codes Start */
 .products .box-container {
@@ -388,7 +409,6 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
-
 
 .products .box-container .box {
     text-align: center;
@@ -556,7 +576,7 @@ section {
   
   .pricing .information span {
     font-size: 2rem;
-    color: #f00;
+    color: var(--main-color);
   }
   
   .pricing .information h3 {
@@ -574,7 +594,7 @@ section {
   
   .pricing .information p i {
     padding-right: 1rem;
-    color: #f00;
+    color: var(--main-color);
   }
   
   .pricing .plan {
@@ -616,7 +636,7 @@ section {
   
   .pricing .plan .list p i {
     padding-right: 1rem;
-    color: #f00;
+    color: var(--main-color);
   }
 
 /* Pricing Selection Css Codes End */
@@ -803,6 +823,17 @@ section {
     .home .content p {
         font-size: 1.5rem;
     }
+
+    .about {
+        gap: 3rem;
+      }
+      .about .image {
+        margin-top: 5rem;
+      }
+      .about .content .title {
+        font-size: 3rem;
+      }
+
 }
 
 @media screen and (max-width: 450px) {
