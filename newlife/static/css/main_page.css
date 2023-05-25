@@ -403,6 +403,43 @@ section {
 /* Trainers (Yönetim) Selection Css Codes End */
 
 
+/*Counter Css section starts*/
+
+.counter {
+    background: linear-gradient(130deg, #111 93%, transparent 90%);
+  }
+  
+  .counter .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+  }
+  
+  .counter .box-container .box {
+    text-align: center;
+  }
+  
+  .counter .box-container .box h3 {
+    font-size: 5rem;
+    color: #f00;
+  }
+  
+  .counter .box-container .box p {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  /*Counter Css section Ends*/
+
+
+
+
+
+
+
+
+
+
 /* Products (İçerikler) Selection Css Codes Start */
 .products .box-container {
     display: grid;
