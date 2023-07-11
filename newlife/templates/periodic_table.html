@@ -9,11 +9,29 @@
   <title>Periodic Table</title>
   <link rel="stylesheet" href="{% static 'css/periodic_table.css' %}">
 </head>
+
 <script>
-  alert("Periyodik tablonun okunurluğu için telefonunuzu yan çevirmeniz önerilir.");
+  window.addEventListener("DOMContentLoaded", function () {
+    var alertBox = document.getElementById("customAlert");
+    alertBox.style.display = "flex";
+  });
+
+  function hideCustomAlert() {
+    var alertBox = document.getElementById("customAlert");
+    alertBox.style.display = "none";
+  }
 </script>
 
 <body>
+  
+  <div class="custom-alert" id="customAlert" style="display: none;">
+    <div class="alert-box">
+      <div class="alert-message">
+        Periyodik tabloyu daha iyi görmek için cihazınızı yatay konuma getirin.
+      </div>
+      <a href="#" class="ok-button" onclick="event.preventDefault(); hideCustomAlert();">Anladım</a>
+    </div>
+  </div>
 
   <!-- ELEMENT MIXIN TEMPLATE-->
   <!-- PLACEHOLDER MIXIN TEMPLATE-->
