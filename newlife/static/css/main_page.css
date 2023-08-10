@@ -214,13 +214,14 @@ section {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 8rem;
+    gap: 6rem;
+    margin-top: 2em;
   }
   
   .about .image {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 42rem;
-            flex: 1 1 42rem;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
     position: relative;
   }
   
